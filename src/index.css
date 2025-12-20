@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-navy: #02050a;
+  /* Updated logic: Deep Navy/Black */
+  --color-gold: #B99C00;
+  --color-white: #ffffff;
+  --color-dark: #02040a;
+  --color-black: #000000;
+  --color-card: rgba(5, 12, 24, 0.7);
+
+  /* Fonts */
+  --font-heading: 'Google Sans', sans-serif;
+  --font-body: 'Google Sans', sans-serif;
+}
+
+/* Custom Utilities Variables */
+:root {
+  --glass-bg: rgba(5, 12, 24, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --blur: 10px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #050c18;
+  /* Matching the new navy color */
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-navy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4c575;
+}
