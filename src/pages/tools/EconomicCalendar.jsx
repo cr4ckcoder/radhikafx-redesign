@@ -198,7 +198,7 @@ const EconomicCalendar = () => {
                     <div className="mt-12 p-6 bg-white/5 border border-white/10 rounded-xl text-center">
                         <p className="text-sm text-gray-500 italic">
                             <Info size={14} className="inline mr-1 mb-0.5" />
-                            <strong>Disclaimer:</strong> Past performance of economic data is not an indicator of future market results. High-impact news can lead to significant slippage and price gaps. RadhikaFX is not responsible for trading losses incurred during news events.
+                            <strong>Disclaimer:</strong> Past performance of economic data is not an indicator of future market results. High-impact news can lead to significant slippage and price gaps. Radhika Capital Markets is not responsible for trading losses incurred during news events.
                         </p>
                     </div>
 

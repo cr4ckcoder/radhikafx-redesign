@@ -135,7 +135,7 @@ const Crypto = () => {
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">Secure Regulation</h3>
                             <p className="text-gray-400 text-sm leading-relaxed">
-                                Unlike unregulated exchanges, RadhikaFX operates under strict FSC oversight.
+                                Unlike unregulated exchanges, Radhika Capital Markets operates under strict FSC oversight.
                             </p>
                         </div>
                         <div className="bg-[rgba(255,255,255,0.03)] p-8 rounded-2xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-colors">

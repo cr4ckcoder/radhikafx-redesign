@@ -29,7 +29,7 @@ const Footer = () => {
                         {/* Column 1: Brand & Contact */}
                         <div>
                             <Link to="/" className="flex items-center gap-2 mb-6">
-                                <img src={Logo} alt="RadhikaFX" className="h-32 w-auto object-contain" />
+                                <img src={Logo} alt="Radhika Capital Markets" className="h-32 w-auto object-contain" />
                             </Link>
                             <p className="text-gray-400 mb-6 leading-relaxed">
                                 Trade with a regulated global broker. Experience institutional-grade execution, 0.0 spreads, and 24/7 support.
@@ -38,7 +38,7 @@ const Footer = () => {
                             <div className="space-y-4 text-sm mb-8">
                                 <div className="flex items-start gap-3">
                                     <MapPin size={18} className="text-gold-gradient flex-shrink-0 mt-1" />
-                                    <span>Concord Tower, Dubai Media City, UAE</span>
+                                    <span>Dubai, UAE</span>
                                 </div>
                                 <div className="flex items-start gap-3">
                                     <Mail size={18} className="text-gold-gradient flex-shrink-0 mt-1" />
@@ -100,11 +100,11 @@ const Footer = () => {
                         </div>
 
                         <p className="text-xs text-gray-500 leading-relaxed text-center mb-4">
-                            Radhika Capital Markets Ltd operating under brand name Radhikafx is an Investment Dealer regulated by the Financial Services Commission (FSC) of Mauritius with a Global Business License and an Investment Dealer License number GB22200742 - Registration No. 190425 | Authorised Representative Number : 00000572.
+                            Radhika Capital Markets Ltd operating under brand name Radhika Capital Markets is an Investment Dealer regulated by the Financial Services Commission (FSC) of Mauritius with a Global Business License and an Investment Dealer License number GB22200742 - Registration No. 190425 | Authorised Representative Number : 00000572.
                         </p>
 
                         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600 pt-4 border-t border-gray-800">
-                            <p>&copy; {new Date().getFullYear()} RadhikaFX. All rights reserved.</p>
+                            <p>&copy; {new Date().getFullYear()} Radhika Capital Markets. All rights reserved.</p>
                             <div className="flex gap-4">
                                 <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                                 <Link to="/terms-and-conditions" className="hover:text-white transition-colors">Terms & Conditions</Link>

@@ -20,7 +20,7 @@ const Header = () => {
             name: 'About',
             icon: <User size={18} />,
             dropdown: [
-                { name: 'Why RadhikaFX', icon: <Star size={16} />, path: '/about/why-radhikafx' },
+                { name: 'Why Radhika Capital Markets', icon: <Star size={16} />, path: '/about/why-radhikafx' },
                 { name: 'About Us', icon: <User size={16} />, path: '/about-us' },
                 { name: 'Regulations', icon: <Scale size={16} />, path: '/about/regulations' },
                 { name: 'Achievements', icon: <Trophy size={16} />, path: '/about/achievements' },
@@ -93,7 +93,7 @@ const Header = () => {
             <div className="container mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2 group">
-                    <img src={Logo} alt="RadhikaFX" className="h-14 w-auto object-contain" />
+                    <img src={Logo} alt="Radhika Capital Markets" className="h-14 w-auto object-contain" />
                 </Link>
 
                 {/* Desktop Navigation */}

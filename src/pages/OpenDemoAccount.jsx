@@ -186,7 +186,7 @@ const OpenLiveAccount = () => {
                     </div>
                     <h1 className="text-3xl font-serif font-bold text-white mb-4">Application Submitted!</h1>
                     <p className="text-gray-400 mb-8 text-lg">
-                        Welcome to RadhikaFX. Your live account application has been received.
+                        Welcome to Radhika Capital Markets. Your live account application has been received.
                         Please check your email <strong>{formData.email}</strong> for login credentials and next steps.
                     </p>
                     <Link to="/" className="btn-gold inline-flex px-8 py-3 rounded text-[#02040a] font-bold">
@@ -389,7 +389,7 @@ const OpenLiveAccount = () => {
                                     <Building2 className="text-[var(--color-gold)] shrink-0" size={24} />
                                     <div>
                                         <h4 className="text-white font-bold mb-1">Regulated Broker</h4>
-                                        <p className="text-sm text-gray-400">RadhikaFX is a fully licensed broker (FSC Mauritius).</p>
+                                        <p className="text-sm text-gray-400">Radhika Capital Markets is a fully licensed broker (FSC Mauritius).</p>
                                     </div>
                                 </div>
                             </div>

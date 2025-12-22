@@ -15,7 +15,7 @@ const Platform = () => {
                         Multi-Asset Access on <span className="text-[var(--color-gold)]">MetaTrader 5</span>
                     </h2>
                     <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-                        Experience the power of MT5 with RadhikaFX's superior execution. Advanced charting, algorithmic trading, and depth of market at your fingertips.
+                        Experience the power of MT5 with Radhika Capital Markets's superior execution. Advanced charting, algorithmic trading, and depth of market at your fingertips.
                     </p>
 
                     <div className="space-y-6">

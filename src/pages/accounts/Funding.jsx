@@ -151,7 +151,7 @@ const Funding = () => {
                             <div className="w-16 h-16 bg-[#050c18] border-4 border-[#0a1629] rounded-full flex items-center justify-center text-white font-bold text-xl mb-6 mx-auto">1</div>
                             <div className="bg-[#050c18] p-6 rounded-xl border border-gray-800 text-center h-full">
                                 <h4 className="text-white font-bold mb-2">Login</h4>
-                                <p className="text-gray-400 text-sm">Access your RadhikaFX Portal dashboard.</p>
+                                <p className="text-gray-400 text-sm">Access your Radhika Capital Markets Portal dashboard.</p>
                             </div>
                         </div>
 
@@ -199,7 +199,7 @@ const Funding = () => {
                             </div>
                             <div className="flex justify-between p-6 hover:bg-white/5 transition-colors">
                                 <span className="text-gray-400 font-medium">Deposit Fee</span>
-                                <span className="text-[var(--color-gold)] font-bold">0% <span className="text-gray-500 font-normal">(RadhikaFX free)</span></span>
+                                <span className="text-[var(--color-gold)] font-bold">0% <span className="text-gray-500 font-normal">(Radhika Capital Markets free)</span></span>
                             </div>
                             <div className="flex justify-between p-6 hover:bg-white/5 transition-colors">
                                 <span className="text-gray-400 font-medium">Processing Time</span>

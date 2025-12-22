@@ -30,7 +30,7 @@ const CPAAffiliate = () => {
                     </h1>
 
                     <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-                        Join the RadhikaFX CPA Affiliate Program. Get paid for every qualified trader you refer—no long-term management required. Just high-converting tools and high-value payouts.
+                        Join the Radhika Capital Markets CPA Affiliate Program. Get paid for every qualified trader you refer—no long-term management required. Just high-converting tools and high-value payouts.
                     </p>
 
                     <div className="inline-block bg-[#0a1629] border border-[var(--color-gold)]/30 px-6 py-3 rounded-xl mb-10 shadow-[0_0_20px_rgba(255,215,0,0.1)]">
@@ -49,7 +49,7 @@ const CPAAffiliate = () => {
                 </div>
             </section>
 
-            {/* Block 2: Why Choose CPA with RadhikaFX? */}
+            {/* Block 2: Why Choose CPA with Radhika Capital Markets? */}
             <section className="py-24 bg-[#050505] relative border-b border-gray-900">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

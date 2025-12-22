@@ -186,7 +186,7 @@ const AboutUs = () => {
                                 <div className="md:w-1/2 md:pr-12 md:text-right pl-8 md:pl-0">
                                     <span className="text-[var(--color-gold)] font-bold text-xl">2021</span>
                                     <h3 className="text-2xl font-bold text-[var(--color-white)] mb-2">Foundation</h3>
-                                    <p className="text-gray-400">RadhikaFX was founded with a singular vision: to bring true transparency to retail FX trading.</p>
+                                    <p className="text-gray-400">Radhika Capital Markets was founded with a singular vision: to bring true transparency to retail FX trading.</p>
                                 </div>
                             </div>
 

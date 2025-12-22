@@ -37,7 +37,7 @@ const Home = () => {
                 {/* Content */}
                 <div className="relative z-10 container mx-auto px-6 text-center mt-[-5vh]">
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight font-[var(--font-heading)] drop-shadow-2xl">
-                        RadhikaFX <span className="text-gold-gradient">Global Markets</span> Trading
+                        Radhika Capital Markets <span className="text-gold-gradient">Global Markets</span> Trading
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto font-light drop-shadow-md">
                         Trade with the World's Largest and Most Regulated <br /> Financial Derivatives Institution
@@ -111,7 +111,7 @@ const Home = () => {
                                 <span className="text-gold-gradient">Enhanced.</span>
                             </h2>
                             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-                                Trade on MetaTrader 5 (MT5) with RadhikaFX's superior infrastructure. We've optimized the environment for EAs, scalping, and high-frequency trading.
+                                Trade on MetaTrader 5 (MT5) with Radhika Capital Markets's superior infrastructure. We've optimized the environment for EAs, scalping, and high-frequency trading.
                             </p>
 
                             <ul className="space-y-6 mb-10">
@@ -308,7 +308,7 @@ const Home = () => {
 
                     <div className="space-y-4">
                         {[
-                            { q: "Is RadhikaFX regulated?", a: "Yes, Radhika Capital Markets is fully licensed and regulated by the Financial Services Commission (FSC) of Mauritius (License #GB25204826)." },
+                            { q: "Is Radhika Capital Markets regulated?", a: "Yes, Radhika Capital Markets is fully licensed and regulated by the Financial Services Commission (FSC) of Mauritius (License #GB25204826)." },
                             { q: "What is the minimum deposit?", a: "You can start trading with a minimum deposit of just $100 on our Standard Account. For professional conditions, the Pro account starts at $1,000." },
                             { q: "How long do withdrawals take?", a: "We process USDT withdrawals 24/7. In most cases, funds are approved within a few hours and received instantly on the blockchain." },
                             { q: "Can I use Exper Advisors (EAs)?", a: "Absolutely. All our account types support the use of Expert Advisors (EAs), scalping, and hedging strategies without restriction." }

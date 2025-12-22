@@ -113,7 +113,7 @@ const Commodities = () => {
             <section className="py-24 bg-[var(--color-navy)]">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl font-bold text-white mb-4">Why Trade Commodities with RadhikaFX?</h2>
+                        <h2 className="text-3xl font-bold text-white mb-4">Why Trade Commodities with Radhika Capital Markets?</h2>
                         <p className="text-gray-400">Diversify your portfolio across hard and soft commodities.</p>
                     </div>
 

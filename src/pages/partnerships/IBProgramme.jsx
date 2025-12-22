@@ -29,7 +29,7 @@ const IBProgramme = () => {
                     </h1>
 
                     <p className="text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-                        Partner with RadhikaFX and earn industry-leading commissions. Benefit from real-time tracking, marketing support, and a scalable revenue model designed for your success.
+                        Partner with Radhika Capital Markets and earn industry-leading commissions. Benefit from real-time tracking, marketing support, and a scalable revenue model designed for your success.
                     </p>
 
                     <button
@@ -170,7 +170,7 @@ const IBProgramme = () => {
                                 Start Your Partnership Journey.
                             </h2>
                             <p className="text-gray-400 text-lg mb-8">
-                                Join thousands of successful partners who trust RadhikaFX. Complete the form to get started.
+                                Join thousands of successful partners who trust Radhika Capital Markets. Complete the form to get started.
                             </p>
 
                             <div className="space-y-6">

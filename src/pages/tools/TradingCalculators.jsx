@@ -164,7 +164,7 @@ const TradingCalculators = () => {
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-bold text-white mb-1">Leverage Synchronization</h4>
-                                        <p className="text-gray-400 text-sm leading-relaxed">Calculators are pre-configured to match RadhikaFX account leverage limits (up to 1:500 for Standard accounts), giving you accurate margin requirements.</p>
+                                        <p className="text-gray-400 text-sm leading-relaxed">Calculators are pre-configured to match Radhika Capital Markets account leverage limits (up to 1:500 for Standard accounts), giving you accurate margin requirements.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">

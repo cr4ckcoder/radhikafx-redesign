@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-[var(--color-white)] mb-4">
-                        Why Trade with <span className="text-[var(--color-gold)]">RadhikaFX</span>
+                        Why Trade with <span className="text-[var(--color-gold)]">Radhika Capital Markets</span>
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto">
                         We provide the infrastructure, security, and conditions you need to succeed in the global markets.

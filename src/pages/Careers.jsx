@@ -29,7 +29,7 @@ const Careers = () => {
                     </h1>
 
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Join RadhikaFX, a leading global brokerage where innovation meets opportunity. We are looking for bold thinkers to help us empower traders worldwide.
+                        Join Radhika Capital Markets, a leading global brokerage where innovation meets opportunity. We are looking for bold thinkers to help us empower traders worldwide.
                     </p>
 
                     <button
@@ -81,12 +81,12 @@ const Careers = () => {
                 </div>
             </section>
 
-            {/* Block 3: The "Why RadhikaFX?" Section */}
+            {/* Block 3: The "Why Radhika Capital Markets?" Section */}
             <section className="py-24 bg-[#02040a] overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row items-center gap-16">
                         <div className="w-full md:w-1/2">
-                            <div className="inline-block text-[var(--color-gold)] text-sm font-bold uppercase tracking-widest mb-4">Life at RadhikaFX</div>
+                            <div className="inline-block text-[var(--color-gold)] text-sm font-bold uppercase tracking-widest mb-4">Life at Radhika Capital Markets</div>
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
                                 More Than Just a Job. <br />
                                 <span className="text-gray-500">It's a Career.</span>

@@ -58,7 +58,7 @@ const Forex = () => {
                             Master the World’s <br /><span className="text-[var(--color-gold)]">Most Liquid Market</span>
                         </h1>
                         <p className="text-xl text-gray-400 mb-10 leading-relaxed">
-                            Trade 60+ Currency Pairs with deep liquidity, no requotes, and spreads starting from 0.0 pips. Experience the RadhikaFX edge in the $7.5 trillion-a-day market.
+                            Trade 60+ Currency Pairs with deep liquidity, no requotes, and spreads starting from 0.0 pips. Experience the Radhika Capital Markets edge in the $7.5 trillion-a-day market.
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <button className="px-8 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors">

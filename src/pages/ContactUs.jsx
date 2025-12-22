@@ -143,7 +143,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="p-6">
                                         <h4 className="text-white font-bold mb-2">Dubai Office</h4>
-                                        <p className="text-gray-400 text-sm mb-4">Concord Tower, Dubai Media City, UAE.</p>
+                                        <p className="text-gray-400 text-sm mb-4">Dubai, UAE.</p>
                                         <a href="https://www.google.com/maps/search/?api=1&query=Concord+Tower+Dubai+Media+City" target="_blank" rel="noopener noreferrer" className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
                                     </div>
                                 </div>

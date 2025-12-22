@@ -50,7 +50,7 @@ const MT5 = () => {
             answer: "We currently accept USDT for instant deposits. We are actively working on adding more payment methods including Bank Wire and Credit Cards."
         },
         {
-            question: "Does RadhikaFX support VPS for EAs?",
+            question: "Does Radhika Capital Markets support VPS for EAs?",
             answer: "Yes, we support VPS hosting which is highly recommended for pro traders using automated strategies (EAs) to ensure 24/7 uptime and ultra-low latency."
         }
     ];
@@ -72,7 +72,7 @@ const MT5 = () => {
                             One Platform. <br /><span className="text-[var(--color-gold)]">Infinite Possibilities.</span>
                         </h1>
                         <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-                            Harness the full power of MetaTrader 5 with RadhikaFX. Institutional-grade execution, advanced technical analysis, and automated trading—all in one place.
+                            Harness the full power of MetaTrader 5 with Radhika Capital Markets. Institutional-grade execution, advanced technical analysis, and automated trading—all in one place.
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <button className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors shadow-lg shadow-yellow-900/20 flex items-center gap-2">
@@ -95,7 +95,7 @@ const MT5 = () => {
                                     <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                                     <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                                    <div className="ml-4 text-xs text-gray-400">RadhikaFX MT5 Terminal</div>
+                                    <div className="ml-4 text-xs text-gray-400">Radhika Capital Markets MT5 Terminal</div>
                                 </div>
                                 {/* Window Body */}
                                 <div className="flex h-full">
@@ -397,7 +397,7 @@ const MT5 = () => {
                         <div className="relative z-10 flex flex-col items-center text-center w-full md:w-1/3">
                             <div className="w-20 h-20 bg-[var(--color-navy)] border-2 border-[var(--color-gold)] rounded-full flex items-center justify-center text-2xl font-bold text-white mb-6">1</div>
                             <h3 className="text-xl font-bold text-white mb-2">Register</h3>
-                            <p className="text-gray-400 px-4">Open your RadhikaFX Live or Demo account in under 2 minutes.</p>
+                            <p className="text-gray-400 px-4">Open your Radhika Capital Markets Live or Demo account in under 2 minutes.</p>
                         </div>
                         <div className="relative z-10 flex flex-col items-center text-center w-full md:w-1/3">
                             <div className="w-20 h-20 bg-[var(--color-navy)] border-2 border-white rounded-full flex items-center justify-center text-2xl font-bold text-white mb-6">2</div>

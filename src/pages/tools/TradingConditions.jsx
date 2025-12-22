@@ -282,7 +282,7 @@ const TradingConditions = () => {
                                 <h3 className="text-2xl font-bold text-white">Islamic (Swap-Free) Trading</h3>
                             </div>
                             <p className="text-gray-400 mb-8 leading-relaxed">
-                                RadhikaFX respects diverse trading needs. We offer <strong>100% Sharia-Compliant Swap-Free accounts</strong> for clients who cannot pay or receive interest for religious reasons. No widened spreads or hidden administrative fees.
+                                Radhika Capital Markets respects diverse trading needs. We offer <strong>100% Sharia-Compliant Swap-Free accounts</strong> for clients who cannot pay or receive interest for religious reasons. No widened spreads or hidden administrative fees.
                             </p>
                             <button className="self-start px-8 py-3 border border-[var(--color-gold)] text-[var(--color-gold)] font-bold rounded-lg hover:bg-[var(--color-gold)] hover:text-[var(--color-navy)] transition-all">
                                 Request Swap-Free Status

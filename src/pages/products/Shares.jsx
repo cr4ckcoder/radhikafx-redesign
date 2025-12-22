@@ -197,7 +197,7 @@ const Shares = () => {
                             </div>
                             <h3 className="text-3xl font-bold text-white mb-6">Dividends Paid to You</h3>
                             <p className="text-gray-400 leading-relaxed mb-8 text-lg">
-                                Don't miss out on dividends. At RadhikaFX, we reflect dividend adjustments on your CFD positions.
+                                Don't miss out on dividends. At Radhika Capital Markets, we reflect dividend adjustments on your CFD positions.
                                 If you hold a 'Long' position on a stock during its ex-dividend date, you receive the adjustment directly to your account.
                             </p>
                             <Link to="/tools/economic-calendar" className="flex items-center text-blue-400 font-bold hover:text-white transition-colors uppercase tracking-wide">

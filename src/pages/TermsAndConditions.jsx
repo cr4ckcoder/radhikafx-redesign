@@ -119,7 +119,7 @@ const TermsAndConditions = () => {
                         <section id="section-1">
                             <h2 className="text-2xl font-bold text-white mb-6">1. Introduction</h2>
                             <p className="text-lg leading-relaxed text-gray-400 mb-4">
-                                These Terms and Conditions ("Agreement") govern the relationship between Radhika Capital Markets Ltd ("RadhikaFX") and any individual or entity ("the Client") who opens a trading account or uses the services provided by RadhikaFX.
+                                These Terms and Conditions ("Agreement") govern the relationship between Radhika Capital Markets Ltd ("Radhika Capital Markets") and any individual or entity ("the Client") who opens a trading account or uses the services provided by Radhika Capital Markets.
                             </p>
                             <p className="text-lg leading-relaxed text-gray-400">
                                 By accessing our website, opening an account, or trading on our platforms, you acknowledge that you have read, understood, and agreed to be bound by this Agreement.
@@ -150,7 +150,7 @@ const TermsAndConditions = () => {
                         <section id="section-4">
                             <h2 className="text-2xl font-bold text-white mb-6">4. Client Categorisation</h2>
                             <p className="text-lg leading-relaxed text-gray-400 mb-4">
-                                RadhikaFX categorises clients as Retail Clients or Professional Clients in accordance with applicable regulations. Retail Clients are afforded the highest level of protection. You have the right to request a different categorisation, but this may result in a lower level of protection.
+                                Radhika Capital Markets categorises clients as Retail Clients or Professional Clients in accordance with applicable regulations. Retail Clients are afforded the highest level of protection. You have the right to request a different categorisation, but this may result in a lower level of protection.
                             </p>
                         </section>
 
@@ -185,7 +185,7 @@ const TermsAndConditions = () => {
                         <section id="section-9">
                             <h2 className="text-2xl font-bold text-white mb-6">9. AML & KYC</h2>
                             <p className="text-lg leading-relaxed text-gray-400 mb-4">
-                                RadhikaFX complies strictly with Anti-Money Laundering (AML) and Counter-Terrorism Financing (CTF) laws. Valid identification and proof of address are mandatory for all accounts. We report suspicious activities to relevant authorities.
+                                Radhika Capital Markets complies strictly with Anti-Money Laundering (AML) and Counter-Terrorism Financing (CTF) laws. Valid identification and proof of address are mandatory for all accounts. We report suspicious activities to relevant authorities.
                             </p>
                         </section>
 
@@ -199,14 +199,14 @@ const TermsAndConditions = () => {
                         <section id="section-11">
                             <h2 className="text-2xl font-bold text-white mb-6">11. Intellectual Property</h2>
                             <p className="text-lg leading-relaxed text-gray-400 mb-4">
-                                All content on the RadhikaFX website and trading platforms, including trademarks, logos, and software, is the property of Radhika Capital Markets Ltd or its licensors.
+                                All content on the Radhika Capital Markets website and trading platforms, including trademarks, logos, and software, is the property of Radhika Capital Markets Ltd or its licensors.
                             </p>
                         </section>
 
                         <section id="section-12">
                             <h2 className="text-2xl font-bold text-white mb-6">12. Indemnity</h2>
                             <p className="text-lg leading-relaxed text-gray-400 mb-4">
-                                You agree to indemnify and hold RadhikaFX harmless from any losses, liabilities, costs, or expenses arising from your breach of this Agreement or your violation of any law or third-party rights.
+                                You agree to indemnify and hold Radhika Capital Markets harmless from any losses, liabilities, costs, or expenses arising from your breach of this Agreement or your violation of any law or third-party rights.
                             </p>
                         </section>
 

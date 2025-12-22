@@ -30,7 +30,7 @@ const Achievements = () => {
                     </h1>
 
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-light">
-                        At Radhika FX, we are proud to be recognized for our excellence and commitment to delivering exceptional services in the forex industry. Our dedication to providing top-tier trading experiences has earned us multiple prestigious awards.
+                        At Radhika Capital Markets, we are proud to be recognized for our excellence and commitment to delivering exceptional services in the forex industry. Our dedication to providing top-tier trading experiences has earned us multiple prestigious awards.
                     </p>
                 </div>
             </section>
@@ -84,7 +84,7 @@ const Achievements = () => {
                                 </div>
 
                                 <p className="text-gray-400 text-center text-sm leading-relaxed border-t border-gray-800 pt-6">
-                                    Radhika FX was recognized for offering the best trading experience, combining ultra-low latency execution with an intuitive client portal and superior educational resources.
+                                    Radhika Capital Markets was recognized for offering the best trading experience, combining ultra-low latency execution with an intuitive client portal and superior educational resources.
                                 </p>
                             </div>
 
@@ -138,7 +138,7 @@ const Achievements = () => {
                                 Trade with an Award-Winning Broker.
                             </h2>
                             <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                                Experience the excellence that the industry is talking about. Join Radhika FX today.
+                                Experience the excellence that the industry is talking about. Join Radhika Capital Markets today.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center gap-6">
                                 <button className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded hover:bg-white transition-colors shadow-lg shadow-yellow-900/20">

@@ -67,7 +67,7 @@ const Withdrawals = () => {
                             <Shield size={32} className="text-[var(--color-gold)] mb-6" />
                             <h3 className="text-xl font-bold text-white mb-4">Zero Hidden Fees</h3>
                             <p className="text-gray-400 leading-relaxed text-sm">
-                                RadhikaFX does not charge any internal fees for withdrawals. You only pay the standard network gas fee.
+                                Radhika Capital Markets does not charge any internal fees for withdrawals. You only pay the standard network gas fee.
                             </p>
                         </div>
 
