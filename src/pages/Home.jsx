@@ -269,7 +269,8 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Block 7: The "Radhika Education" Teaser */}
+            {/* Block 7: The "Radhika Education" Teaser (HIDDEN AS PER REQUEST) */}
+            {/*
             <section className="py-24 bg-[#02040a]">
                 <div className="container mx-auto px-6">
                     <div className="flex justify-between items-end mb-12">
@@ -298,6 +299,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            */}
 
             {/* Block 8: FAQ (Accordion) */}
             <section className="py-24 bg-[#050c18]">
