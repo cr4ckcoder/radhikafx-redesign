@@ -10,10 +10,62 @@
   --color-dark: #02040a;
   --color-black: #000000;
   --color-card: rgba(5, 12, 24, 0.7);
+  --gradient-gold: linear-gradient(to right,
+      #8f6b29 0%,
+      /* Dark Bronze/Gold */
+      #fde08d 25%,
+      /* Bright Highlight */
+      #df9f28 50%,
+      /* Mid-tone Gold */
+      #adb156 75%,
+      /* Pale/Champagne Gold */
+      #8f6b29 100%
+      /* Dark Bronze Finish */
+    );
 
   /* Fonts */
   --font-heading: 'Google Sans', sans-serif;
   --font-body: 'Google Sans', sans-serif;
+}
+
+/* Global H1 Style for Gold Gradient Theme */
+h1 {
+  @apply font-bold;
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  /* Fallback if text-fill-color fails? No, keep it transparent but background-clip handles it. */
+}
+
+/* Utility to force gold gradient text on other elements */
+.text-gold-gradient {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Utility for gold gradient background (borders/buttons) */
+.bg-gold-gradient {
+  background: var(--gradient-gold);
+}
+
+/* Animated Button Gradient */
+.btn-gold {
+  background-image: var(--gradient-gold);
+  background-size: 200% auto;
+  transition: all 0.5s ease;
+  color: #02050a;
+  /* Ensure text is navy for contrast */
+}
+
+.btn-gold:hover {
+  background-position: right center;
+  box-shadow: 0 0 15px rgba(253, 224, 141, 0.4);
+  transform: translateY(-2px);
 }
 
 /* Custom Utilities Variables */

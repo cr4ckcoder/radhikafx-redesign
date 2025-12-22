@@ -205,8 +205,8 @@ const MT5 = () => {
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
                                 className={`px-6 py-2 rounded-full font-bold transition-all ${activeTab === tab
-                                        ? 'bg-[var(--color-gold)] text-[var(--color-navy)]'
-                                        : 'bg-[rgba(255,255,255,0.05)] text-gray-400 hover:text-white'
+                                    ? 'bg-[var(--color-gold)] text-[var(--color-navy)]'
+                                    : 'bg-[rgba(255,255,255,0.05)] text-gray-400 hover:text-white'
                                     }`}
                             >
                                 {tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -335,6 +335,50 @@ const MT5 = () => {
                             <h3 className="text-xl font-bold text-white mb-3">Superior Charting</h3>
                             <p className="text-gray-400 text-sm">Analyze with 38 advanced technical indicators and 44 analytical objects.</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Block 4.5: Download Links (Added per user request) */}
+            <section className="py-20 bg-black border-y border-[rgba(255,255,255,0.1)]">
+                <div className="container mx-auto px-6 text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-[var(--font-heading)]">
+                        Start Trading with Radhika Capital Markets MT5
+                    </h2>
+                    <p className="text-gray-400 max-w-3xl mx-auto mb-12 text-lg">
+                        Get the MT5 platform tailored for Radhika Capital Markets clients — fast, secure, and optimized for pro-level performance.
+                    </p>
+
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                        {/* iOS Button */}
+                        <a href="https://download.mql5.com/cdn/mobile/mt5/ios?server=RadhikaFxCapital-Trade" className="flex items-center gap-3 bg-white text-black px-6 py-3 rounded-xl hover:scale-105 transition-transform duration-300 min-w-[200px]">
+                            <Smartphone size={32} strokeWidth={1.5} />
+                            <div className="text-left">
+                                <div className="text-[10px] uppercase font-bold tracking-wider opacity-70">Download on the</div>
+                                <div className="text-lg font-bold leading-none">App Store</div>
+                            </div>
+                        </a>
+
+                        {/* Android Button */}
+                        <a href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5" className="flex items-center gap-3 bg-white text-black px-6 py-3 rounded-xl hover:scale-105 transition-transform duration-300 min-w-[200px]">
+                            <div className="w-8 h-8 flex items-center justify-center border-2 border-black rounded-md relative overflow-hidden">
+                                {/* Crude Play Store Triangle approximation using CSS or just generic icon */}
+                                <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-black border-b-[6px] border-b-transparent ml-1"></div>
+                            </div>
+                            <div className="text-left">
+                                <div className="text-[10px] uppercase font-bold tracking-wider opacity-70">GET IT ON</div>
+                                <div className="text-lg font-bold leading-none">Google Play</div>
+                            </div>
+                        </a>
+
+                        {/* Windows Button */}
+                        <a href="https://download.mql5.com/cdn/web/radhikafx.capital.markets/mt5/radhikafxcapital5setup.exe" className="flex items-center gap-3 bg-white text-black px-6 py-3 rounded-xl hover:scale-105 transition-transform duration-300 min-w-[200px]">
+                            <Monitor size={32} strokeWidth={1.5} />
+                            <div className="text-left">
+                                <div className="text-[10px] uppercase font-bold tracking-wider opacity-70">USE ON</div>
+                                <div className="text-lg font-bold leading-none">Windows PC</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>

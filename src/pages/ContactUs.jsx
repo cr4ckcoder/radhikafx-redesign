@@ -4,6 +4,7 @@ import {
     Globe, Send, HelpCircle, ArrowRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ContactForm from '../components/ContactForm';
 
 const ContactUs = () => {
     // Simulated World Clock Time
@@ -84,7 +85,7 @@ const ContactUs = () => {
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Instant Support</h3>
                             <p className="text-gray-400 text-sm mb-6">Chat with our experts in real-time.</p>
-                            <button className="text-[var(--color-gold)] font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all">
+                            <button onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })} className="text-[var(--color-gold)] font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all">
                                 Start Chat <ArrowRight size={16} />
                             </button>
                         </div>
@@ -121,60 +122,8 @@ const ContactUs = () => {
                 <div className="container mx-auto px-6 max-w-6xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
-                        {/* Contact Form */}
-                        <div>
-                            <h2 className="text-3xl font-serif font-bold text-white mb-8">Send us a Message</h2>
-                            <form className="space-y-6">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div>
-                                        <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Your Name</label>
-                                        <input type="text" className="w-full bg-[#0a1629] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" />
-                                    </div>
-                                    <div>
-                                        <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Email Address</label>
-                                        <input type="email" className="w-full bg-[#0a1629] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" />
-                                    </div>
-                                </div>
-
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div>
-                                        <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Department</label>
-                                        <div className="relative">
-                                            <select className="w-full bg-[#0a1629] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none">
-                                                <option>General Support</option>
-                                                <option>Sales & Accounts</option>
-                                                <option>IB & Partnerships</option>
-                                                <option>Careers</option>
-                                            </select>
-                                            <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500">
-                                                <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" /></svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Priority</label>
-                                        <div className="relative">
-                                            <select className="w-full bg-[#0a1629] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none">
-                                                <option>Normal</option>
-                                                <option>High</option>
-                                                <option>Critical (Account Issue)</option>
-                                            </select>
-                                            <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500">
-                                                <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" /></svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Message</label>
-                                    <textarea rows="5" className="w-full bg-[#0a1629] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"></textarea>
-                                </div>
-
-                                <button type="button" className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-gold)] text-[#02040a] font-bold rounded hover:bg-white transition-colors">
-                                    Send Message <Send size={18} />
-                                </button>
-                            </form>
+                        <div id="contact-form">
+                            <ContactForm />
                         </div>
 
                         {/* Map & Office Info */}
@@ -195,7 +144,7 @@ const ContactUs = () => {
                                     <div className="p-6">
                                         <h4 className="text-white font-bold mb-2">Dubai Office</h4>
                                         <p className="text-gray-400 text-sm mb-4">Concord Tower, Dubai Media City, UAE.</p>
-                                        <a href="#" className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Concord+Tower+Dubai+Media+City" target="_blank" rel="noopener noreferrer" className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
                                     </div>
                                 </div>
                             </div>
@@ -212,13 +161,13 @@ const ContactUs = () => {
                                     <div className="p-6">
                                         <h4 className="text-white font-bold mb-2">Registered Office</h4>
                                         <p className="text-gray-400 text-sm mb-4">Cybercati, Ebene, Mauritius.</p>
-                                        <a href="#" className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Cybercati+Ebene+Mauritius" target="_blank" rel="noopener noreferrer" className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </section>
 

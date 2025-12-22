@@ -7,14 +7,14 @@ const Footer = () => {
     return (
         <footer>
             {/* CTA Block (Optional: Only show if not on Home/Contact? For now keep consistent) */}
-            <div className="bg-[var(--color-gold)] py-16 relative overflow-hidden">
+            <div className="bg-gold-gradient py-16 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[rgba(255,255,255,0.2)] transform skew-x-12 opacity-50"></div>
                 <div className="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between text-[var(--color-navy)]">
                     <div className="mb-6 md:mb-0 text-center md:text-left">
                         <h2 className="text-3xl md:text-4xl font-bold mb-2">Ready to Start Trading?</h2>
                         <p className="text-lg font-medium opacity-80">Join thousands of traders worldwide.</p>
                     </div>
-                    <Link to="/accounts/pro" className="px-8 py-3 bg-[var(--color-navy)] text-[var(--color-white)] font-bold rounded-lg shadow-xl hover:scale-105 transition-transform">
+                    <Link to="/open-live-account" className="px-8 py-3 bg-[var(--color-navy)] text-[var(--color-white)] font-bold rounded-lg shadow-xl hover:scale-105 transition-transform">
                         Get Started Now
                     </Link>
                 </div>
@@ -37,18 +37,18 @@ const Footer = () => {
 
                             <div className="space-y-4 text-sm mb-8">
                                 <div className="flex items-start gap-3">
-                                    <MapPin size={18} className="text-[var(--color-gold)] flex-shrink-0 mt-1" />
+                                    <MapPin size={18} className="text-gold-gradient flex-shrink-0 mt-1" />
                                     <span>Concord Tower, Dubai Media City, UAE</span>
                                 </div>
                                 <div className="flex items-start gap-3">
-                                    <Mail size={18} className="text-[var(--color-gold)] flex-shrink-0 mt-1" />
+                                    <Mail size={18} className="text-gold-gradient flex-shrink-0 mt-1" />
                                     <a href="mailto:support@radhikafx.com" className="hover:text-white transition-colors">support@radhikafx.com</a>
                                 </div>
                             </div>
 
                             <div className="flex space-x-4">
                                 {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-                                    <a key={i} href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[var(--color-gold)] hover:text-[var(--color-navy)] transition-colors">
+                                    <a key={i} href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold-gradient hover:text-[var(--color-navy)] transition-colors">
                                         <Icon size={20} />
                                     </a>
                                 ))}
@@ -106,9 +106,11 @@ const Footer = () => {
                         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600 pt-4 border-t border-gray-800">
                             <p>&copy; {new Date().getFullYear()} RadhikaFX. All rights reserved.</p>
                             <div className="flex gap-4">
-                                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                                <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
-                                <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+                                <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                                <Link to="/terms-and-conditions" className="hover:text-white transition-colors">Terms & Conditions</Link>
+                                <Link to="/risk-disclaimer" className="hover:text-white transition-colors">Risk Disclaimer</Link>
+                                <Link to="/risk-warning" className="hover:text-white transition-colors">Risk Warning</Link>
+                                <Link to="/privacy-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
                             </div>
                         </div>
                     </div>

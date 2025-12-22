@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown, User, Globe, Activity, Briefcase, BarChart2, Star, Flame, TrendingUp, PieChart, Repeat, DollarSign, Zap, Monitor, Award, Diamond, Check, Wallet, ArrowUpRight, Scale, Trophy, HelpCircle, Users, Mail, Clock, Calendar, Calculator } from 'lucide-react';
+import { Menu, X, ChevronDown, User, Globe, Activity, Briefcase, BarChart2, Star, Flame, TrendingUp, PieChart, Repeat, DollarSign, Zap, Monitor, Award, Diamond, Check, Wallet, ArrowUpRight, Scale, Trophy, HelpCircle, Users, Mail, Clock, Calendar, Calculator, BookOpen } from 'lucide-react';
 import Logo from '../assets/logo.png';
 
 const Header = () => {
@@ -53,7 +53,8 @@ const Header = () => {
                 { name: 'Standard', icon: <User size={16} />, path: '/accounts/standard' },
                 { name: 'Pro', icon: <Award size={16} />, path: '/accounts/pro' },
                 { name: 'Pro X', icon: <Diamond size={16} />, path: '/accounts/pro-x' },
-                { name: 'Compare Accounts', icon: <Check size={16} />, path: '/accounts/comparison' },
+                { name: 'Comparison', icon: <Check size={16} />, path: '/accounts/comparison' },
+                { name: 'Open Demo Account', icon: <User size={16} />, path: '/open-demo-account' },
                 { name: 'Fund Your Account', icon: <Wallet size={16} />, path: '/accounts/funding' },
                 { name: 'Withdrawal', icon: <ArrowUpRight size={16} />, path: '/accounts/withdrawals' }
             ]
@@ -73,7 +74,8 @@ const Header = () => {
                 { name: 'Trading Conditions', icon: <Scale size={16} />, path: '/tools/trading-conditions' },
                 { name: 'Trading Hours', icon: <Clock size={16} />, path: '/tools/trading-hours' },
                 { name: 'Economic Calendar', icon: <Calendar size={16} />, path: '/tools/economic-calendar' },
-                { name: 'Calculators', icon: <Calculator size={16} />, path: '/tools/calculators' }
+                { name: 'Calculators', icon: <Calculator size={16} />, path: '/tools/calculators' },
+                { name: 'Education', icon: <BookOpen size={16} />, path: 'https://www.radhikafx.com/radhika-blogs/' }
             ]
         },
         { name: 'Contact Us', icon: <Mail size={18} />, path: '/contact-us' }
@@ -117,14 +119,27 @@ const Header = () => {
                                         {item.dropdown ? (
                                             <div className="flex flex-col space-y-1">
                                                 {item.dropdown.map((subItem) => (
-                                                    <Link
-                                                        key={subItem.name}
-                                                        to={subItem.path}
-                                                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[rgba(255,255,255,0.05)] text-gray-300 hover:text-[var(--color-gold)] transition-colors"
-                                                    >
-                                                        <span className="text-[var(--color-gold)]">{subItem.icon}</span>
-                                                        <span className="font-medium">{subItem.name}</span>
-                                                    </Link>
+                                                    subItem.path.startsWith('http') ? (
+                                                        <a
+                                                            key={subItem.name}
+                                                            href={subItem.path}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[rgba(255,255,255,0.05)] text-gray-300 hover:text-gold-gradient transition-colors"
+                                                        >
+                                                            <span className="text-gold-gradient">{subItem.icon}</span>
+                                                            <span className="font-medium">{subItem.name}</span>
+                                                        </a>
+                                                    ) : (
+                                                        <Link
+                                                            key={subItem.name}
+                                                            to={subItem.path}
+                                                            className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[rgba(255,255,255,0.05)] text-gray-300 hover:text-gold-gradient transition-colors"
+                                                        >
+                                                            <span className="text-gold-gradient">{subItem.icon}</span>
+                                                            <span className="font-medium">{subItem.name}</span>
+                                                        </Link>
+                                                    )
                                                 ))}
                                             </div>
                                         ) : (
@@ -137,23 +152,22 @@ const Header = () => {
                             )}
                         </div>
                     ))}
-                    <a href="#" className="flex items-center space-x-1 text-[var(--color-white)] hover:text-[var(--color-gold)] transition-colors font-medium">
-                        Partnership
-                    </a>
+
                 </nav>
 
                 {/* Actions */}
                 <div className="hidden md:flex items-center space-x-4">
                     <button
-                        className="text-[var(--color-white)] hover:text-[var(--color-gold)] font-medium transition-colors"
+                        className="text-[var(--color-white)] hover:text-gold-gradient font-medium transition-colors"
                     >
                         Login
                     </button>
-                    <button
-                        className="px-6 py-2 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-full hover:bg-[var(--color-white)] transition-colors"
+                    <Link
+                        to="/open-live-account"
+                        className="px-6 py-2 btn-gold text-[var(--color-navy)] font-bold rounded-full transition-all"
                     >
                         Open Live Account
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -187,7 +201,7 @@ const Header = () => {
                                                 <Link
                                                     key={subItem.name}
                                                     to={subItem.path}
-                                                    className="text-gray-300 py-1 hover:text-[var(--color-gold)]"
+                                                    className="text-gray-300 py-1 hover:text-gold-gradient"
                                                     onClick={() => setMobileMenuOpen(false)}
                                                 >
                                                     {subItem.name}
@@ -200,8 +214,8 @@ const Header = () => {
                         </div>
                     ))}
                     <div className="pt-4 flex flex-col space-y-3">
-                        <button className="w-full py-2 border border-[var(--color-gold)] text-[var(--color-gold)] rounded-lg">Login</button>
-                        <button className="w-full py-2 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg">Open Live Account</button>
+                        <button className="w-full py-2 border border-[var(--color-gold)] text-gold-gradient rounded-lg">Login</button>
+                        <Link to="/open-live-account" onClick={() => setMobileMenuOpen(false)} className="w-full py-2 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg text-center">Open Live Account</Link>
                     </div>
                 </div>
             )}

@@ -16,32 +16,32 @@ const CPAAffiliate = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[#02040a]/80 to-transparent"></div>
 
                 {/* Tech Grid Overlay */}
-                <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,136,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,136,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,215,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,215,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
                 <div className="relative z-10 max-w-5xl mx-auto text-center px-6">
-                    <div className="inline-flex items-center gap-2 px-6 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full mb-8 backdrop-blur-md animate-pulse">
-                        <Zap size={16} className="text-emerald-400" />
-                        <span className="text-emerald-400 text-xs font-bold uppercase tracking-[0.2em]">High Impact Network</span>
+                    <div className="inline-flex items-center gap-2 px-6 py-2 bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/30 rounded-full mb-8 backdrop-blur-md animate-pulse">
+                        <Zap size={16} className="text-[var(--color-gold)]" />
+                        <span className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-[0.2em]">High Impact Network</span>
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                         Turn Your Traffic into <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Premium Commissions.</span>
+                        <span className="text-gold-gradient">Premium Commissions.</span>
                     </h1>
 
                     <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
                         Join the RadhikaFX CPA Affiliate Program. Get paid for every qualified trader you refer—no long-term management required. Just high-converting tools and high-value payouts.
                     </p>
 
-                    <div className="inline-block bg-[#0a1629] border border-emerald-500/30 px-6 py-3 rounded-xl mb-10 shadow-[0_0_20px_rgba(16,185,129,0.1)]">
+                    <div className="inline-block bg-[#0a1629] border border-[var(--color-gold)]/30 px-6 py-3 rounded-xl mb-10 shadow-[0_0_20px_rgba(255,215,0,0.1)]">
                         <span className="text-gray-400 text-sm uppercase tracking-wider mr-2">Performance Badge</span>
-                        <span className="text-white font-bold text-lg">Earn up to <span className="text-emerald-400">$500</span> per qualified lead</span>
+                        <span className="text-white font-bold text-lg">Earn up to <span className="text-[var(--color-gold)]">$500</span> per qualified lead</span>
                     </div>
 
                     <div>
                         <button
                             onClick={() => document.getElementById('affiliate-form').scrollIntoView({ behavior: 'smooth' })}
-                            className="px-8 py-4 bg-emerald-500 text-black font-bold rounded-full hover:bg-emerald-400 transition-all shadow-[0_0_30px_rgba(16,185,129,0.4)] transform hover:-translate-y-1"
+                            className="px-8 py-4 btn-gold text-[var(--color-navy)] font-bold rounded-full hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-all transform hover:-translate-y-1"
                         >
                             Start Earning Now
                         </button>
@@ -54,8 +54,8 @@ const CPAAffiliate = () => {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Benefit 1 */}
-                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/50 transition-colors group">
-                            <div className="w-16 h-16 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 text-emerald-400 group-hover:scale-110 transition-transform">
+                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-[var(--color-gold)]/50 transition-colors group">
+                            <div className="w-16 h-16 bg-[var(--color-gold)]/10 rounded-xl flex items-center justify-center mb-6 text-[var(--color-gold)] group-hover:scale-110 transition-transform">
                                 <Target size={32} />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">High Conversion Rates</h3>
@@ -65,8 +65,8 @@ const CPAAffiliate = () => {
                         </div>
 
                         {/* Benefit 2 */}
-                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/50 transition-colors group">
-                            <div className="w-16 h-16 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 text-emerald-400 group-hover:scale-110 transition-transform">
+                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-[var(--color-gold)]/50 transition-colors group">
+                            <div className="w-16 h-16 bg-[var(--color-gold)]/10 rounded-xl flex items-center justify-center mb-6 text-[var(--color-gold)] group-hover:scale-110 transition-transform">
                                 <DollarSign size={32} />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">Flexible Payouts</h3>
@@ -76,8 +76,8 @@ const CPAAffiliate = () => {
                         </div>
 
                         {/* Benefit 3 */}
-                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-emerald-500/50 transition-colors group">
-                            <div className="w-16 h-16 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 text-emerald-400 group-hover:scale-110 transition-transform">
+                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-[var(--color-gold)]/50 transition-colors group">
+                            <div className="w-16 h-16 bg-[var(--color-gold)]/10 rounded-xl flex items-center justify-center mb-6 text-[var(--color-gold)] group-hover:scale-110 transition-transform">
                                 <BarChart2 size={32} />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">Superior Tracking</h3>
@@ -94,7 +94,7 @@ const CPAAffiliate = () => {
                 <div className="container mx-auto px-6 max-w-4xl relative z-10">
                     <div className="bg-[#0a1629]/80 backdrop-blur-md rounded-2xl p-10 border border-gray-800 shadow-2xl relative">
                         {/* Glowing Border effect */}
-                        <div className="absolute inset-0 rounded-2xl border border-emerald-500/20 pointer-events-none"></div>
+                        <div className="absolute inset-0 rounded-2xl border border-[var(--color-gold)]/20 pointer-events-none"></div>
 
                         <div className="text-center mb-10">
                             <h2 className="text-3xl font-bold text-white mb-2">How it Works: The CPA Trigger</h2>
@@ -113,24 +113,24 @@ const CPAAffiliate = () => {
                             </div>
                             <div className="hidden md:block w-full h-0.5 bg-gray-700"></div>
                             <div className="text-center relative">
-                                <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 text-black font-bold shadow-[0_0_20px_rgba(16,185,129,0.5)] animate-bounce-slow">
+                                <div className="w-16 h-16 bg-[var(--color-gold)] rounded-full flex items-center justify-center mx-auto mb-4 text-[var(--color-navy)] font-bold shadow-[0_0_20px_rgba(255,215,0,0.5)] animate-bounce-slow">
                                     <Check size={32} />
                                 </div>
-                                <p className="text-emerald-400 font-bold">Completes First Trade</p>
+                                <p className="text-[var(--color-gold)] font-bold">Completes First Trade</p>
                                 <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap text-xs text-gray-500">YOU GET PAID </div>
                             </div>
                         </div>
 
-                        <div className="mt-10 text-center bg-emerald-900/10 rounded-lg p-4 border border-emerald-900/30">
-                            <p className="text-emerald-400 text-sm font-medium">It’s that simple. No complex rebate calculations.</p>
+                        <div className="mt-10 text-center bg-[var(--color-gold)]/10 rounded-lg p-4 border border-[var(--color-gold)]/30">
+                            <p className="text-[var(--color-gold)] text-sm font-medium">It’s that simple. No complex rebate calculations.</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Background Tech Elements */}
                 <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-                    <div className="absolute top-1/4 left-10 w-32 h-32 bg-emerald-500/5 rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-1/4 right-10 w-48 h-48 bg-cyan-500/5 rounded-full blur-3xl"></div>
+                    <div className="absolute top-1/4 left-10 w-32 h-32 bg-[var(--color-gold)]/5 rounded-full blur-3xl"></div>
+                    <div className="absolute bottom-1/4 right-10 w-48 h-48 bg-[var(--color-gold)]/5 rounded-full blur-3xl"></div>
                 </div>
             </section>
 
@@ -139,7 +139,7 @@ const CPAAffiliate = () => {
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row items-center gap-16">
                         <div className="w-full md:w-1/2">
-                            <div className="inline-block text-emerald-400 text-sm font-bold uppercase tracking-widest mb-4">Marketing Support</div>
+                            <div className="inline-block text-[var(--color-gold)] text-sm font-bold uppercase tracking-widest mb-4">Marketing Support</div>
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
                                 Tools to Help You Scale.
                             </h2>
@@ -155,7 +155,7 @@ const CPAAffiliate = () => {
                                     "Email Marketing Templates"
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3 text-gray-300">
-                                        <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+                                        <div className="w-1.5 h-1.5 bg-[var(--color-gold)] rounded-full"></div>
                                         {item}
                                     </li>
                                 ))}
@@ -165,19 +165,19 @@ const CPAAffiliate = () => {
                         <div className="w-full md:w-1/2">
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-4 pt-8">
-                                    <div className="bg-[#0a1629] p-4 rounded-xl border border-gray-800 h-40 flex items-center justify-center">
-                                        <Globe size={40} className="text-gray-600" />
+                                    <div className="bg-[#0a1629] p-4 rounded-xl border border-gray-800 h-40 flex items-center justify-center hover:border-[var(--color-gold)] transition-colors">
+                                        <Globe size={40} className="text-gray-600 hover:text-[var(--color-gold)] transition-colors" />
                                     </div>
-                                    <div className="bg-[#0a1629] p-4 rounded-xl border border-gray-800 h-56 flex items-center justify-center">
-                                        <Smartphone size={40} className="text-gray-600" />
+                                    <div className="bg-[#0a1629] p-4 rounded-xl border border-gray-800 h-56 flex items-center justify-center hover:border-[var(--color-gold)] transition-colors">
+                                        <Smartphone size={40} className="text-gray-600 hover:text-[var(--color-gold)] transition-colors" />
                                     </div>
                                 </div>
                                 <div className="space-y-4">
-                                    <div className="bg-[#0a1629] p-4 rounded-xl border border-gray-800 h-56 flex items-center justify-center">
-                                        <Layers size={40} className="text-gray-600" />
+                                    <div className="bg-[#0a1629] p-4 rounded-xl border border-gray-800 h-56 flex items-center justify-center hover:border-[var(--color-gold)] transition-colors">
+                                        <Layers size={40} className="text-gray-600 hover:text-[var(--color-gold)] transition-colors" />
                                     </div>
-                                    <div className="bg-[#0a1629] p-4 rounded-xl border border-gray-800 h-40 flex items-center justify-center">
-                                        <MousePointer size={40} className="text-gray-600" />
+                                    <div className="bg-[#0a1629] p-4 rounded-xl border border-gray-800 h-40 flex items-center justify-center hover:border-[var(--color-gold)] transition-colors">
+                                        <MousePointer size={40} className="text-gray-600 hover:text-[var(--color-gold)] transition-colors" />
                                     </div>
                                 </div>
                             </div>
@@ -195,15 +195,15 @@ const CPAAffiliate = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Affiliate Card */}
-                        <div className="bg-gradient-to-b from-[#0a1629] to-[#050c18] border border-emerald-500/50 rounded-2xl p-10 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 px-4 py-1 bg-emerald-500 text-black text-xs font-bold rounded-bl-lg">RECOMMENDED</div>
+                        <div className="bg-gradient-to-b from-[#0a1629] to-[#050c18] border border-[var(--color-gold)]/50 rounded-2xl p-10 relative overflow-hidden">
+                            <div className="absolute top-0 right-0 px-4 py-1 bg-[var(--color-gold)] text-[var(--color-navy)] text-xs font-bold rounded-bl-lg">RECOMMENDED</div>
                             <h3 className="text-2xl font-bold text-white mb-2">Affiliate (CPA)</h3>
                             <p className="text-sm text-gray-400 mb-8 border-b border-gray-700 pb-6">Best for Media Buyers, Bloggers, and Social Media Influencers.</p>
 
-                            <div className="text-4xl font-bold text-emerald-400 mb-2">One-Time</div>
+                            <div className="text-4xl font-bold text-[var(--color-gold)] mb-2">One-Time</div>
                             <p className="text-gray-400 text-sm mb-6">High payout per qualified client.</p>
 
-                            <div className="flex items-center gap-2 text-emerald-400 text-sm">
+                            <div className="flex items-center gap-2 text-[var(--color-gold)] text-sm">
                                 <Check size={16} /> Instant Cash Flow
                             </div>
                         </div>
@@ -233,23 +233,23 @@ const CPAAffiliate = () => {
                         <form className="space-y-4">
                             <div>
                                 <label className="block text-gray-400 text-xs font-bold uppercase mb-2">Full Name</label>
-                                <input type="text" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Enter your name" />
+                                <input type="text" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Enter your name" />
                             </div>
 
                             <div>
                                 <label className="block text-gray-400 text-xs font-bold uppercase mb-2">Email Address</label>
-                                <input type="email" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Enter your email" />
+                                <input type="email" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Enter your email" />
                             </div>
 
                             <div>
                                 <label className="block text-gray-400 text-xs font-bold uppercase mb-2">Website / Social Media URL</label>
-                                <input type="url" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors" placeholder="https://" />
+                                <input type="url" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="https://" />
                             </div>
 
                             <div>
                                 <label className="block text-gray-400 text-xs font-bold uppercase mb-2">Primary Traffic Source</label>
                                 <div className="relative">
-                                    <select className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition-colors appearance-none">
+                                    <select className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none">
                                         <option>Paid Ads (PPC/Display)</option>
                                         <option>SEO / Organic Search</option>
                                         <option>Social Media</option>
@@ -262,7 +262,7 @@ const CPAAffiliate = () => {
                                 </div>
                             </div>
 
-                            <button type="button" className="w-full py-4 bg-emerald-500 text-black font-bold rounded hover:bg-white transition-colors shadow-lg shadow-emerald-900/20 mt-4">
+                            <button type="button" className="w-full py-4 btn-gold text-[var(--color-navy)] font-bold rounded-lg hover:shadow-[0_0_20px_rgba(255,215,0,0.3)] transition-all mt-4">
                                 Convert Now
                             </button>
                         </form>

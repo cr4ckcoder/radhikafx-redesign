@@ -26,11 +26,7 @@ const FeatureCard = ({ icon: Icon, title, description, hoverStat, size = 'defaul
                     </div>
                 </div>
 
-                {size === 'large' && (
-                    <div className="mt-6 flex items-center text-[var(--color-gold)] text-sm font-bold uppercase tracking-wider opacity-100 group-hover:opacity-0 transition-opacity duration-300 absolute bottom-8">
-                        Learn More →
-                    </div>
-                )}
+
             </div>
         </div>
     );

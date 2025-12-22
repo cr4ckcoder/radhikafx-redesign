@@ -14,15 +14,15 @@ const Funding = () => {
 
             {/* Block 1: The "Instant Liquidity" Hero */}
             <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#02040a]">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#26A17B1a] to-[#02040a]"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-gold)]/10 to-[#02040a]"></div>
 
                 <div className="container mx-auto px-6 relative z-10 text-center">
-                    <div className="w-20 h-20 bg-[#26A17B20] rounded-full flex items-center justify-center mx-auto mb-8 animate-pulse-slow">
-                        <Wallet size={40} color={accentColor} />
+                    <div className="w-20 h-20 bg-[var(--color-gold)]/20 rounded-full flex items-center justify-center mx-auto mb-8 animate-pulse-slow">
+                        <Wallet size={40} className="text-[var(--color-gold)]" />
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
-                        Fast, Borderless Funding via <span style={{ color: accentColor }}>USDT</span>
+                        Fast, Borderless Funding via <span className="text-green-500">USDT</span>
                     </h1>
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                         Experience instant account funding with zero bank delays. Securely deposit Tether (USDT) directly into your trading account and start trading global markets in minutes.
@@ -30,8 +30,7 @@ const Funding = () => {
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <button
-                            className="px-8 py-4 font-bold rounded-lg text-white transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
-                            style={{ backgroundColor: accentColor, boxShadow: `0 10px 20px -10px ${accentColor}66` }}
+                            className="px-8 py-4 font-bold rounded-lg btn-gold text-[var(--color-navy)] transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
                         >
                             Login to Deposit <ArrowRight size={20} />
                         </button>
@@ -42,13 +41,13 @@ const Funding = () => {
 
                     <div className="mt-12 flex justify-center gap-8 text-gray-500 text-xs font-bold uppercase tracking-widest">
                         <div className="flex items-center gap-2">
-                            <CheckCircle size={14} color={accentColor} /> Instant Processing
+                            <CheckCircle size={14} className="text-[var(--color-gold)]" /> Instant Processing
                         </div>
                         <div className="flex items-center gap-2">
-                            <CheckCircle size={14} color={accentColor} /> Blockchain Verified
+                            <CheckCircle size={14} className="text-[var(--color-gold)]" /> Blockchain Verified
                         </div>
                         <div className="flex items-center gap-2">
-                            <CheckCircle size={14} color={accentColor} /> 24/7 Availability
+                            <CheckCircle size={14} className="text-[var(--color-gold)]" /> 24/7 Availability
                         </div>
                     </div>
                 </div>
@@ -58,9 +57,9 @@ const Funding = () => {
             <section className="py-24 bg-[#0a1629]">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                        <div className="p-8 bg-[#050c18] rounded-2xl border border-[rgba(255,255,255,0.05)] hover:border-[#26A17B] transition-colors group">
-                            <div className="w-14 h-14 bg-[#26A17B10] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#26A17B] transition-colors">
-                                <Zap size={28} className="text-[#26A17B] group-hover:text-white transition-colors" />
+                        <div className="p-8 bg-[#050c18] rounded-2xl border border-[rgba(255,255,255,0.05)] hover:border-[var(--color-gold)] transition-colors group">
+                            <div className="w-14 h-14 bg-[var(--color-gold)]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[var(--color-gold)] transition-colors">
+                                <Zap size={28} className="text-[var(--color-gold)] group-hover:text-[var(--color-navy)] transition-colors" />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">Instant Speed</h3>
                             <p className="text-gray-400 leading-relaxed">
@@ -68,9 +67,9 @@ const Funding = () => {
                             </p>
                         </div>
 
-                        <div className="p-8 bg-[#050c18] rounded-2xl border border-[rgba(255,255,255,0.05)] hover:border-[#26A17B] transition-colors group">
-                            <div className="w-14 h-14 bg-[#26A17B10] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#26A17B] transition-colors">
-                                <Lock size={28} className="text-[#26A17B] group-hover:text-white transition-colors" />
+                        <div className="p-8 bg-[#050c18] rounded-2xl border border-[rgba(255,255,255,0.05)] hover:border-[var(--color-gold)] transition-colors group">
+                            <div className="w-14 h-14 bg-[var(--color-gold)]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[var(--color-gold)] transition-colors">
+                                <Lock size={28} className="text-[var(--color-gold)] group-hover:text-[var(--color-navy)] transition-colors" />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">Privacy & Security</h3>
                             <p className="text-gray-400 leading-relaxed">
@@ -78,9 +77,9 @@ const Funding = () => {
                             </p>
                         </div>
 
-                        <div className="p-8 bg-[#050c18] rounded-2xl border border-[rgba(255,255,255,0.05)] hover:border-[#26A17B] transition-colors group">
-                            <div className="w-14 h-14 bg-[#26A17B10] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#26A17B] transition-colors">
-                                <Clock size={28} className="text-[#26A17B] group-hover:text-white transition-colors" />
+                        <div className="p-8 bg-[#050c18] rounded-2xl border border-[rgba(255,255,255,0.05)] hover:border-[var(--color-gold)] transition-colors group">
+                            <div className="w-14 h-14 bg-[var(--color-gold)]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[var(--color-gold)] transition-colors">
+                                <Clock size={28} className="text-[var(--color-gold)] group-hover:text-[var(--color-navy)] transition-colors" />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">24/7 Funding</h3>
                             <p className="text-gray-400 leading-relaxed">
@@ -98,18 +97,18 @@ const Funding = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                         {/* TRC20 Card */}
-                        <div className="bg-[#050c18] border-2 border-[#26A17B] rounded-2xl p-8 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 bg-[#26A17B] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">RECOMMENDED</div>
+                        <div className="bg-[#050c18] border-2 border-[var(--color-gold)] rounded-2xl p-8 relative overflow-hidden">
+                            <div className="absolute top-0 right-0 bg-[var(--color-gold)] text-[var(--color-navy)] text-xs font-bold px-3 py-1 rounded-bl-lg">RECOMMENDED</div>
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="w-12 h-12 bg-[#26A17B] rounded-full flex items-center justify-center text-white font-bold text-xl">T</div>
+                                <div className="w-12 h-12 bg-[var(--color-gold)] rounded-full flex items-center justify-center text-[var(--color-navy)] font-bold text-xl">T</div>
                                 <div>
                                     <h3 className="text-2xl font-bold text-white">USDT (TRC20)</h3>
                                     <p className="text-gray-400 text-sm">Tron Network</p>
                                 </div>
                             </div>
                             <ul className="space-y-3">
-                                <li className="flex items-center text-gray-300 text-sm"><CheckCircle size={16} className="text-[#26A17B] mr-2" /> Lowest Network Fees (~$1)</li>
-                                <li className="flex items-center text-gray-300 text-sm"><CheckCircle size={16} className="text-[#26A17B] mr-2" /> Fastest Confirmation Time</li>
+                                <li className="flex items-center text-gray-300 text-sm"><CheckCircle size={16} className="text-[var(--color-gold)] mr-2" /> Lowest Network Fees (~$1)</li>
+                                <li className="flex items-center text-gray-300 text-sm"><CheckCircle size={16} className="text-[var(--color-gold)] mr-2" /> Fastest Confirmation Time</li>
                             </ul>
                         </div>
 
@@ -129,10 +128,10 @@ const Funding = () => {
                         </div>
                     </div>
 
-                    <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-lg flex items-start gap-4">
-                        <AlertTriangle size={24} className="text-red-500 shrink-0 mt-1" />
-                        <p className="text-red-200 text-sm leading-relaxed">
-                            <span className="font-bold text-red-100">Warning:</span> Please ensure you select the correct network. Sending funds to the wrong address/network may result in permanent loss of assets. Always double-check before confirming.
+                    <div className="bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/20 p-4 rounded-lg flex items-start gap-4">
+                        <AlertTriangle size={24} className="text-[var(--color-gold)] shrink-0 mt-1" />
+                        <p className="text-[var(--color-gold)] text-sm leading-relaxed">
+                            <span className="font-bold">Warning:</span> Please ensure you select the correct network. Sending funds to the wrong address/network may result in permanent loss of assets. Always double-check before confirming.
                         </p>
                     </div>
                 </div>
@@ -167,8 +166,8 @@ const Funding = () => {
 
                         {/* Step 3 */}
                         <div className="relative z-10 w-full md:w-1/4">
-                            <div className="w-16 h-16 bg-[#26A17B] border-4 border-[#0a1629] rounded-full flex items-center justify-center text-white font-bold text-xl mb-6 mx-auto shadow-[0_0_20px_#26A17B66]">3</div>
-                            <div className="bg-[#050c18] p-6 rounded-xl border border-[#26A17B] text-center h-full shadow-lg shadow-[#26A17B1a]">
+                            <div className="w-16 h-16 bg-[var(--color-gold)] border-4 border-[#0a1629] rounded-full flex items-center justify-center text-[var(--color-navy)] font-bold text-xl mb-6 mx-auto shadow-[0_0_20px_rgba(255,215,0,0.4)]">3</div>
+                            <div className="bg-[#050c18] p-6 rounded-xl border border-[var(--color-gold)] text-center h-full shadow-lg shadow-[var(--color-gold)]/10">
                                 <h4 className="text-white font-bold mb-2">Scan & Send</h4>
                                 <p className="text-gray-400 text-sm">Scan the QR Code or copy the unique address.</p>
                             </div>
@@ -200,7 +199,7 @@ const Funding = () => {
                             </div>
                             <div className="flex justify-between p-6 hover:bg-white/5 transition-colors">
                                 <span className="text-gray-400 font-medium">Deposit Fee</span>
-                                <span className="text-[#26A17B] font-bold">0% <span className="text-gray-500 font-normal">(RadhikaFX free)</span></span>
+                                <span className="text-[var(--color-gold)] font-bold">0% <span className="text-gray-500 font-normal">(RadhikaFX free)</span></span>
                             </div>
                             <div className="flex justify-between p-6 hover:bg-white/5 transition-colors">
                                 <span className="text-gray-400 font-medium">Processing Time</span>
@@ -218,14 +217,14 @@ const Funding = () => {
             {/* Block 6: Live Help / Troubleshooting */}
             <section className="pb-24 pt-8 bg-[var(--color-navy)]">
                 <div className="container mx-auto px-6 max-w-3xl">
-                    <div className="bg-gradient-to-r from-blue-900/40 to-[#0a1629] border border-blue-500/30 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-8">
+                    <div className="bg-gradient-to-r from-[var(--color-gold)]/10 to-[#0a1629] border border-[var(--color-gold)]/20 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-8">
                         <div>
                             <h3 className="text-xl font-bold text-white mb-2">Funds not reflecting?</h3>
                             <p className="text-gray-400 text-sm leading-relaxed mb-4">
                                 If your transaction is confirmed on the blockchain but not in your dashboard, please have your TxID (Transaction ID) ready and contact our 24/7 support.
                             </p>
                         </div>
-                        <button className="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg transition-colors whitespace-nowrap flex items-center gap-2">
+                        <button className="px-6 py-3 bg-[var(--color-navy)] border border-[var(--color-gold)] hover:bg-[var(--color-gold)] hover:text-[var(--color-navy)] text-white font-bold rounded-lg transition-colors whitespace-nowrap flex items-center gap-2">
                             <MessageCircle size={18} /> Chat with Support
                         </button>
                     </div>

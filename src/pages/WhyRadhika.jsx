@@ -4,6 +4,7 @@ import {
     ArrowRight, Check, ChevronDown, ChevronUp, Users,
     MessageCircle, Wallet, TrendingUp, Activity
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FAQItem = ({ question, answer, isOpen, toggle }) => {
     return (
@@ -47,7 +48,7 @@ const WhyRadhika = () => {
             icon: Shield,
             title: "Regulated Security",
             description: "Fully licensed by the FSC Mauritius. Your funds are segregated in top-tier banks.",
-            link: "View License"
+            link: "/about/regulations"
         },
         {
             icon: Cpu,
@@ -122,12 +123,12 @@ const WhyRadhika = () => {
                         Experience a transparent, FSC-regulated environment built for traders who demand speed, security, and 24/7 reliability.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <button className="px-10 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-full hover:bg-yellow-400 hover:scale-105 transition-all shadow-[0_0_20px_rgba(233,219,141,0.3)]">
+                        <Link to="/open-live-account" className="px-10 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-full hover:bg-yellow-400 hover:scale-105 transition-all shadow-[0_0_20px_rgba(233,219,141,0.3)]">
                             Open Live Account
-                        </button>
-                        <button className="px-10 py-4 bg-transparent border border-[var(--color-white)] text-[var(--color-white)] font-bold rounded-full hover:bg-[rgba(255,255,255,0.1)] transition-all">
+                        </Link>
+                        <Link to="/open-demo-account" className="px-10 py-4 bg-transparent border border-[var(--color-white)] text-[var(--color-white)] font-bold rounded-full hover:bg-[rgba(255,255,255,0.1)] transition-all">
                             Try Free Demo
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -164,9 +165,9 @@ const WhyRadhika = () => {
                                     <h3 className="text-2xl font-bold text-[var(--color-white)] mb-4">{item.title}</h3>
                                     <p className="text-gray-400 mb-6 leading-relaxed">{item.description}</p>
                                     {item.link && (
-                                        <a href="#" className="inline-flex items-center text-[var(--color-gold)] font-bold text-sm uppercase tracking-wider hover:underline">
-                                            {item.link} <ArrowRight size={16} className="ml-2" />
-                                        </a>
+                                        <Link to={item.link} className="inline-flex items-center text-[var(--color-gold)] font-bold text-sm uppercase tracking-wider hover:underline">
+                                            {item.title} <ArrowRight size={16} className="ml-2" />
+                                        </Link>
                                     )}
                                 </div>
                             </div>
@@ -226,9 +227,9 @@ const WhyRadhika = () => {
                     <p className="text-xl text-gray-400 mb-8 leading-relaxed">
                         Access world-class markets with conditions built to help you win. Scalping, hedging, and high-frequency trading allowed.
                     </p>
-                    <a href="#" className="text-[var(--color-white)] font-bold uppercase tracking-wider flex items-center hover:text-[var(--color-gold)] transition-colors">
+                    <Link to="/open-live-account" className="text-[var(--color-white)] font-bold uppercase tracking-wider flex items-center hover:text-[var(--color-gold)] transition-colors">
                         Start Trading <ArrowRight className="ml-2" />
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Right Side: Partners */}
@@ -239,9 +240,9 @@ const WhyRadhika = () => {
                     <p className="text-xl text-gray-400 mb-8 leading-relaxed">
                         Grow as we grow. Join our Introducing Broker program and earn industry-leading rebates with real-time tracking and dedicated support.
                     </p>
-                    <a href="#" className="text-blue-400 font-bold uppercase tracking-wider flex items-center hover:text-[var(--color-white)] transition-colors">
+                    <Link to="/partnership/ib-programme" className="text-blue-400 font-bold uppercase tracking-wider flex items-center hover:text-[var(--color-white)] transition-colors">
                         Become a Partner <ArrowRight className="ml-2" />
-                    </a>
+                    </Link>
                 </div>
             </section>
 
@@ -271,10 +272,10 @@ const WhyRadhika = () => {
 
                     <div className="mt-12 text-center">
                         <p className="text-gray-400 mb-6">Need more details about onboarding or education?</p>
-                        <button className="px-8 py-3 border border-[var(--color-glass-border)] hover:border-[var(--color-gold)] text-[var(--color-white)] rounded-lg transition-colors font-medium">
+                        <Link to="/contact-us" className="px-8 py-3 border border-[var(--color-glass-border)] hover:border-[var(--color-gold)] text-[var(--color-white)] rounded-lg transition-colors font-medium">
                             <MessageCircle className="inline-block mr-2" size={18} />
                             Contact Support
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>

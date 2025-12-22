@@ -55,16 +55,16 @@ const Comparison = () => {
                             <thead>
                                 <tr className="text-white sticky top-[80px] z-30 shadow-lg">
                                     <th className="p-6 bg-[#0a1629] text-left w-1/4 border-b border-gray-800">Feature</th>
-                                    <th className="p-6 bg-blue-900/90 backdrop-blur border-b border-blue-800 w-1/4">
+                                    <th className="p-6 bg-[#0a1629]/90 backdrop-blur border-b border-gray-700 w-1/4">
                                         <div className="text-sm uppercase tracking-widest opacity-70 mb-1">Standard</div>
                                         <div className="text-xl font-bold">Retail</div>
                                     </th>
-                                    <th className="p-6 bg-slate-800/90 backdrop-blur border-b border-slate-700 w-1/4 relative overflow-hidden">
+                                    <th className="p-6 bg-[#1a2b4b]/90 backdrop-blur border-b border-gray-600 w-1/4 relative overflow-hidden">
                                         <div className="absolute top-0 right-0 bg-[var(--color-gold)] text-black text-[10px] font-bold px-2 py-0.5 transform rotate-0">POPULAR</div>
                                         <div className="text-sm uppercase tracking-widest opacity-70 mb-1">Pro</div>
                                         <div className="text-xl font-bold">Active</div>
                                     </th>
-                                    <th className="p-6 bg-[#2a2305]/90 backdrop-blur border-b border-[var(--color-gold)] w-1/4">
+                                    <th className="p-6 bg-[rgba(233,219,141,0.15)]/90 backdrop-blur border-b border-[var(--color-gold)] w-1/4">
                                         <div className="text-sm text-[var(--color-gold)] uppercase tracking-widest opacity-70 mb-1">Pro X</div>
                                         <div className="text-xl font-bold text-white">Elite</div>
                                     </th>
@@ -77,7 +77,7 @@ const Comparison = () => {
                                             {row.name}
                                         </td>
                                         <td className="p-5 border-r border-gray-800">{row.standard}</td>
-                                        <td className="p-5 border-r border-gray-800 bg-slate-900/20 font-medium text-white">{row.pro}</td>
+                                        <td className="p-5 border-r border-gray-800 bg-[#0a1629]/50 font-medium text-white">{row.pro}</td>
                                         <td className="p-5 font-bold text-white">{row.prox}</td>
                                     </tr>
                                 ))}
@@ -90,29 +90,29 @@ const Comparison = () => {
             {/* Block 3: Hidden Costs Transparency */}
             <section className="py-24 bg-[var(--color-dark)] relative">
                 <div className="container mx-auto px-6 text-center">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 border border-green-500/30 bg-green-500/10 rounded-full mb-8 text-green-400">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 border border-[var(--color-gold)]/30 bg-[var(--color-gold)]/10 rounded-full mb-8 text-[var(--color-gold)]">
                         <ShieldCheck size={16} />
                         <span className="text-xs font-bold uppercase tracking-widest">Transparency First</span>
                     </div>
                     <h2 className="text-3xl font-bold text-white mb-12">No Hidden Fees. No Surprise Requotes.</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="p-8 border border-gray-800 rounded-2xl bg-[#0a1629]">
-                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+                        <div className="p-8 border border-gray-800 rounded-2xl bg-[#0a1629] hover:border-[var(--color-gold)] transition-colors group">
+                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white group-hover:text-[var(--color-gold)] transition-colors">
                                 <DollarSign size={24} />
                             </div>
                             <h3 className="text-white font-bold mb-2">Funding</h3>
                             <p className="text-gray-400 text-sm">Instant USDT deposits with <span className="text-white font-bold">0% processing fees</span>.</p>
                         </div>
-                        <div className="p-8 border border-gray-800 rounded-2xl bg-[#0a1629]">
-                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+                        <div className="p-8 border border-gray-800 rounded-2xl bg-[#0a1629] hover:border-[var(--color-gold)] transition-colors group">
+                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white group-hover:text-[var(--color-gold)] transition-colors">
                                 <CreditCard size={24} />
                             </div>
                             <h3 className="text-white font-bold mb-2">Withdrawal</h3>
                             <p className="text-gray-400 text-sm">Standard (24h), Pro (Same Day), Pro X (Priority).</p>
                         </div>
-                        <div className="p-8 border border-gray-800 rounded-2xl bg-[#0a1629]">
-                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+                        <div className="p-8 border border-gray-800 rounded-2xl bg-[#0a1629] hover:border-[var(--color-gold)] transition-colors group">
+                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white group-hover:text-[var(--color-gold)] transition-colors">
                                 <Check size={24} />
                             </div>
                             <h3 className="text-white font-bold mb-2">Islamic / Swap-Free</h3>
@@ -128,29 +128,29 @@ const Comparison = () => {
                     <h2 className="text-3xl font-bold text-white mb-12 text-center">Which one is right for me?</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Standard */}
-                        <div className="bg-[#050c18] border-t-4 border-blue-500 p-8 rounded-b-xl hover:-translate-y-2 transition-transform duration-300">
+                        <div className="bg-[#050c18] border-t-4 border-gray-500 p-8 rounded-b-xl hover:-translate-y-2 transition-transform duration-300">
                             <div className="flex items-center gap-3 mb-4">
-                                <Target className="text-blue-500" size={24} />
+                                <Target className="text-gray-500" size={24} />
                                 <h3 className="text-xl font-bold text-white">I am New</h3>
                             </div>
                             <p className="text-gray-400 leading-relaxed italic">
                                 "I am new to trading and want to start with a small amount while learning market dynamics."
                             </p>
-                            <div className="mt-6 text-sm font-bold text-blue-500 uppercase tracking-wider">
+                            <div className="mt-6 text-sm font-bold text-gray-500 uppercase tracking-wider">
                                 Choose Standard
                             </div>
                         </div>
 
                         {/* Pro */}
-                        <div className="bg-[#050c18] border-t-4 border-gray-400 p-8 rounded-b-xl hover:-translate-y-2 transition-transform duration-300 shadow-xl">
+                        <div className="bg-[#050c18] border-t-4 border-white p-8 rounded-b-xl hover:-translate-y-2 transition-transform duration-300 shadow-xl">
                             <div className="flex items-center gap-3 mb-4">
-                                <Award className="text-gray-400" size={24} />
+                                <Award className="text-white" size={24} />
                                 <h3 className="text-xl font-bold text-white">I Trade Frequently</h3>
                             </div>
                             <p className="text-gray-400 leading-relaxed italic">
                                 "I trade frequently and want better pricing and faster support without paying a per-trade commission."
                             </p>
-                            <div className="mt-6 text-sm font-bold text-gray-400 uppercase tracking-wider">
+                            <div className="mt-6 text-sm font-bold text-white uppercase tracking-wider">
                                 Choose Pro
                             </div>
                         </div>
@@ -179,7 +179,7 @@ const Comparison = () => {
                         <h2 className="text-3xl font-bold text-white">Common Questions</h2>
                     </div>
                     <div className="space-y-4">
-                        <div className="bg-[#0a1629] p-6 rounded-lg border border-gray-800">
+                        <div className="bg-[#0a1629] p-6 rounded-lg border border-gray-800 hover:border-[var(--color-gold)] transition-colors">
                             <h3 className="text-white font-bold mb-2 flex items-center gap-2"><HelpCircle size={16} className="text-[var(--color-gold)]" /> Can I change my account type later?</h3>
                             <p className="text-gray-400">Yes, you can upgrade at any time through your dashboard. Simply request an account type change or open a new sub-account.</p>
                         </div>

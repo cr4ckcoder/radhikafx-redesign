@@ -14,18 +14,18 @@ const Careers = () => {
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 filter grayscale"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
-                {/* Teal Glow */}
-                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-cyan-900/20 via-transparent to-transparent pointer-events-none"></div>
+                {/* Gold Glow */}
+                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-[var(--color-gold)]/10 via-transparent to-transparent pointer-events-none"></div>
 
                 <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-900/30 border border-cyan-500/30 rounded-full mb-8 backdrop-blur-md">
-                        <Globe size={16} className="text-cyan-400" />
-                        <span className="text-cyan-400 text-xs font-bold uppercase tracking-widest">Global Opportunities</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/30 rounded-full mb-8 backdrop-blur-md">
+                        <Globe size={16} className="text-[var(--color-gold)]" />
+                        <span className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest">Global Opportunities</span>
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                         Shape the Future of <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">Global Trading.</span>
+                        <span className="text-gold-gradient">Global Trading.</span>
                     </h1>
 
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -34,7 +34,7 @@ const Careers = () => {
 
                     <button
                         onClick={() => document.getElementById('application-form').scrollIntoView({ behavior: 'smooth' })}
-                        className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold rounded-full hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all duration-300 transform hover:-translate-y-1"
+                        className="px-8 py-4 btn-gold text-[var(--color-navy)] font-bold rounded-full hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-all duration-300 transform hover:-translate-y-1"
                     >
                         View Open Positions
                     </button>
@@ -46,8 +46,8 @@ const Careers = () => {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Value 1 */}
-                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-cyan-500/50 transition-colors group">
-                            <div className="w-16 h-16 bg-cyan-900/20 rounded-xl flex items-center justify-center mb-6 text-cyan-400 group-hover:scale-110 transition-transform">
+                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-[var(--color-gold)]/50 transition-colors group">
+                            <div className="w-16 h-16 bg-[var(--color-gold)]/10 rounded-xl flex items-center justify-center mb-6 text-[var(--color-gold)] group-hover:scale-110 transition-transform">
                                 <Users size={32} />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">Inclusive Culture</h3>
@@ -57,8 +57,8 @@ const Careers = () => {
                         </div>
 
                         {/* Value 2 */}
-                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-cyan-500/50 transition-colors group">
-                            <div className="w-16 h-16 bg-cyan-900/20 rounded-xl flex items-center justify-center mb-6 text-cyan-400 group-hover:scale-110 transition-transform">
+                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-[var(--color-gold)]/50 transition-colors group">
+                            <div className="w-16 h-16 bg-[var(--color-gold)]/10 rounded-xl flex items-center justify-center mb-6 text-[var(--color-gold)] group-hover:scale-110 transition-transform">
                                 <GraduationCap size={32} />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">Growth & Learning</h3>
@@ -68,8 +68,8 @@ const Careers = () => {
                         </div>
 
                         {/* Value 3 */}
-                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-cyan-500/50 transition-colors group">
-                            <div className="w-16 h-16 bg-cyan-900/20 rounded-xl flex items-center justify-center mb-6 text-cyan-400 group-hover:scale-110 transition-transform">
+                        <div className="bg-[#0a1629] p-8 rounded-2xl border border-gray-800 hover:border-[var(--color-gold)]/50 transition-colors group">
+                            <div className="w-16 h-16 bg-[var(--color-gold)]/10 rounded-xl flex items-center justify-center mb-6 text-[var(--color-gold)] group-hover:scale-110 transition-transform">
                                 <Award size={32} />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-4">Rewards & Progression</h3>
@@ -86,7 +86,7 @@ const Careers = () => {
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row items-center gap-16">
                         <div className="w-full md:w-1/2">
-                            <div className="inline-block text-cyan-400 text-sm font-bold uppercase tracking-widest mb-4">Life at RadhikaFX</div>
+                            <div className="inline-block text-[var(--color-gold)] text-sm font-bold uppercase tracking-widest mb-4">Life at RadhikaFX</div>
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
                                 More Than Just a Job. <br />
                                 <span className="text-gray-500">It's a Career.</span>
@@ -102,7 +102,7 @@ const Careers = () => {
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-4 group">
                                         <div className="mt-1 min-w-[20px]">
-                                            <CheckCircle size={20} className="text-cyan-500 group-hover:text-cyan-400 transition-colors" />
+                                            <CheckCircle size={20} className="text-[var(--color-gold)] group-hover:text-yellow-400 transition-colors" />
                                         </div>
                                         <p className="text-gray-300 text-lg">{item}</p>
                                     </div>
@@ -112,7 +112,7 @@ const Careers = () => {
 
                         <div className="w-full md:w-1/2 relative">
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
-                                <div className="absolute inset-0 bg-cyan-500/10 mix-blend-overlay"></div>
+                                <div className="absolute inset-0 bg-[var(--color-gold)]/10 mix-blend-overlay"></div>
                                 <img
                                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
                                     alt="Team Collaboration"
@@ -120,8 +120,8 @@ const Careers = () => {
                                 />
                             </div>
                             {/* Decorative Elements */}
-                            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-cyan-500/20 rounded-full blur-2xl"></div>
-                            <div className="absolute -top-6 -right-6 w-32 h-32 bg-teal-500/20 rounded-full blur-2xl"></div>
+                            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[var(--color-gold)]/20 rounded-full blur-2xl"></div>
+                            <div className="absolute -top-6 -right-6 w-32 h-32 bg-[var(--color-gold)]/20 rounded-full blur-2xl"></div>
                         </div>
                     </div>
                 </div>
@@ -140,18 +140,18 @@ const Careers = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-gray-400 text-sm font-bold mb-2">Full Name</label>
-                                    <input type="text" className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="John Doe" />
+                                    <input type="text" className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="John Doe" />
                                 </div>
                                 <div>
                                     <label className="block text-gray-400 text-sm font-bold mb-2">Email Address</label>
-                                    <input type="email" className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="john@example.com" />
+                                    <input type="email" className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="john@example.com" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-gray-400 text-sm font-bold mb-2">Position of Interest</label>
-                                    <select className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <select className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors">
                                         <option>Select a position...</option>
                                         <option>Software Engineer</option>
                                         <option>Marketing Specialist</option>
@@ -162,7 +162,7 @@ const Careers = () => {
                                 </div>
                                 <div>
                                     <label className="block text-gray-400 text-sm font-bold mb-2">Years of Experience</label>
-                                    <select className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <select className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors">
                                         <option>0-2 Years</option>
                                         <option>3-5 Years</option>
                                         <option>5-10 Years</option>
@@ -173,16 +173,16 @@ const Careers = () => {
 
                             <div>
                                 <label className="block text-gray-400 text-sm font-bold mb-2">Cover Letter / Message</label>
-                                <textarea rows="4" className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Tell us why you're a great fit..."></textarea>
+                                <textarea rows="4" className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Tell us why you're a great fit..."></textarea>
                             </div>
 
-                            <div className="border-2 border-dashed border-gray-700 rounded-lg p-8 text-center hover:border-cyan-500/50 transition-colors cursor-pointer bg-[#02040a]/50">
+                            <div className="border-2 border-dashed border-gray-700 rounded-lg p-8 text-center hover:border-[var(--color-gold)]/50 transition-colors cursor-pointer bg-[#02040a]/50">
                                 <Upload className="mx-auto text-gray-500 mb-2" size={32} />
-                                <p className="text-gray-400 text-sm">Drag & drop your CV here, or <span className="text-cyan-400">browse</span></p>
+                                <p className="text-gray-400 text-sm">Drag & drop your CV here, or <span className="text-[var(--color-gold)]">browse</span></p>
                                 <p className="text-gray-600 text-xs mt-1">PDF or DOCX up to 5MB</p>
                             </div>
 
-                            <button type="button" className="w-full py-4 bg-gradient-to-r from-cyan-600 to-teal-600 text-white font-bold rounded hover:shadow-lg hover:shadow-cyan-900/20 transition-all">
+                            <button type="button" className="w-full py-4 btn-gold text-[var(--color-navy)] font-bold rounded hover:shadow-lg hover:shadow-[var(--color-gold)]/20 transition-all">
                                 Submit Application
                             </button>
                         </form>

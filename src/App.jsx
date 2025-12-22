@@ -28,6 +28,12 @@ import TradingConditions from './pages/tools/TradingConditions';
 import TradingHours from './pages/tools/TradingHours';
 import EconomicCalendar from './pages/tools/EconomicCalendar';
 import TradingCalculators from './pages/tools/TradingCalculators';
+import RiskDisclaimer from './pages/RiskDisclaimer';
+import TermsAndConditions from './pages/TermsAndConditions';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RiskWarning from './pages/RiskWarning';
+import OpenLiveAccount from './pages/OpenLiveAccount';
+import OpenDemoAccount from './pages/OpenDemoAccount';
 import { useEffect } from 'react';
 
 // Scroll to top on route change
@@ -75,6 +81,12 @@ function App() {
             <Route path="/tools/trading-hours" element={<TradingHours />} />
             <Route path="/tools/economic-calendar" element={<EconomicCalendar />} />
             <Route path="/tools/calculators" element={<TradingCalculators />} />
+            <Route path="/risk-disclaimer" element={<RiskDisclaimer />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/risk-warning" element={<RiskWarning />} />
+            <Route path="/open-live-account" element={<OpenLiveAccount />} />
+            <Route path="/open-demo-account" element={<OpenDemoAccount />} />
           </Routes>
         </main>
         <Footer />

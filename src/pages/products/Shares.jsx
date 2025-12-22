@@ -3,6 +3,7 @@ import {
     TrendingUp, TrendingDown, Calendar, PieChart,
     BarChart2, ArrowRight, DollarSign, Percent, Activity, ArrowUpRight, ArrowDownRight
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import TradingViewTicker from '../../components/TradingViewTicker';
 
 const ShareCard = ({ symbol, name, price, change, isPositive }) => (
@@ -29,8 +30,8 @@ const ShareCard = ({ symbol, name, price, change, isPositive }) => (
             <div className={`h-full ${isPositive ? 'bg-green-500' : 'bg-red-500'}`} style={{ width: `${Math.random() * 40 + 30}%` }}></div>
         </div>
         <div className="mt-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-            <button className="flex-1 py-1 text-xs bg-red-500/20 text-red-500 font-bold rounded hover:bg-red-500 hover:text-white transition-colors">Sell</button>
-            <button className="flex-1 py-1 text-xs bg-green-500/20 text-green-500 font-bold rounded hover:bg-green-500 hover:text-white transition-colors">Buy</button>
+            <Link to="/open-live-account" className="flex-1 py-1 text-xs bg-red-500/20 text-red-500 font-bold rounded hover:bg-red-500 hover:text-white transition-colors text-center">Sell</Link>
+            <Link to="/open-live-account" className="flex-1 py-1 text-xs bg-green-500/20 text-green-500 font-bold rounded hover:bg-green-500 hover:text-white transition-colors text-center">Buy</Link>
         </div>
     </div>
 );
@@ -82,12 +83,12 @@ const Shares = () => {
                             Trade CFDs on 500+ of the world’s most powerful companies. Go long or short on Apple, NVIDIA, Tesla, and more—all from one platform.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors shadow-lg shadow-yellow-900/20">
+                            <Link to="/open-live-account" className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors shadow-lg shadow-yellow-900/20 text-center">
                                 Start Trading Shares
-                            </button>
-                            <button className="px-8 py-4 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
+                            </Link>
+                            <Link to="/tools/trading-conditions" className="px-8 py-4 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors text-center">
                                 View Full Symbol List
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -168,9 +169,9 @@ const Shares = () => {
                             <h2 className="text-3xl font-bold text-white mb-2">Market Movers</h2>
                             <p className="text-gray-400">Most active stocks today.</p>
                         </div>
-                        <button className="text-[var(--color-gold)] font-bold hover:text-white transition-colors hidden md:block">
+                        <Link to="/tools/trading-conditions" className="text-[var(--color-gold)] font-bold hover:text-white transition-colors hidden md:block">
                             View All Shares →
-                        </button>
+                        </Link>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <ShareCard symbol="NVDA" name="NVIDIA Corp" price="485.09" change="2.45" isPositive={true} />
@@ -199,9 +200,9 @@ const Shares = () => {
                                 Don't miss out on dividends. At RadhikaFX, we reflect dividend adjustments on your CFD positions.
                                 If you hold a 'Long' position on a stock during its ex-dividend date, you receive the adjustment directly to your account.
                             </p>
-                            <a href="#" className="flex items-center text-blue-400 font-bold hover:text-white transition-colors uppercase tracking-wide">
+                            <Link to="/tools/economic-calendar" className="flex items-center text-blue-400 font-bold hover:text-white transition-colors uppercase tracking-wide">
                                 View Corporate Action Schedule <ArrowRight className="ml-2" />
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="md:w-1/2 flex justify-center relative z-10">
