@@ -37,10 +37,10 @@ const Home = () => {
                 {/* Content */}
                 <div className="relative z-10 container mx-auto px-6 text-center mt-[-5vh]">
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight font-[var(--font-heading)] drop-shadow-2xl">
-                        Radhika Capital Markets <span className="text-gold-gradient">Global Markets</span> Trading
+                        Radhika Capital Markets
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto font-light drop-shadow-md">
-                        Trade with the World's Largest and Most Regulated <br /> Financial Derivatives Institution
+                        Trade Global Markets with the World’s Most Trusted and Regulated Financial Institution
                     </p>
 
                     {/* CTA Buttons */}
