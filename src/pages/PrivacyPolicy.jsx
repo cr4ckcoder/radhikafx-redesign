@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
     };
 
     return (
-        <div className="bg-[#02040a] min-h-screen pt-24 pb-16 font-sans text-gray-300">
+        <div className="bg-[#02040a] min-h-screen pt-24 md:pt-44 pb-16 font-sans text-gray-300">
             {/* Header / Hero Section */}
             <div className="bg-[#0a1629] border-b border-gray-800 mb-12">
                 <div className="container mx-auto px-6 max-w-7xl py-12">

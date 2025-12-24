@@ -47,7 +47,7 @@ const TradingCalculators = () => {
     const positionSizeConfig = { "Url": "https://fxverify.com", "TopPaneStyle": "YmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KCMzNDM1NDAgMCUsICMyNDI4MzEgMTAwJSk7IGNvbG9yOiB3aGl0ZTsgYm9yZGVyLWJvdHRvbTogbm9uZTs=", "BottomPaneStyle": "YmFja2dyb3VuZDogIzE1MTgxZDsgYm9yZGVyOiBzb2xpZCAwcHggIzJhMmUzOTsgY29sb3I6ICM5MTk0YTE7", "ButtonStyle": "YmFja2dyb3VuZDogIzM0MzU0MDsgY29sb3I6IHdoaXRlOyBib3JkZXItcmFkaXVzOiAyMHB4Ow==", "TitleStyle": "dGV4dC1hbGlnbjogbGVmdDsgZm9udC1zaXplOiA0MHB4OyBmb250LXdlaWdodDogNTAwOw==", "TextboxStyle": "YmFja2dyb3VuZDogIzE1MTgxZDsgY29sb3I6ICM5MTk0YTE7IGJvcmRlcjogc29saWQgMHB4ICM5MTk0YTE7", "HighlightColor": "rgba(0,0,0,1.0)", "IsDisplayTitle": false, "IsShowChartLinks": false, "IsShowEmbedButton": false, "CompactType": "large", "Calculator": "position-size-calculator", "ContainerId": "position-size-calculator-544062" };
 
     return (
-        <div className="bg-[var(--color-navy)] min-h-screen pt-20 font-[var(--font-body)] text-white">
+        <div className="bg-[var(--color-navy)] min-h-screen pt-20 md:pt-40 font-[var(--font-body)] text-white">
 
             {/* Block 1: The "Risk-First" Hero */}
             <section className="py-20 bg-[var(--color-navy)] border-b border-[var(--glass-border)] relative overflow-hidden">

@@ -34,6 +34,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import RiskWarning from './pages/RiskWarning';
 import OpenLiveAccount from './pages/OpenLiveAccount';
 import OpenDemoAccount from './pages/OpenDemoAccount';
+import LiquidityServices from './pages/partnerships/LiquidityServices';
 import { useEffect } from 'react';
 
 // Scroll to top on route change
@@ -65,6 +66,7 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/partnership/ib-programme" element={<IBProgramme />} />
             <Route path="/partnership/cpa-affiliate" element={<CPAAffiliate />} />
+            <Route path="/partnership/liquidity-services" element={<LiquidityServices />} />
             <Route path="/products/commodities" element={<Commodities />} />
             <Route path="/products/indices" element={<Indices />} />
             <Route path="/products/shares" element={<Shares />} />

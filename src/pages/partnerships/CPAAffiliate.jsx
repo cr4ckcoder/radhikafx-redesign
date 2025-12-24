@@ -7,7 +7,7 @@ import {
 
 const CPAAffiliate = () => {
     return (
-        <div className="pt-20 bg-[#02040a] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[#02040a] font-[var(--font-body)]">
 
             {/* Block 1: The "High-Yield" Hero */}
             <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#02040a]">

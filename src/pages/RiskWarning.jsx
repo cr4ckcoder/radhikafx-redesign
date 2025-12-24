@@ -3,7 +3,7 @@ import { AlertTriangle, AlertOctagon } from 'lucide-react';
 
 const RiskWarning = () => {
     return (
-        <div className="bg-[#02040a] min-h-screen pt-20 pb-16 font-sans text-gray-300">
+        <div className="bg-[#02040a] min-h-screen pt-20 md:pt-40 pb-16 font-sans text-gray-300">
 
             {/* Block 1: The Cautionary Banner (Hero) */}
             <div className="bg-gradient-to-b from-[var(--color-navy)] to-[#1a0f0f] border-b border-red-900/50 text-white py-16 px-6 shadow-xl relative overflow-hidden">

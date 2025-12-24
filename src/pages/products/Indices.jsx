@@ -45,7 +45,7 @@ const Indices = () => {
     ];
 
     return (
-        <div className="pt-20 bg-[var(--color-navy)] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The Hero Section (Global Impact) */}
             <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#02040a]">

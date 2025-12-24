@@ -58,7 +58,7 @@ const TermsAndConditions = () => {
     };
 
     return (
-        <div className="bg-[#02040a] min-h-screen pt-24 pb-16 font-sans text-gray-300">
+        <div className="bg-[#02040a] min-h-screen pt-24 md:pt-44 pb-16 font-sans text-gray-300">
             {/* Header / Actions */}
             <div className="container mx-auto px-6 max-w-7xl mb-12">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-gray-800 pb-8">

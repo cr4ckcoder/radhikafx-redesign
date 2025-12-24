@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import HeroBackground from '../assets/hero-background.png';
 import WhyChooseUs from '../components/WhyChooseUs';
 import TradingViewTicker from '../components/TradingViewTicker';
+import MT5Display from '../assets/mt5_tech_display.png';
 
 const Home = () => {
     // FAQ State
@@ -20,7 +21,7 @@ const Home = () => {
         <div className="bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* NEW HERO SECTION */}
-            <section className="relative min-h-screen flex flex-col justify-center items-center pt-20 overflow-hidden">
+            <section className="relative min-h-screen flex flex-col justify-center items-center pt-20 md:pt-40 overflow-hidden">
                 {/* Background: Dubai Skyline */}
                 <div className="absolute inset-0 z-0">
                     <img
@@ -131,7 +132,7 @@ const Home = () => {
                             </ul>
 
                             <Link to="/platforms/mt5" className="inline-flex items-center gap-2 text-gold-gradient font-bold hover:text-white transition-colors group">
-                                Explore MT5 Features <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                                Explore MT5 Features <ArrowRight size={18} className="text-[var(--color-gold)] group-hover:translate-x-1 transition-transform" />
                             </Link>
                         </div>
 
@@ -139,7 +140,7 @@ const Home = () => {
                         <div className="w-full lg:w-1/2">
                             <div className="relative group perspective-1000">
                                 <img
-                                    src="/src/assets/mt5_tech_display.png"
+                                    src={MT5Display}
                                     alt="MT5 Desktop and Mobile"
                                     className="rounded-2xl border border-gray-800 shadow-2xl relative z-10 transform transition-transform duration-700 group-hover:rotate-y-6"
                                 />

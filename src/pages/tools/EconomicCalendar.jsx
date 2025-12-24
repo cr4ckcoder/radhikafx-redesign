@@ -58,7 +58,7 @@ const TradingViewCalendar = memo(() => {
 
 const EconomicCalendar = () => {
     return (
-        <div className="bg-[var(--color-navy)] min-h-screen pt-20 font-[var(--font-body)] text-white">
+        <div className="bg-[var(--color-navy)] min-h-screen pt-20 md:pt-40 font-[var(--font-body)] text-white">
 
             {/* Block 1: The Tactical Hero */}
             <section className="py-16 bg-[var(--color-navy)] border-b border-[var(--glass-border)] relative overflow-hidden">

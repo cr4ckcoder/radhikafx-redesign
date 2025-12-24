@@ -9,7 +9,7 @@ const Standard = () => {
     const accentColor = "#3b82f6"; // blue-500
 
     return (
-        <div className="pt-20 bg-[var(--color-navy)] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The "Standard" Hero */}
             <section className="relative min-h-[700px] flex items-center justify-center overflow-hidden bg-black">

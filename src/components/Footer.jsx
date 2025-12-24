@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
 
             {/* Main Footer Links */}
-            <div className="bg-[#0b0f19] pt-20 pb-10 border-t border-gray-800 text-gray-400">
+            <div className="bg-[#0b0f19] pt-20 md:pt-40 pb-10 border-t border-gray-800 text-gray-400">
                 {/* Main Footer Content */}
                 <div className="container mx-auto px-6 py-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -37,11 +37,11 @@ const Footer = () => {
 
                             <div className="space-y-4 text-sm mb-8">
                                 <div className="flex items-start gap-3">
-                                    <MapPin size={18} className="text-gold-gradient flex-shrink-0 mt-1" />
-                                    <span>Dubai, UAE</span>
+                                    <MapPin size={18} className="text-[var(--color-gold)] flex-shrink-0 mt-1" />
+                                    <span>Dubai, UAE.</span>
                                 </div>
-                                <div className="flex items-start gap-3">
-                                    <Mail size={18} className="text-gold-gradient flex-shrink-0 mt-1" />
+                                <div className="flex items-start gap-4 text-sm hover:text-[var(--color-gold)] transition-colors">
+                                    <Mail size={18} className="text-[var(--color-gold)] flex-shrink-0 mt-1" />
                                     <a href="mailto:support@radhikafx.com" className="hover:text-white transition-colors">support@radhikafx.com</a>
                                 </div>
                             </div>

@@ -4,7 +4,7 @@ import Hero3D from './Hero3D';
 
 const Hero = () => {
     return (
-        <section className="relative w-full min-h-screen flex items-center pt-20 overflow-hidden">
+        <section className="relative w-full min-h-screen flex items-center pt-20 md:pt-40 overflow-hidden">
             {/* Background Gradient */}
             <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-navy)] via-[var(--color-dark)] to-[var(--color-black)] -z-20"></div>
 

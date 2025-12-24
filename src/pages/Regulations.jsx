@@ -6,7 +6,7 @@ import {
 
 const Regulations = () => {
     return (
-        <div className="pt-20 bg-[var(--color-navy)] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The Authority Hero */}
             <section className="relative py-24 md:py-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-[#02040a]">

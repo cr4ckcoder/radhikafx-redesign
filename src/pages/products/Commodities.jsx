@@ -43,7 +43,7 @@ const Commodities = () => {
     ];
 
     return (
-        <div className="pt-20 bg-[var(--color-navy)] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The Tactical Hero */}
             <section className="relative min-h-[600px] flex items-center bg-[#02040a] border-b border-[rgba(255,255,255,0.05)] overflow-hidden">

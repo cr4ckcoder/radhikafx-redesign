@@ -36,7 +36,7 @@ const Counter = ({ end, suffix = "", duration = 2000 }) => {
 
 const AboutUs = () => {
     return (
-        <div className="pt-20 bg-[var(--color-navy)] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The Identity Hero */}
             <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">

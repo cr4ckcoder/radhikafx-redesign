@@ -179,7 +179,7 @@ const OpenLiveAccount = () => {
 
     if (view === 'SUCCESS') {
         return (
-            <div className="min-h-screen bg-[#02040a] font-[var(--font-body)] pt-20 flex items-center justify-center p-6">
+            <div className="min-h-screen bg-[#02040a] font-[var(--font-body)] pt-20 md:pt-40 flex items-center justify-center p-6">
                 <div className="bg-[#0a1629] p-12 rounded-2xl border border-[var(--color-gold)]/30 text-center max-w-xl w-full">
                     <div className="w-24 h-24 bg-[var(--color-gold)]/10 rounded-full flex items-center justify-center mx-auto mb-8 text-[var(--color-gold)]">
                         <CheckCircle size={48} />
@@ -198,7 +198,7 @@ const OpenLiveAccount = () => {
     }
 
     return (
-        <div className="min-h-screen bg-[#02040a] font-[var(--font-body)] pt-20">
+        <div className="min-h-screen bg-[#02040a] font-[var(--font-body)] pt-20 md:pt-40">
             {/* Block 1: The "Low-Friction" Hero */}
             <section className="bg-gradient-to-b from-[#050A14] to-[#02040a] py-16 border-b border-gray-900">
                 <div className="container mx-auto px-6 text-center">

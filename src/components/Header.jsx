@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown, User, Globe, Activity, Briefcase, BarChart2, Star, Flame, TrendingUp, PieChart, Repeat, DollarSign, Zap, Monitor, Award, Diamond, Check, Wallet, ArrowUpRight, Scale, Trophy, HelpCircle, Users, Mail, Clock, Calendar, Calculator, BookOpen } from 'lucide-react';
+import { Menu, X, ChevronDown, User, Globe, Activity, Briefcase, BarChart2, Star, Flame, TrendingUp, PieChart, Repeat, DollarSign, Zap, Monitor, Award, Diamond, Check, Wallet, ArrowUpRight, Scale, Trophy, HelpCircle, Users, Mail, Clock, Calendar, Calculator, BookOpen, Database } from 'lucide-react';
 import Logo from '../assets/logo.png';
 
 const Header = () => {
@@ -64,7 +64,8 @@ const Header = () => {
             icon: <Users size={18} />,
             dropdown: [
                 { name: 'IB Programme', icon: <Briefcase size={16} />, path: '/partnership/ib-programme' },
-                { name: 'CPA Affiliate', icon: <TrendingUp size={16} />, path: '/partnership/cpa-affiliate' }
+                { name: 'CPA Affiliate', icon: <TrendingUp size={16} />, path: '/partnership/cpa-affiliate' },
+                { name: 'Liquidity Services', icon: <Database size={16} />, path: '/partnership/liquidity-services' }
             ]
         },
         {
@@ -90,6 +91,35 @@ const Header = () => {
                 borderBottom: '1px solid var(--glass-border)'
             }}
         >
+            {/* Top Bar (Desktop Only) */}
+            <div className="hidden md:flex h-[50px] bg-[#02040a] border-b border-[var(--glass-border)]">
+                <div className="container mx-auto px-6 h-full flex items-center justify-between">
+                    {/* Left: Contact Info */}
+                    <div className="flex items-center gap-6 text-sm">
+                        <a href="tel:+447462103568" className="flex items-center gap-2 text-gray-400 hover:text-[var(--color-gold)] transition-colors">
+                            <span>+44 7462 103568</span>
+                        </a>
+                        <span className="w-px h-4 bg-gray-700"></span>
+                        <Link to="/contact-us" className="text-gray-400 hover:text-[var(--color-gold)] transition-colors">
+                            Contact Us
+                        </Link>
+                    </div>
+
+                    {/* Right: Actions (Moved from Main Nav) */}
+                    <div className="flex items-center gap-4">
+                        <a href="https://cabinet.radhikafx.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-white)] hover:text-gold-gradient font-medium transition-colors">
+                            Login
+                        </a>
+                        <Link
+                            to="/open-live-account"
+                            className="px-6 py-2 btn-gold text-[var(--color-navy)] font-bold rounded-full transition-all"
+                        >
+                            Open Live Account
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
             <div className="container mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2 group">
@@ -127,7 +157,7 @@ const Header = () => {
                                                             rel="noopener noreferrer"
                                                             className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[rgba(255,255,255,0.05)] text-gray-300 hover:text-gold-gradient transition-colors"
                                                         >
-                                                            <span className="text-gold-gradient">{subItem.icon}</span>
+                                                            <span className="text-[var(--color-gold)]">{subItem.icon}</span>
                                                             <span className="font-medium">{subItem.name}</span>
                                                         </a>
                                                     ) : (
@@ -136,7 +166,7 @@ const Header = () => {
                                                             to={subItem.path}
                                                             className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[rgba(255,255,255,0.05)] text-gray-300 hover:text-gold-gradient transition-colors"
                                                         >
-                                                            <span className="text-gold-gradient">{subItem.icon}</span>
+                                                            <span className="text-[var(--color-gold)]">{subItem.icon}</span>
                                                             <span className="font-medium">{subItem.name}</span>
                                                         </Link>
                                                     )
@@ -155,24 +185,9 @@ const Header = () => {
 
                 </nav>
 
-                {/* Actions */}
-                <div className="hidden md:flex items-center space-x-4">
-                    <button
-                        className="text-[var(--color-white)] hover:text-gold-gradient font-medium transition-colors"
-                    >
-                        Login
-                    </button>
-                    <Link
-                        to="/open-live-account"
-                        className="px-6 py-2 btn-gold text-[var(--color-navy)] font-bold rounded-full transition-all"
-                    >
-                        Open Live Account
-                    </Link>
-                </div>
-
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden text-[var(--color-white)]"
+                    className="md:hidden text-[var(--color-white)] ml-auto"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 >
                     {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -214,7 +229,7 @@ const Header = () => {
                         </div>
                     ))}
                     <div className="pt-4 flex flex-col space-y-3">
-                        <button className="w-full py-2 border border-[var(--color-gold)] text-gold-gradient rounded-lg">Login</button>
+                        <a href="https://cabinet.radhikafx.com/" target="_blank" rel="noopener noreferrer" className="w-full py-2 border border-[var(--color-gold)] text-gold-gradient rounded-lg text-center block">Login</a>
                         <Link to="/open-live-account" onClick={() => setMobileMenuOpen(false)} className="w-full py-2 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg text-center">Open Live Account</Link>
                     </div>
                 </div>

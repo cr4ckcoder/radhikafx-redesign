@@ -6,7 +6,7 @@ import {
 
 const Achievements = () => {
     return (
-        <div className="pt-20 bg-[var(--color-navy)] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The Hero Section (The Statement) */}
             <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden bg-black text-center px-6">

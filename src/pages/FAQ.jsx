@@ -104,7 +104,7 @@ const FAQ = () => {
     }).filter(category => category.questions.length > 0);
 
     return (
-        <div className="pt-20 bg-[var(--color-navy)] font-[var(--font-body)] min-h-screen">
+        <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)] min-h-screen">
 
             {/* Block 1: The Knowledge Hub Hero */}
             <section className="relative py-20 md:py-32 flex flex-col items-center justify-center text-center px-6 bg-[#02040a] overflow-hidden">

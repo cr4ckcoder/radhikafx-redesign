@@ -12,7 +12,7 @@ const TradingConditions = () => {
     };
 
     return (
-        <div className="bg-[var(--color-navy)] min-h-screen pt-20 font-[var(--font-body)] text-white">
+        <div className="bg-[var(--color-navy)] min-h-screen pt-20 md:pt-40 font-[var(--font-body)] text-white">
 
             {/* 0. Quick Links / Jump To */}
             <div className="bg-[#02040a]/90 backdrop-blur-md border-b border-[var(--glass-border)] sticky top-20 z-40">

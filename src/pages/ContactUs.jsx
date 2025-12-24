@@ -35,7 +35,7 @@ const ContactUs = () => {
     }, []);
 
     return (
-        <div className="pt-20 bg-[#02040a] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[#02040a] font-[var(--font-body)]">
 
             {/* Block 1: The "We’re Here" Hero */}
             <section className="relative py-24 md:py-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden">

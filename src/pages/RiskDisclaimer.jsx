@@ -7,7 +7,7 @@ const RiskDisclaimer = () => {
     };
 
     return (
-        <div className="bg-[#02040a] min-h-screen pt-24 pb-16 font-sans text-gray-300">
+        <div className="bg-[#02040a] min-h-screen pt-24 md:pt-44 pb-16 font-sans text-gray-300">
             <div className="container mx-auto px-6 max-w-4xl">
 
                 {/* Header Actions */}
