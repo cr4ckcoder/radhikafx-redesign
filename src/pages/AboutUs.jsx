@@ -177,22 +177,26 @@ const AboutUs = () => {
                         <p className="text-gray-400">A timeline of trust and growth.</p>
                     </div>
 
-                    <div className="max-w-4xl mx-auto">
-                        <div className="relative border-l-2 border-[rgba(233,219,141,0.2)] ml-4 md:ml-0 md:pl-0 space-y-12">
+                    <div className="max-w-4xl mx-auto relative">
+                        {/* Central Timeline Line */}
+                        <div className="absolute top-0 bottom-0 left-0 md:left-1/2 w-0.5 bg-[rgba(233,219,141,0.2)] ml-4 md:ml-0 md:-translate-x-1/2"></div>
+
+                        <div className="relative ml-4 md:ml-0 space-y-12">
 
                             {/* Item 1 */}
-                            <div className="relative flex flex-col md:flex-row items-center md:items-start group">
-                                <div className="absolute left-[-9px] md:left-1/2 md:-ml-3 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10"></div>
+                            <div className="relative flex flex-col md:flex-row items-center md:items-center group">
+                                <div className="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10 md:-translate-x-1/2"></div>
                                 <div className="md:w-1/2 md:pr-12 md:text-right pl-8 md:pl-0">
                                     <span className="text-[var(--color-gold)] font-bold text-xl">2021</span>
                                     <h3 className="text-2xl font-bold text-[var(--color-white)] mb-2">Foundation</h3>
                                     <p className="text-gray-400">Radhika Capital Markets was founded with a singular vision: to bring true transparency to retail FX trading.</p>
                                 </div>
+                                <div className="hidden md:block md:w-1/2"></div>
                             </div>
 
                             {/* Item 2 */}
-                            <div className="relative flex flex-col md:flex-row items-center md:items-start group">
-                                <div className="absolute left-[-9px] md:left-1/2 md:-ml-3 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10"></div>
+                            <div className="relative flex flex-col md:flex-row items-center md:items-center group">
+                                <div className="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10 md:-translate-x-1/2"></div>
                                 <div className="hidden md:block md:w-1/2"></div>
                                 <div className="md:w-1/2 md:pl-12 pl-8">
                                     <span className="text-[var(--color-gold)] font-bold text-xl">2023</span>
@@ -202,13 +206,16 @@ const AboutUs = () => {
                             </div>
 
                             {/* Item 3 */}
-                            <div className="relative flex flex-col md:flex-row items-center md:items-start group">
-                                <div className="absolute left-[-9px] md:left-1/2 md:-ml-3 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10 animate-ping"></div>
+                            <div className="relative flex flex-col md:flex-row items-center md:items-center group">
+                                <div className="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10 md:-translate-x-1/2 animate-ping"></div>
+                                <div className="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10 md:-translate-x-1/2"></div>
+
                                 <div className="md:w-1/2 md:pr-12 md:text-right pl-8 md:pl-0">
                                     <span className="text-[var(--color-gold)] font-bold text-xl">Today</span>
                                     <h3 className="text-2xl font-bold text-[var(--color-white)] mb-2">Empowering Traders</h3>
                                     <p className="text-gray-400">Serving thousands of traders globally with institutional conditions and seamless execution.</p>
                                 </div>
+                                <div className="hidden md:block md:w-1/2"></div>
                             </div>
                         </div>
                     </div>

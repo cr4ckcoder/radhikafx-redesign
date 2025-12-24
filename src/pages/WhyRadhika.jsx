@@ -134,7 +134,7 @@ const WhyRadhika = () => {
             </section>
 
             {/* Block 2: At a Glance Stats */}
-            <div className="relative z-20 -mt-20 container mx-auto px-6">
+            {/* <div className="relative z-20 -mt-20 container mx-auto px-6">
                 <div className="bg-[rgba(5,12,24,0.8)] backdrop-blur-md border border-[var(--glass-border)] rounded-2xl p-8 shadow-2xl grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-gray-800">
                     {stats.map((stat, index) => (
                         <div key={index} className={`text-center ${index % 2 !== 0 ? 'border-l border-gray-800 md:border-none' : ''}`}>
@@ -143,7 +143,7 @@ const WhyRadhika = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
 
             {/* Block 3: Radhika Advantage Grid */}
             <section className="py-24 bg-[var(--color-navy)]">
