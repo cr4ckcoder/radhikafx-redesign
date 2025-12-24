@@ -24,9 +24,9 @@ const Achievements = () => {
                         <span className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-[0.2em]">Excellence Defined</span>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-8 leading-tight">
+                    <h1 className="text-4xl md:text-6xl font-[var(--font-heading)] font-bold text-white mb-8 leading-tight">
                         Achievements & <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-gold)] to-yellow-200">Industry Recognition</span>
+                        <span className="text-gold-gradient">Industry Recognition</span>
                     </h1>
 
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-light">
@@ -38,36 +38,13 @@ const Achievements = () => {
             {/* Block 2: The Award Showcase (The "Golden Cards") */}
             <section className="py-24 bg-[#050505] relative">
                 <div className="container mx-auto px-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                    <div className="flex flex-wrap justify-center gap-12 max-w-5xl mx-auto">
 
                         {/* Card 1 */}
-                        <div className="bg-[#0a1629]/50 backdrop-blur-sm border border-[rgba(255,215,0,0.1)] rounded-2xl p-8 hover:border-[var(--color-gold)] transition-all duration-500 hover:transform hover:-translate-y-2 group shadow-2xl relative overflow-hidden">
-                            {/* Sash */}
-                            <div className="absolute top-0 right-0 bg-[var(--color-gold)] text-black text-xs font-bold px-4 py-1 rounded-bl-lg z-20">
-                                2025 WINNER
-                            </div>
 
-                            <div className="relative z-10">
-                                <div className="w-24 h-24 bg-gradient-to-br from-[var(--color-gold)] to-yellow-600 rounded-full flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(255,215,0,0.3)] mx-auto group-hover:scale-110 transition-transform duration-500">
-                                    <Trophy size={48} className="text-[#0a1629]" />
-                                </div>
-
-                                <h3 className="text-2xl font-serif font-bold text-white text-center mb-2">Best Retail Forex Broker</h3>
-                                <div className="flex items-center justify-center gap-2 text-[var(--color-gold)] text-sm mb-6">
-                                    <MapPin size={14} /> ProfX Expo MENA, Dubai
-                                </div>
-
-                                <p className="text-gray-400 text-center text-sm leading-relaxed border-t border-gray-800 pt-6">
-                                    We were honored with this prestigious award for our superior performance, transparent conditions, and dedicated customer support that sets the standard for retail trading.
-                                </p>
-                            </div>
-
-                            {/* Background Texture */}
-                            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-gold)] opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none"></div>
-                        </div>
 
                         {/* Card 2 */}
-                        <div className="bg-[#0a1629]/50 backdrop-blur-sm border border-[rgba(255,215,0,0.1)] rounded-2xl p-8 hover:border-[var(--color-gold)] transition-all duration-500 hover:transform hover:-translate-y-2 group shadow-2xl relative overflow-hidden">
+                        <div className="w-full max-w-xl bg-[#0a1629]/50 backdrop-blur-sm border border-[rgba(255,215,0,0.1)] rounded-2xl p-8 hover:border-[var(--color-gold)] transition-all duration-500 hover:transform hover:-translate-y-2 group shadow-2xl relative overflow-hidden">
                             {/* Sash */}
                             <div className="absolute top-0 right-0 bg-[var(--color-gold)] text-black text-xs font-bold px-4 py-1 rounded-bl-lg z-20">
                                 2025 WINNER
@@ -78,7 +55,7 @@ const Achievements = () => {
                                     <Award size={48} className="text-[#0a1629]" />
                                 </div>
 
-                                <h3 className="text-2xl font-serif font-bold text-white text-center mb-2">Best Forex Trading Experience</h3>
+                                <h3 className="text-2xl font-[var(--font-heading)] font-bold text-white text-center mb-2">Best Forex Trading Experience</h3>
                                 <div className="flex items-center justify-center gap-2 text-[var(--color-gold)] text-sm mb-6">
                                     <MapPin size={14} /> Forex Traders Summit, Dubai
                                 </div>
@@ -102,9 +79,9 @@ const Achievements = () => {
                     <p className="text-center text-gray-600 text-xs font-bold uppercase tracking-[0.3em] mb-8">Recognized By</p>
                     <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
                         {/* Placeholder Logos with Text for now */}
-                        <div className="text-2xl font-bold text-white font-serif">Prof<span className="text-[var(--color-gold)]">X</span> Expo</div>
-                        <div className="text-2xl font-bold text-white font-serif">FOREX <span className="text-gray-500">TRADERS</span> SUMMIT</div>
-                        <div className="text-2xl font-bold text-white font-serif"><span className="text-[var(--color-gold)]">MENA</span> FINANCIAL AWARDS</div>
+                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]">Prof<span className="text-[var(--color-gold)]">X</span> Expo</div>
+                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]">FOREX <span className="text-gray-500">TRADERS</span> SUMMIT</div>
+                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]"><span className="text-[var(--color-gold)]">MENA</span> FINANCIAL AWARDS</div>
                     </div>
                 </div>
             </section>
@@ -114,15 +91,15 @@ const Achievements = () => {
                 <div className="container mx-auto px-6 max-w-4xl">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="text-center">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-serif">2<span className="text-[var(--color-gold)]">+</span></div>
+                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">2<span className="text-[var(--color-gold)]">+</span></div>
                             <div className="text-gray-500 text-xs uppercase tracking-widest">Major Awards in 2025</div>
                         </div>
                         <div className="text-center border-l border-r border-gray-800">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-serif">100<span className="text-[var(--color-gold)]">%</span></div>
+                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">100<span className="text-[var(--color-gold)]">%</span></div>
                             <div className="text-gray-500 text-xs uppercase tracking-widest">Commitment to Transparency</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-serif">Global</div>
+                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">Global</div>
                             <div className="text-gray-500 text-xs uppercase tracking-widest">Industry Recognition</div>
                         </div>
                     </div>
@@ -134,7 +111,7 @@ const Achievements = () => {
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto rounded-3xl p-1 bg-gradient-to-r from-[#b8860b] via-[var(--color-gold)] to-[#b8860b]">
                         <div className="bg-[#050505] rounded-[22px] px-8 py-16 text-center">
-                            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
+                            <h2 className="text-3xl md:text-5xl font-[var(--font-heading)] font-bold text-white mb-6">
                                 Trade with an Award-Winning Broker.
                             </h2>
                             <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">

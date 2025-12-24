@@ -23,7 +23,7 @@ const IBProgramme = () => {
                         <span className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-[0.2em]">Official Partnership</span>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+                    <h1 className="text-4xl md:text-6xl font-[var(--font-heading)] font-bold text-white mb-6 leading-tight">
                         Grow Your Business with a <br />
                         <span className="text-[var(--color-gold)]">Global Trading Leader.</span>
                     </h1>
@@ -45,7 +45,7 @@ const IBProgramme = () => {
             <section className="py-24 bg-[#050505] relative border-b border-gray-900">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Flexible Earning Output</h2>
+                        <h2 className="text-3xl md:text-4xl font-[var(--font-heading)] font-bold text-white mb-4">Flexible Earning Output</h2>
                         <p className="text-gray-400">Choose a model that fits your business strategy.</p>
                     </div>
 
@@ -135,7 +135,7 @@ const IBProgramme = () => {
             <section className="py-24 bg-[#050505] border-y border-gray-900">
                 <div className="container mx-auto px-6 max-w-5xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl font-serif font-bold text-white">How It Works</h2>
+                        <h2 className="text-3xl font-[var(--font-heading)] font-bold text-white">How It Works</h2>
                     </div>
 
                     <div className="flex flex-col md:flex-row justify-between items-center relative">
@@ -166,7 +166,7 @@ const IBProgramme = () => {
 
                         {/* Left Side: Text */}
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                            <h2 className="text-4xl md:text-5xl font-[var(--font-heading)] font-bold text-white mb-6">
                                 Start Your Partnership Journey.
                             </h2>
                             <p className="text-gray-400 text-lg mb-8">

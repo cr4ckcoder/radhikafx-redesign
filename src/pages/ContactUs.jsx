@@ -52,7 +52,7 @@ const ContactUs = () => {
                         <span className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest">Support Active 24/7</span>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+                    <h1 className="text-4xl md:text-6xl font-[var(--font-heading)] font-bold text-white mb-6 leading-tight">
                         How Can We Help You Today?
                     </h1>
 

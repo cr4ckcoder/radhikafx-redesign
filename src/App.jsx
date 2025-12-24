@@ -35,7 +35,8 @@ import RiskWarning from './pages/RiskWarning';
 import OpenLiveAccount from './pages/OpenLiveAccount';
 import OpenDemoAccount from './pages/OpenDemoAccount';
 import LiquidityServices from './pages/partnerships/LiquidityServices';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+
 
 // Scroll to top on route change
 const ScrollToTop = () => {

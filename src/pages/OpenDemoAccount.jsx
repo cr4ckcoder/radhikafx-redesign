@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const OpenLiveAccount = () => {
+const OpenDemoAccount = () => {
     // Steps: 1 = Account Setup, 2 = Trading Prefs, 3 = Verification
     const [step, setStep] = useState(1);
     const [view, setView] = useState('WIZARD'); // 'WIZARD', 'OTP', 'SUCCESS'
@@ -184,7 +184,7 @@ const OpenLiveAccount = () => {
                     <div className="w-24 h-24 bg-[var(--color-gold)]/10 rounded-full flex items-center justify-center mx-auto mb-8 text-[var(--color-gold)]">
                         <CheckCircle size={48} />
                     </div>
-                    <h1 className="text-3xl font-serif font-bold text-white mb-4">Application Submitted!</h1>
+                    <h1 className="text-3xl font-[var(--font-heading)] font-bold text-white mb-4">Application Submitted!</h1>
                     <p className="text-gray-400 mb-8 text-lg">
                         Welcome to Radhika Capital Markets. Your live account application has been received.
                         Please check your email <strong>{formData.email}</strong> for login credentials and next steps.
@@ -202,7 +202,7 @@ const OpenLiveAccount = () => {
             {/* Block 1: The "Low-Friction" Hero */}
             <section className="bg-gradient-to-b from-[#050A14] to-[#02040a] py-16 border-b border-gray-900">
                 <div className="container mx-auto px-6 text-center">
-                    <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
+                    <h1 className="text-4xl md:text-5xl font-[var(--font-heading)] font-bold text-white mb-4">
                         Start Your Trading Journey <span className="text-gold-gradient">in 3 Simple Steps</span>
                     </h1>
                     <p className="text-xl text-gray-400 mb-6">Join thousands of traders globally. Registration takes less than 2 minutes.</p>
@@ -436,4 +436,4 @@ const OpenLiveAccount = () => {
     );
 };
 
-export default OpenLiveAccount;
+export default OpenDemoAccount;

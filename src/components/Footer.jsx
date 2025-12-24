@@ -1,7 +1,8 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin, Send, Mail, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Send, Mail, MapPin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.png';
+import { useRef } from 'react';
 
 const Footer = () => {
     return (
@@ -21,7 +22,7 @@ const Footer = () => {
             </div>
 
             {/* Main Footer Links */}
-            <div className="bg-[#0b0f19] pt-20 md:pt-40 pb-10 border-t border-gray-800 text-gray-400">
+            <div className="bg-[#0b0f19] pt-20 pb-20 md:pt-40 pb-10 border-t border-gray-800 text-gray-400">
                 {/* Main Footer Content */}
                 <div className="container mx-auto px-6 py-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -47,8 +48,19 @@ const Footer = () => {
                             </div>
 
                             <div className="flex space-x-4">
-                                {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-                                    <a key={i} href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold-gradient hover:text-[var(--color-navy)] transition-colors">
+                                {[
+                                    { Icon: Twitter, link: "https://x.com/radhikafx" },
+                                    { Icon: Instagram, link: "https://www.instagram.com/radhika_fx" },
+                                    { Icon: Linkedin, link: "https://www.linkedin.com/company/radhikafx09" },
+                                    { Icon: Youtube, link: "https://www.youtube.com/@radhikafxcapitals" }
+                                ].map(({ Icon, link }, i) => (
+                                    <a
+                                        key={i}
+                                        href={link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold-gradient hover:text-[var(--color-navy)] transition-colors"
+                                    >
                                         <Icon size={20} />
                                     </a>
                                 ))}
@@ -91,7 +103,7 @@ const Footer = () => {
                     </div>
 
                     {/* Disclaimer & Risk Warning (High Contrast) */}
-                    <div className="pt-8 border-t border-gray-800">
+                    <div className="mt-8 pt-8 border-t border-gray-800">
                         <div className="bg-[#1a202c] p-6 rounded-lg border border-gray-700 mb-8">
                             <h5 className="text-white font-bold text-sm mb-2 uppercase tracking-wide">Risk Warning</h5>
                             <p className="text-xs text-gray-300 leading-relaxed text-justify">

@@ -4,6 +4,8 @@ import {
     Layers, Zap, BarChart2, Check, Download, MousePointer,
     HelpCircle, ChevronDown, ChevronUp, Cpu
 } from 'lucide-react';
+import MT5Logo from '../../assets/mt5logo.svg';
+import MT5Badge from '../../assets/MT5Badge.svg';
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
     return (
@@ -65,9 +67,6 @@ const MT5 = () => {
 
                 <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
-                            MetaTrader 5
-                        </div>
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
                             One Platform. <br /><span className="text-[var(--color-gold)]">Infinite Possibilities.</span>
                         </h1>
@@ -129,12 +128,16 @@ const MT5 = () => {
                                 </div>
                             </div>
                         </div>
+                        {/* MT5 Badge overlapping the mockup */}
+                        <div className="absolute -bottom-10 -right-10 z-20 animate-fade-in-up">
+                            <img src={MT5Badge} alt="MetaTrader 5 Badge" className="w-48 h-auto shadow-2xl rounded-xl" />
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* Block 2: The "MT5 vs MT4" Edge */}
-            <section className="py-24 bg-[var(--color-navy)]">
+            < section className="py-24 bg-[var(--color-navy)]" >
                 <div className="container mx-auto px-6 max-w-5xl">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-white mb-4">Why Upgrade to MT5?</h2>
@@ -190,10 +193,10 @@ const MT5 = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Block 3: The Multi-Device Ecosystem */}
-            <section className="py-24 bg-[var(--color-dark)] relative overflow-hidden">
+            < section className="py-24 bg-[var(--color-dark)] relative overflow-hidden" >
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">Trade Anywhere, Anytime</h2>
@@ -301,34 +304,28 @@ const MT5 = () => {
                         )}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Block 4: Feature Spotlight (The "Pro" Tools) */}
-            <section className="py-24 bg-[var(--color-navy)]">
-                <div className="container mx-auto px-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div className="group text-center p-6 border border-[rgba(255,255,255,0.05)] rounded-2xl hover:border-[var(--color-gold)] transition-colors">
-                            <div className="w-16 h-16 mx-auto bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 mb-6 group-hover:bg-[var(--color-gold)] group-hover:text-black transition-colors">
-                                <Layers size={28} />
-                            </div>
-                            <h3 className="text-xl font-bold text-white mb-3">Depth of Market</h3>
-                            <p className="text-gray-400 text-sm">See market liquidity (Level II) in real-time to gauge supply & demand.</p>
-                        </div>
-                        <div className="group text-center p-6 border border-[rgba(255,255,255,0.05)] rounded-2xl hover:border-[var(--color-gold)] transition-colors">
+            < section className="py-24 bg-[var(--color-navy)]" >
+                <div className="container mx-auto px-6 ">
+                    <div className="flex flex-wrap justify-center gap-8">
+
+                        <div className="group text-center p-6 border border-[rgba(255,255,255,0.05)] rounded-2xl hover:border-[var(--color-gold)] transition-colors w-full max-w-sm">
                             <div className="w-16 h-16 mx-auto bg-purple-500/10 rounded-full flex items-center justify-center text-purple-400 mb-6 group-hover:bg-[var(--color-gold)] group-hover:text-black transition-colors">
                                 <Code size={28} />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-3">Algorithmic Trading</h3>
                             <p className="text-gray-400 text-sm">Deploy your bots (EAs) with 100% compatibility for the MQL5 language.</p>
                         </div>
-                        <div className="group text-center p-6 border border-[rgba(255,255,255,0.05)] rounded-2xl hover:border-[var(--color-gold)] transition-colors">
+                        <div className="group text-center p-6 border border-[rgba(255,255,255,0.05)] rounded-2xl hover:border-[var(--color-gold)] transition-colors w-full max-w-sm">
                             <div className="w-16 h-16 mx-auto bg-yellow-500/10 rounded-full flex items-center justify-center text-yellow-400 mb-6 group-hover:bg-[var(--color-gold)] group-hover:text-black transition-colors">
                                 <MousePointer size={28} />
                             </div>
                             <h3 className="text-xl font-bold text-white mb-3">One-Click Trading</h3>
                             <p className="text-gray-400 text-sm">Enter and exit positions in milliseconds directly from the chart.</p>
                         </div>
-                        <div className="group text-center p-6 border border-[rgba(255,255,255,0.05)] rounded-2xl hover:border-[var(--color-gold)] transition-colors">
+                        <div className="group text-center p-6 border border-[rgba(255,255,255,0.05)] rounded-2xl hover:border-[var(--color-gold)] transition-colors w-full max-w-sm">
                             <div className="w-16 h-16 mx-auto bg-green-500/10 rounded-full flex items-center justify-center text-green-400 mb-6 group-hover:bg-[var(--color-gold)] group-hover:text-black transition-colors">
                                 <BarChart2 size={28} />
                             </div>
@@ -337,10 +334,10 @@ const MT5 = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Block 4.5: Download Links (Added per user request) */}
-            <section className="py-20 bg-black border-y border-[rgba(255,255,255,0.1)]">
+            < section className="py-20 bg-black border-y border-[rgba(255,255,255,0.1)]" >
                 <div className="container mx-auto px-6 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-[var(--font-heading)]">
                         Start Trading with Radhika Capital Markets MT5
@@ -381,10 +378,10 @@ const MT5 = () => {
                         </a>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Block 5: The "3-Step Setup" */}
-            <section className="py-24 bg-[var(--color-dark)] border-t border-[rgba(255,255,255,0.05)]">
+            < section className="py-24 bg-[var(--color-dark)] border-t border-[rgba(255,255,255,0.05)]" >
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-white">Start Trading in Minutes</h2>
@@ -411,10 +408,10 @@ const MT5 = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Block 6: The "Support & FAQ" Accordion */}
-            <section className="py-24 bg-[var(--color-navy)]">
+            < section className="py-24 bg-[var(--color-navy)]" >
                 <div className="container mx-auto px-6 max-w-4xl">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center space-x-2 text-[var(--color-gold)] mb-4 font-bold uppercase tracking-widest text-sm">
@@ -442,8 +439,8 @@ const MT5 = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 };
 

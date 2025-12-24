@@ -185,7 +185,7 @@ const WhyRadhika = () => {
                     </div>
 
                     <div className="overflow-x-auto">
-                        <div className="min-w-[800px] grid grid-cols-4 gap-4">
+                        <div className="min-w-[800px] grid grid-cols-4 gap-4 pt-6">
                             {/* Headers */}
                             <div className="col-span-1"></div>
                             <div className="p-6 text-center text-xl font-bold text-[var(--color-white)]">Standard</div>
