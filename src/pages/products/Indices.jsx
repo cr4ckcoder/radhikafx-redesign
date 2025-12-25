@@ -4,6 +4,7 @@ import {
     Smartphone, Zap, ArrowRight, BarChart, ArrowUpRight, ArrowDownRight, Activity
 } from 'lucide-react';
 import TradingViewTicker from '../../components/TradingViewTicker';
+import IndicesBg from '../../assets/indices.jpg';
 
 const IndexCard = ({ name, code, country, spread, isPositive }) => (
     <div className="bg-[rgba(255,255,255,0.03)] border border-[var(--glass-border)] p-6 rounded-2xl hover:border-[var(--color-gold)] transition-colors group">
@@ -49,11 +50,8 @@ const Indices = () => {
 
             {/* Block 1: The Hero Section (Global Impact) */}
             <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#02040a]">
-                {/* Abstract Digital Globe Background */}
-                <div className="absolute inset-0 opacity-30">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:20px_20px] rounded-full border border-[rgba(255,255,255,0.05)] animate-spin-slow"></div>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-[rgba(233,219,141,0.1)] rounded-full animate-ping-slow"></div>
-                </div>
+                <div className="absolute inset-0 bg-cover bg-center opacity-40 filter grayscale" style={{ backgroundImage: `url(${IndicesBg})` }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                 <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>

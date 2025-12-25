@@ -74,7 +74,7 @@ const TradingCalculators = () => {
                         {/* Calculator 1: Pip Value */}
                         <div className="bg-[var(--color-navy)] rounded-xl border border-[var(--glass-border)] p-2 shadow-lg hover:shadow-2xl transition-all">
                             <div className="p-6 pb-2 border-b border-[var(--glass-border)] flex items-center justify-between">
-                                <h3 className="text-xl font-bold text-white flex items-center gap-2"><Calculator size={20} className="text-[var(--color-gold)]" /> Pip Value Calculator</h3>
+                                <h3 className="text-xl font-bold text-white flex items-center gap-2"><Calculator size={20} className="stroke-gold-gradient" /> Pip Value Calculator</h3>
                                 <div className="text-xs text-gray-500 font-mono">ID: PIP-01</div>
                             </div>
                             <div className="p-4">
@@ -90,7 +90,7 @@ const TradingCalculators = () => {
                                 Essential
                             </div>
                             <div className="p-6 pb-2 border-b border-[var(--glass-border)] flex items-center justify-between">
-                                <h3 className="text-xl font-bold text-white flex items-center gap-2"><PieChart size={20} className="text-[var(--color-gold)]" /> Margin Calculator</h3>
+                                <h3 className="text-xl font-bold text-white flex items-center gap-2"><PieChart size={20} className="stroke-gold-gradient" /> Margin Calculator</h3>
                                 <div className="text-xs text-gray-500 font-mono">ID: MRG-02</div>
                             </div>
                             <div className="p-4">
@@ -102,7 +102,7 @@ const TradingCalculators = () => {
                         {/* Calculator 3: Profit */}
                         <div className="bg-[var(--color-navy)] rounded-xl border border-[var(--glass-border)] p-2 shadow-lg hover:shadow-2xl transition-all">
                             <div className="p-6 pb-2 border-b border-[var(--glass-border)] flex items-center justify-between">
-                                <h3 className="text-xl font-bold text-white flex items-center gap-2"><TrendingUp size={20} className="text-[var(--color-gold)]" /> Profit Calculator</h3>
+                                <h3 className="text-xl font-bold text-white flex items-center gap-2"><TrendingUp size={20} className="stroke-gold-gradient" /> Profit Calculator</h3>
                                 <div className="text-xs text-gray-500 font-mono">ID: PRF-03</div>
                             </div>
                             <div className="p-4">
@@ -183,7 +183,7 @@ const TradingCalculators = () => {
                         <div className="bg-gradient-to-br from-[var(--color-navy)] to-[#0a1629] rounded-2xl p-8 border border-[var(--glass-border)] flex flex-col justify-center relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-[50px]"></div>
 
-                            <Shield className="text-[var(--color-gold)] mb-6 relative z-10" size={48} />
+                            <Shield className="stroke-gold-gradient mb-6 relative z-10" size={48} />
 
                             <h3 className="text-2xl font-bold text-white mb-4 relative z-10">Pro Tip: Smart Risk Sizing</h3>
                             <p className="text-gray-300 mb-6 leading-relaxed relative z-10">

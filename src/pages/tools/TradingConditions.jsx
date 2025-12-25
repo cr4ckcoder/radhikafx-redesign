@@ -262,7 +262,7 @@ const TradingConditions = () => {
                         <div className="bg-[#02040a] rounded-2xl p-10 text-white relative overflow-hidden border border-[var(--glass-border)]">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-gold)] rounded-full filter blur-[100px] opacity-10"></div>
                             <div className="relative z-10">
-                                <Shield className="text-[var(--color-gold)] mb-6" size={48} />
+                                <Shield className="stroke-gold-gradient mb-6" size={48} />
                                 <h3 className="text-2xl font-bold mb-4">Execution & Requote Policy</h3>
                                 <p className="text-gray-400 mb-6 leading-relaxed">
                                     We operate a strictly <strong>No Requote</strong> policy. Our ultra-low latency environment (avg. &lt;30ms) ensures that the price you see is the price you get.

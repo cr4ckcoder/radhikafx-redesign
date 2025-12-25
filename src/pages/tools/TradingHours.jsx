@@ -69,7 +69,7 @@ const TradingHours = () => {
             <section className="py-20 bg-[#02040a] border-b border-[var(--glass-border)]">
                 <div className="container mx-auto px-6">
                     <h2 className="text-2xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
-                        <MapPin className="text-[var(--color-gold)]" /> Market Sessions Overview (GMT+3)
+                        <MapPin className="stroke-gold-gradient" /> Market Sessions Overview (GMT+3)
                     </h2>
 
                     {/* Visual Timeline Bar */}
@@ -224,7 +224,7 @@ const TradingHours = () => {
                     {/* Holiday Bulletin */}
                     <div>
                         <div className="flex items-center gap-3 mb-6">
-                            <Calendar className="text-[var(--color-gold)]" size={24} />
+                            <Calendar className="stroke-gold-gradient" size={24} />
                             <h2 className="text-2xl font-bold text-white">Upcoming Market Adjustments</h2>
                         </div>
                         <div className="bg-[var(--color-navy)] rounded-xl border border-[var(--glass-border)] p-6">

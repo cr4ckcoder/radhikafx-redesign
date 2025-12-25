@@ -235,7 +235,7 @@ const TermsAndConditions = () => {
 
                     {/* Block 4: The Regulatory Signature */}
                     <div className="mt-16 p-8 border-2 border-gray-800 rounded-lg bg-[#0a1629] flex items-start gap-4">
-                        <Shield className="text-[var(--color-gold)] flex-shrink-0" size={32} />
+                        <Shield className="stroke-gold-gradient flex-shrink-0" size={32} />
                         <div>
                             <h4 className="font-bold text-white mb-1">Regulatory Information</h4>
                             <p className="text-gray-400">

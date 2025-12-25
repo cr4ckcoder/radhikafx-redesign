@@ -37,7 +37,7 @@ const RiskDisclaimer = () => {
                             </p>
                         </div>
                         <div className="flex items-center gap-2 bg-[#0a1629] px-4 py-2 rounded-lg border border-gray-800">
-                            <ShieldCheck className="text-[var(--color-gold)]" size={24} />
+                            <ShieldCheck className="stroke-gold-gradient" size={24} />
                             <div className="text-xs">
                                 <p className="font-bold text-white">FSC Regulated</p>
                                 <p className="text-gray-400">Licence No. GB25204826</p>

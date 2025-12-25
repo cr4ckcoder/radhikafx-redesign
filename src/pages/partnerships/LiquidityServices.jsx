@@ -39,15 +39,15 @@ const LiquidityServices = () => {
 
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
                         <div className="flex flex-col items-center gap-2">
-                            <Server size={32} className="text-[var(--color-gold)]" />
+                            <Server size={32} className="stroke-gold-gradient" />
                             <span className="font-mono text-xs text-gray-400 uppercase">Equinix NY4</span>
                         </div>
                         <div className="flex flex-col items-center gap-2">
-                            <Server size={32} className="text-[var(--color-gold)]" />
+                            <Server size={32} className="stroke-gold-gradient" />
                             <span className="font-mono text-xs text-gray-400 uppercase">Equinix LD4</span>
                         </div>
                         <div className="flex flex-col items-center gap-2">
-                            <Server size={32} className="text-[var(--color-gold)]" />
+                            <Server size={32} className="stroke-gold-gradient" />
                             <span className="font-mono text-xs text-gray-400 uppercase">Equinix TY3</span>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const LiquidityServices = () => {
             {/* Block 2: The Multi-Asset Ecosystem */}
             <section className="py-24 border-b border-[#334155] bg-[#050c18] relative">
                 <div className="absolute top-0 right-0 p-4 opacity-20">
-                    <Hexagon size={120} className="text-[var(--color-gold)] stroke-[0.5]" />
+                    <Hexagon size={120} className="stroke-gold-gradient stroke-[0.5]" />
                 </div>
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold mb-12 uppercase tracking-wider flex items-center gap-4">
@@ -74,7 +74,7 @@ const LiquidityServices = () => {
                             { icon: Cpu, title: "Crypto", desc: "Deep Liquidity. USDT-Settled Assets." }
                         ].map((item, i) => (
                             <div key={i} className="bg-[#02050a] p-8 group hover:bg-[#0a1629] transition-colors relative">
-                                <item.icon size={40} className="text-[#334155] mb-6 group-hover:text-[var(--color-gold)] transition-colors" />
+                                <item.icon size={40} className="text-[#334155] mb-6 group-hover-stroke-gold-gradient transition-colors" />
                                 <h3 className="text-xl font-bold text-white mb-2 font-mono uppercase">{item.title}</h3>
                                 <p className="text-sm text-gray-400 leading-relaxed rounded-none">{item.desc}</p>
                                 <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -104,7 +104,7 @@ const LiquidityServices = () => {
                         {/* 1 */}
                         <div className="border border-[#334155] p-8 relative">
                             <div className="absolute -top-4 -left-4 bg-[#02050a] p-2 border border-[#334155]">
-                                <Terminal size={32} className="text-[var(--color-gold)]" />
+                                <Terminal size={32} className="stroke-gold-gradient" />
                             </div>
                             <h3 className="text-2xl font-bold mb-4 mt-4 font-mono">FIX API 4.4</h3>
                             <p className="text-gray-400 text-sm leading-7">
@@ -115,7 +115,7 @@ const LiquidityServices = () => {
                         {/* 2 */}
                         <div className="border border-[#334155] p-8 relative bg-[rgba(185,156,0,0.02)]">
                             <div className="absolute -top-4 -left-4 bg-[#02050a] p-2 border border-[#334155]">
-                                <Database size={32} className="text-[var(--color-gold)]" />
+                                <Database size={32} className="stroke-gold-gradient" />
                             </div>
                             <h3 className="text-2xl font-bold mb-4 mt-4 font-mono">Aggregated Pricing</h3>
                             <p className="text-gray-400 text-sm leading-7">
@@ -126,7 +126,7 @@ const LiquidityServices = () => {
                         {/* 3 */}
                         <div className="border border-[#334155] p-8 relative">
                             <div className="absolute -top-4 -left-4 bg-[#02050a] p-2 border border-[#334155]">
-                                <Activity size={32} className="text-[var(--color-gold)]" />
+                                <Activity size={32} className="stroke-gold-gradient" />
                             </div>
                             <h3 className="text-2xl font-bold mb-4 mt-4 font-mono">Cross-Margining</h3>
                             <p className="text-gray-400 text-sm leading-7">
@@ -210,7 +210,7 @@ const LiquidityServices = () => {
                             <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[var(--color-gold)]"></div>
                             <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[var(--color-gold)]"></div>
 
-                            <Anchor size={48} className="mx-auto text-[var(--color-gold)] mb-6" />
+                            <Anchor size={48} className="mx-auto stroke-gold-gradient mb-6" />
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-[var(--font-heading)] uppercase">
                                 Upgrade Your <span className="text-gold-gradient">Liquidity Today</span>
                             </h2>

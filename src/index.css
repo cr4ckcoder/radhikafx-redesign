@@ -5,7 +5,7 @@
   /* Brand Colors */
   --color-navy: #02050a;
   /* Updated logic: Deep Navy/Black */
-  --color-gold: #B99C00;
+  --color-gold: #C6A347;
   --color-white: #ffffff;
   --color-dark: #02040a;
   --color-black: #000000;
@@ -22,6 +22,9 @@
       #8f6b29 100%
       /* Dark Bronze Finish */
     );
+
+  --gradient-gold-hover: linear-gradient(to right, linear-gradient(273deg, #DFA00D 0%, #794107 100%));
+
 
   /* Fonts */
   --font-heading: 'Google Sans', sans-serif;
@@ -57,7 +60,14 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  background-clip: text;
   color: transparent;
+}
+
+.stroke-gold-gradient {
+  stroke: url(#gold-gradient) !important;
+  /* Overrides currentColor */
+  stroke-width: 2px;
 }
 
 /* Utility for gold gradient background (borders/buttons) */

@@ -35,6 +35,7 @@ import RiskWarning from './pages/RiskWarning';
 import OpenLiveAccount from './pages/OpenLiveAccount';
 import OpenDemoAccount from './pages/OpenDemoAccount';
 import LiquidityServices from './pages/partnerships/LiquidityServices';
+import GoldGradientDefs from './components/GoldGradientDefs';
 import { useEffect, useRef } from 'react';
 
 
@@ -53,6 +54,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <GoldGradientDefs />
       <div className="app-container min-h-screen flex flex-col">
         <Header />
         <main className="flex-grow">

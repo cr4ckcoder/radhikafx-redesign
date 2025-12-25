@@ -3,6 +3,7 @@ import {
     Shield, Lock, FileCheck, ExternalLink,
     Scale, Building
 } from 'lucide-react';
+import RegulationsBg from '../assets/regulations.jpg';
 
 const Regulations = () => {
     return (
@@ -10,7 +11,8 @@ const Regulations = () => {
 
             {/* Block 1: The Authority Hero */}
             <section className="relative py-24 md:py-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-[#02040a]">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,215,0,0.05)_0%,rgba(0,0,0,0)_70%)]"></div>
+                <div className="absolute inset-0 bg-cover bg-center opacity-40 filter grayscale" style={{ backgroundImage: `url(${RegulationsBg})` }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                 <div className="relative z-10 max-w-4xl mx-auto">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#0a1629] border border-gray-700 rounded-full mb-8 shadow-sm">

@@ -38,11 +38,11 @@ const Footer = () => {
 
                             <div className="space-y-4 text-sm mb-8">
                                 <div className="flex items-start gap-3">
-                                    <MapPin size={18} className="text-[var(--color-gold)] flex-shrink-0 mt-1" />
+                                    <MapPin size={18} className="stroke-gold-gradient flex-shrink-0 mt-1" />
                                     <span>Dubai, UAE.</span>
                                 </div>
                                 <div className="flex items-start gap-4 text-sm hover:text-[var(--color-gold)] transition-colors">
-                                    <Mail size={18} className="text-[var(--color-gold)] flex-shrink-0 mt-1" />
+                                    <Mail size={18} className="stroke-gold-gradient flex-shrink-0 mt-1" />
                                     <a href="mailto:support@radhikafx.com" className="hover:text-white transition-colors">support@radhikafx.com</a>
                                 </div>
                             </div>

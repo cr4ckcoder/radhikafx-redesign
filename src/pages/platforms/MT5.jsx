@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import MT5Logo from '../../assets/mt5logo.svg';
 import MT5Badge from '../../assets/MT5Badge.svg';
+import PlatformBg from '../../assets/platform.jpg';
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
     return (
@@ -62,8 +63,8 @@ const MT5 = () => {
 
             {/* Block 1: The "Command Center" Hero */}
             <section className="relative min-h-[700px] flex items-center justify-center overflow-hidden bg-[#02040a]">
-                {/* 3D Background Effect */}
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-[#02040a] to-[#02040a]"></div>
+                <div className="absolute inset-0 bg-cover bg-center opacity-40 filter grayscale" style={{ backgroundImage: `url(${PlatformBg})` }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                 <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>

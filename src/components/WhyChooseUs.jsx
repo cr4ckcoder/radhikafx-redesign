@@ -13,8 +13,8 @@ const FeatureCard = ({ icon: Icon, title, description, hoverStat, size = 'defaul
 
             <div className="relative z-10 h-full flex flex-col justify-between">
                 <div>
-                    <div className="w-12 h-12 mb-6 rounded-lg bg-[rgba(14,35,78,0.5)] flex items-center justify-center text-[var(--color-gold)] group-hover:scale-110 transition-transform">
-                        <Icon size={24} />
+                    <div className="w-12 h-12 mb-6 rounded-lg bg-[rgba(14,35,78,0.5)] flex items-center justify-center text-[var(--color-navy)] group-hover:scale-110 transition-transform">
+                        <Icon size={24} className="stroke-gold-gradient" />
                     </div>
                     <h3 className="text-2xl font-bold text-[var(--color-white)] mb-3">{title}</h3>
                     <p className="text-gray-400 leading-relaxed mb-6 group-hover:text-gray-300 transition-colors">{description}</p>

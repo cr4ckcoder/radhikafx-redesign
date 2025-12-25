@@ -5,6 +5,7 @@ import {
     MessageCircle, Wallet, TrendingUp, Activity
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import WhyChooseUsBg from '../assets/whychooseus.jpg';
 
 const FAQItem = ({ question, answer, isOpen, toggle }) => {
     return (
@@ -17,7 +18,7 @@ const FAQItem = ({ question, answer, isOpen, toggle }) => {
                     {question}
                 </span>
                 {isOpen ? (
-                    <ChevronUp className="text-[var(--color-gold)]" />
+                    <ChevronUp className="stroke-gold-gradient" />
                 ) : (
                     <ChevronDown className="text-gray-500 group-hover:text-white" />
                 )}
@@ -106,7 +107,7 @@ const WhyRadhika = () => {
                 {/* Background Animation (Heatmap/Trading feel) */}
                 <div className="absolute inset-0 bg-[#02040a]">
                     {/* Background Image Overlay */}
-                    <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1614850523060-8da1d56e37ad?q=80&w=2070&auto=format&fit=crop')" }}></div>
+                    <div className="absolute inset-0 bg-cover bg-center opacity-40 filter grayscale" style={{ backgroundImage: `url(${WhyChooseUsBg})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                     <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(233,219,141,0.05)_0%,rgba(5,12,24,0)_50%)] animate-pulse"></div>
@@ -227,7 +228,7 @@ const WhyRadhika = () => {
                 {/* Left Side: Traders */}
                 <div className="md:w-1/2 p-12 md:p-20 bg-[#050c18] flex flex-col justify-center relative border-r border-[rgba(255,255,255,0.05)]">
                     <div className="absolute top-0 left-0 w-full h-1 bg-[var(--color-gold)]"></div>
-                    <Users size={48} className="text-[var(--color-gold)] mb-8" />
+                    <Users size={48} className="stroke-gold-gradient mb-8" />
                     <h3 className="text-4xl font-bold text-[var(--color-white)] mb-6">For Traders</h3>
                     <p className="text-xl text-gray-400 mb-8 leading-relaxed">
                         Access world-class markets with conditions built to help you win. Scalping, hedging, and high-frequency trading allowed.
