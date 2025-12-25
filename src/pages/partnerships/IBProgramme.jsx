@@ -11,8 +11,9 @@ const IBProgramme = () => {
             {/* Block 1: The Partnership Hero */}
             <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#02040a]">
                 {/* Background Image Overlay */}
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop')] bg-cover bg-center opacity-10 blur-sm"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#02040a] via-[#02040a]/90 to-[#02040a]/70"></div>
+                <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2070&auto=format&fit=crop')" }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+
 
                 {/* Gold Glow */}
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[var(--color-gold)]/5 to-transparent pointer-events-none"></div>

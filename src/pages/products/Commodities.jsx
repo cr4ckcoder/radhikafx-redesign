@@ -53,11 +53,11 @@ const Commodities = () => {
                 <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
                     {/* Left: Content */}
                     <div>
-                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
+                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-gold-gradient text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
                             Commodities Trading
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
-                            Trade Global Resources with <span className="text-[var(--color-gold)]">Institutional Spreads</span>
+                            Trade Global Resources with <span className="text-gold-gradient">Institutional Spreads</span>
                         </h1>
                         <p className="text-xl text-gray-400 mb-8 leading-relaxed max-w-xl">
                             From Energy to Agriculture—capitalize on global price movements with up to 1:20 leverage and lightning-fast execution on MT5.
@@ -166,7 +166,7 @@ const Commodities = () => {
                             <h2 className="text-3xl font-bold text-white mb-2">Trade Essentials</h2>
                             <p className="text-gray-400">Energies, Metals, and Agriculture.</p>
                         </div>
-                        <button className="text-[var(--color-gold)] font-bold hover:text-white transition-colors hidden md:block">
+                        <button className="text-gold-gradient font-bold hover:text-white transition-colors hidden md:block">
                             View All Commodities →
                         </button>
                     </div>
@@ -214,7 +214,7 @@ const Commodities = () => {
                         </div>
 
                         <div className="md:w-1/2 relative z-10 order-1 md:order-2">
-                            <div className="inline-flex items-center space-x-2 text-[var(--color-gold)] mb-6 font-bold uppercase tracking-widest text-sm">
+                            <div className="inline-flex items-center space-x-2 text-gold-gradient mb-6 font-bold uppercase tracking-widest text-sm">
                                 <BarChart3 size={18} />
                                 <span>The Inventory Edge</span>
                             </div>
@@ -244,7 +244,7 @@ const Commodities = () => {
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                         From the oil fields of Texas to the gold mines of South Africa, trade the raw materials that power the global economy.
                     </p>
-                    <div className="text-[var(--color-gold)] font-bold text-lg tracking-widest border border-[var(--color-gold)] px-6 py-2 inline-block rounded-full">
+                    <div className="text-gold-gradient font-bold text-lg tracking-widest border border-[var(--color-gold)] px-6 py-2 inline-block rounded-full">
                         Trade Commodities
                     </div>
                 </div>

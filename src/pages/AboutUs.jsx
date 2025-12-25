@@ -41,6 +41,10 @@ const AboutUs = () => {
             {/* Block 1: The Identity Hero */}
             <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 bg-[#02040a]">
+                    {/* Background Image Overlay */}
+                    <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2070&auto=format&fit=crop')" }}></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+
                     {/* World Map / Ticker placeholder Visual */}
                     <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#e9db8d_1px,transparent_1px)] [background-size:40px_40px]"></div>
                     <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[var(--color-gold)] opacity-5 rounded-full filter blur-[150px] animate-pulse"></div>
@@ -49,7 +53,7 @@ const AboutUs = () => {
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <h1 className="text-4xl md:text-7xl font-bold font-[var(--font-heading)] text-[var(--color-white)] mb-8 leading-tight">
                         The Bridge Between <br />
-                        <span className="text-[var(--color-gold)]">Your Ambition</span> and <br />
+                        <span className="text-gold-gradient">Your Ambition</span> and <br />
                         Global Markets
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
@@ -72,13 +76,13 @@ const AboutUs = () => {
                 </div>
                 <div className="md:w-1/2 p-12 md:p-24 flex flex-col justify-center bg-[var(--color-navy)] text-white">
                     <div className="mb-12">
-                        <h2 className="text-3xl font-bold text-[var(--color-gold)] mb-4">Our Mission</h2>
+                        <h2 className="text-3xl font-bold text-gold-gradient mb-4">Our Mission</h2>
                         <p className="text-xl text-gray-300 leading-relaxed">
                             "To democratize institutional-grade trading tools for retail investors worldwide."
                         </p>
                     </div>
                     <div>
-                        <h2 className="text-3xl font-bold text-[var(--color-gold)] mb-4">Our Vision</h2>
+                        <h2 className="text-3xl font-bold text-gold-gradient mb-4">Our Vision</h2>
                         <p className="text-xl text-gray-300 leading-relaxed">
                             "Becoming the most transparent financial partner by eliminating the barriers of high costs and slow execution."
                         </p>
@@ -91,25 +95,25 @@ const AboutUs = () => {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
                         <div>
-                            <div className="text-4xl md:text-6xl font-bold text-[var(--color-gold)] mb-2 font-[var(--font-heading)]">
+                            <div className="text-4xl md:text-6xl font-bold text-gold-gradient mb-2 font-[var(--font-heading)]">
                                 <Counter end={500} suffix="+" />
                             </div>
                             <p className="text-gray-400 font-medium">Instruments to Trade</p>
                         </div>
                         <div>
-                            <div className="text-4xl md:text-6xl font-bold text-[var(--color-gold)] mb-2 font-[var(--font-heading)]">
+                            <div className="text-4xl md:text-6xl font-bold text-gold-gradient mb-2 font-[var(--font-heading)]">
                                 &lt;30<span className="text-3xl">ms</span>
                             </div>
                             <p className="text-gray-400 font-medium">Avg Execution Speed</p>
                         </div>
                         <div>
-                            <div className="text-4xl md:text-6xl font-bold text-[var(--color-gold)] mb-2 font-[var(--font-heading)]">
+                            <div className="text-4xl md:text-6xl font-bold text-gold-gradient mb-2 font-[var(--font-heading)]">
                                 24/7
                             </div>
                             <p className="text-gray-400 font-medium">Expert Human Support</p>
                         </div>
                         <div>
-                            <div className="text-4xl md:text-6xl font-bold text-[var(--color-gold)] mb-2 font-[var(--font-heading)]">
+                            <div className="text-4xl md:text-6xl font-bold text-gold-gradient mb-2 font-[var(--font-heading)]">
                                 0.0
                             </div>
                             <p className="text-gray-400 font-medium">Starting Spreads</p>
@@ -187,7 +191,7 @@ const AboutUs = () => {
                             <div className="relative flex flex-col md:flex-row items-center md:items-center group">
                                 <div className="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10 md:-translate-x-1/2"></div>
                                 <div className="md:w-1/2 md:pr-12 md:text-right pl-8 md:pl-0">
-                                    <span className="text-[var(--color-gold)] font-bold text-xl">2021</span>
+                                    <span className="text-gold-gradient font-bold text-xl">2021</span>
                                     <h3 className="text-2xl font-bold text-[var(--color-white)] mb-2">Foundation</h3>
                                     <p className="text-gray-400">Radhika Capital Markets was founded with a singular vision: to bring true transparency to retail FX trading.</p>
                                 </div>
@@ -199,7 +203,7 @@ const AboutUs = () => {
                                 <div className="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10 md:-translate-x-1/2"></div>
                                 <div className="hidden md:block md:w-1/2"></div>
                                 <div className="md:w-1/2 md:pl-12 pl-8">
-                                    <span className="text-[var(--color-gold)] font-bold text-xl">2023</span>
+                                    <span className="text-gold-gradient font-bold text-xl">2023</span>
                                     <h3 className="text-2xl font-bold text-[var(--color-white)] mb-2">Global Expansion</h3>
                                     <p className="text-gray-400">Secured FSC Mauritius regulation and launched our state-of-the-art MT5 infrastructure.</p>
                                 </div>
@@ -211,7 +215,7 @@ const AboutUs = () => {
                                 <div className="absolute left-[-10px] md:left-1/2 w-5 h-5 bg-[var(--color-gold)] rounded-full border-4 border-[#050c18] z-10 md:-translate-x-1/2"></div>
 
                                 <div className="md:w-1/2 md:pr-12 md:text-right pl-8 md:pl-0">
-                                    <span className="text-[var(--color-gold)] font-bold text-xl">Today</span>
+                                    <span className="text-gold-gradient font-bold text-xl">Today</span>
                                     <h3 className="text-2xl font-bold text-[var(--color-white)] mb-2">Empowering Traders</h3>
                                     <p className="text-gray-400">Serving thousands of traders globally with institutional conditions and seamless execution.</p>
                                 </div>
@@ -229,7 +233,7 @@ const AboutUs = () => {
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         <div className="lg:w-1/2">
                             <h2 className="text-3xl md:text-5xl font-bold text-[var(--color-white)] mb-6">
-                                Powering your trades with <span className="text-[var(--color-gold)]">MetaTrader 5</span>
+                                Powering your trades with <span className="text-gold-gradient">MetaTrader 5</span>
                             </h2>
                             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
                                 Experience advanced charting, automated trading (EAs), and institutional-grade liquidity directly from your pocket.
@@ -266,7 +270,7 @@ const AboutUs = () => {
                                     ))}
                                 </div>
                                 <div className="z-10 text-center">
-                                    <p className="text-[var(--color-gold)] font-mono mb-2">RADHIKA.MT5.PRO</p>
+                                    <p className="text-gold-gradient font-mono mb-2">RADHIKA.MT5.PRO</p>
                                     <h3 className="text-4xl font-bold text-white tracking-widest">LIVE</h3>
                                 </div>
                             </div>
@@ -279,13 +283,13 @@ const AboutUs = () => {
             <section className="py-24 bg-[var(--color-navy)] border-t border-[var(--glass-border)]">
                 <div className="container mx-auto px-6 text-center">
                     <h2 className="text-3xl md:text-5xl font-bold text-[var(--color-white)] mb-10">
-                        Ready to start your journey with a <br /><span className="text-[var(--color-gold)]">regulated partner?</span>
+                        Ready to start your journey with a <br /><span className="text-gold-gradient">regulated partner?</span>
                     </h2>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <button className="px-10 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-full hover:bg-[var(--color-white)] transition-all transform hover:scale-105 shadow-xl text-lg">
                             Open Live Account
                         </button>
-                        <button className="px-10 py-4 bg-transparent border-2 border-[var(--color-gold)] text-[var(--color-gold)] font-bold rounded-full hover:bg-[rgba(233,219,141,0.1)] transition-colors text-lg">
+                        <button className="px-10 py-4 bg-transparent border-2 border-[var(--color-gold)] text-gold-gradient font-bold rounded-full hover:bg-[rgba(233,219,141,0.1)] transition-colors text-lg">
                             Contact Support
                         </button>
                     </div>

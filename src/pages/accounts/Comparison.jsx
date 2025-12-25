@@ -30,7 +30,7 @@ const Comparison = () => {
         { name: "Platform", standard: "MT5", pro: "MT5", prox: "MT5" },
         { name: "Min. Lot Size", standard: "0.01 Lots", pro: "0.01 Lots", prox: "0.01 Lots" },
         { name: "Execution", standard: "STP", pro: "STP", prox: "ECN (Raw)" },
-        { name: "Expert Advisors", standard: <Check size={20} className="mx-auto text-green-500" />, pro: <Check size={20} className="mx-auto text-green-500" />, prox: <span className="font-bold text-[var(--color-gold)]">Optimized</span> },
+        { name: "Expert Advisors", standard: <Check size={20} className="mx-auto text-green-500" />, pro: <Check size={20} className="mx-auto text-green-500" />, prox: <span className="font-bold text-gold-gradient">Optimized</span> },
         { name: "Personal Manager", standard: "Email/Chat", pro: "Priority Support", prox: "Direct Relationship Mgr" },
     ];
 
@@ -40,7 +40,7 @@ const Comparison = () => {
             {/* Block 1: Hero Section */}
             <section className="py-20 text-center container mx-auto px-6">
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
-                    Choose the Account That <br /><span className="text-[var(--color-gold)]">Matches Your Ambition.</span>
+                    Choose the Account That <br /><span className="text-gold-gradient">Matches Your Ambition.</span>
                 </h1>
                 <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                     From retail beginners to institutional pros—we provide the environment you need to succeed.
@@ -65,7 +65,7 @@ const Comparison = () => {
                                         <div className="text-xl font-bold">Active</div>
                                     </th>
                                     <th className="p-6 bg-[rgba(233,219,141,0.15)]/90 backdrop-blur border-b border-[var(--color-gold)] w-1/4">
-                                        <div className="text-sm text-[var(--color-gold)] uppercase tracking-widest opacity-70 mb-1">Pro X</div>
+                                        <div className="text-sm text-gold-gradient uppercase tracking-widest opacity-70 mb-1">Pro X</div>
                                         <div className="text-xl font-bold text-white">Elite</div>
                                     </th>
                                 </tr>
@@ -73,7 +73,7 @@ const Comparison = () => {
                             <tbody className="bg-[#050c18] divide-y divide-gray-800 text-gray-300">
                                 {features.map((row, index) => (
                                     <tr key={index} className="hover:bg-white/5 transition-colors group">
-                                        <td className="p-5 text-left font-bold text-white border-r border-gray-800 group-hover:text-[var(--color-gold)] transition-colors pl-8">
+                                        <td className="p-5 text-left font-bold text-white border-r border-gray-800 group-hover:text-gold-gradient transition-colors pl-8">
                                             {row.name}
                                         </td>
                                         <td className="p-5 border-r border-gray-800">{row.standard}</td>
@@ -158,13 +158,13 @@ const Comparison = () => {
                         {/* Pro X */}
                         <div className="bg-[#050c18] border-t-4 border-[var(--color-gold)] p-8 rounded-b-xl hover:-translate-y-2 transition-transform duration-300">
                             <div className="flex items-center gap-3 mb-4">
-                                <Zap className="text-[var(--color-gold)]" size={24} />
+                                <Zap className="text-gold-gradient" size={24} />
                                 <h3 className="text-xl font-bold text-white">I am a Pro</h3>
                             </div>
                             <p className="text-gray-400 leading-relaxed italic">
                                 "I am a professional or algorithm user who needs the lowest possible spreads (Raw) to maximize my edge."
                             </p>
-                            <div className="mt-6 text-sm font-bold text-[var(--color-gold)] uppercase tracking-wider">
+                            <div className="mt-6 text-sm font-bold text-gold-gradient uppercase tracking-wider">
                                 Choose Pro X
                             </div>
                         </div>

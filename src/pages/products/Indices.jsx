@@ -22,7 +22,7 @@ const IndexCard = ({ name, code, country, spread, isPositive }) => (
         <div className="flex justify-between items-end mt-4">
             <div>
                 <div className="text-xs text-gray-500 mb-1">Spread from</div>
-                <div className="text-xl font-mono font-bold text-[var(--color-gold)]">{spread}</div>
+                <div className="text-xl font-mono font-bold text-gold-gradient">{spread}</div>
             </div>
             <button className="text-sm font-bold text-white border-b border-white/20 hover:border-white transition-colors">Trade</button>
         </div>
@@ -57,11 +57,11 @@ const Indices = () => {
 
                 <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
+                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-gold-gradient text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
                             Indices Trading
                         </div>
                         <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
-                            Trade the World’s <br /><span className="text-[var(--color-gold)]">Leading Economies</span>
+                            Trade the World’s <br /><span className="text-gold-gradient">Leading Economies</span>
                         </h1>
                         <p className="text-xl text-gray-400 mb-10 leading-relaxed">
                             Take a position on the global markets. Trade the world's most liquid Indices with 0.0 pips starting spreads and ultra-fast execution.
@@ -163,7 +163,7 @@ const Indices = () => {
                             <h2 className="text-3xl font-bold text-white mb-2">Global Benchmarks</h2>
                             <p className="text-gray-400">The pulse of the world's biggest economies.</p>
                         </div>
-                        <button className="text-[var(--color-gold)] font-bold hover:text-white transition-colors hidden md:block">
+                        <button className="text-gold-gradient font-bold hover:text-white transition-colors hidden md:block">
                             View Contract Specs →
                         </button>
                     </div>
@@ -236,7 +236,7 @@ const Indices = () => {
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                         Our direct bridge to liquidity providers ensures that even during high-volatility news events, your orders are filled with precision.
                     </p>
-                    <div className="text-[var(--color-gold)] font-bold text-lg tracking-widest border border-[var(--color-gold)] px-6 py-2 inline-block rounded-full">
+                    <div className="text-gold-gradient font-bold text-lg tracking-widest border border-[var(--color-gold)] px-6 py-2 inline-block rounded-full">
                         Trade Indices
                     </div>
                 </div>

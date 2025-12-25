@@ -51,11 +51,11 @@ const Forex = () => {
 
                 <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
+                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-gold-gradient text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
                             Forex Trading
                         </div>
                         <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
-                            Master the World’s <br /><span className="text-[var(--color-gold)]">Most Liquid Market</span>
+                            Master the World’s <br /><span className="text-gold-gradient">Most Liquid Market</span>
                         </h1>
                         <p className="text-xl text-gray-400 mb-10 leading-relaxed">
                             Trade 60+ Currency Pairs with deep liquidity, no requotes, and spreads starting from 0.0 pips. Experience the Radhika Capital Markets edge in the $7.5 trillion-a-day market.
@@ -163,7 +163,7 @@ const Forex = () => {
                             <h2 className="text-3xl font-bold text-white mb-2">Major Pairs</h2>
                             <p className="text-gray-400">Low spreads, high liquidity.</p>
                         </div>
-                        <button className="text-[var(--color-gold)] font-bold hover:text-white transition-colors hidden md:block">
+                        <button className="text-gold-gradient font-bold hover:text-white transition-colors hidden md:block">
                             View All 60+ Pairs →
                         </button>
                     </div>
@@ -187,7 +187,7 @@ const Forex = () => {
                         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
 
                         <div className="md:w-1/2 relative z-10">
-                            <div className="inline-flex items-center space-x-2 text-[var(--color-gold)] mb-6 font-bold uppercase tracking-widest text-sm">
+                            <div className="inline-flex items-center space-x-2 text-gold-gradient mb-6 font-bold uppercase tracking-widest text-sm">
                                 <Activity size={18} />
                                 <span>Execution Speed</span>
                             </div>
@@ -218,14 +218,14 @@ const Forex = () => {
                                             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                                             <span className="text-white text-sm">Server Latency</span>
                                         </div>
-                                        <span className="text-[var(--color-gold)] font-mono">1.2ms</span>
+                                        <span className="text-gold-gradient font-mono">1.2ms</span>
                                     </div>
                                     <div className="flex justify-between items-center bg-gray-900/50 p-3 rounded-lg border border-gray-800">
                                         <div className="flex items-center gap-3">
                                             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                                             <span className="text-white text-sm">Execution Time</span>
                                         </div>
-                                        <span className="text-[var(--color-gold)] font-mono">24ms</span>
+                                        <span className="text-gold-gradient font-mono">24ms</span>
                                     </div>
                                     <div className="h-32 mt-4 bg-gray-800/20 rounded-lg flex items-end justify-between px-2 pb-2">
                                         {[4, 7, 3, 8, 5, 9, 6, 4, 8, 10, 7, 5, 8, 6, 9].map((h, i) => (
@@ -251,7 +251,7 @@ const Forex = () => {
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                         Trade with a regulated global broker. Your funds are segregated in top-tier banks, ensuring maximum security while you focus on the markets.
                     </p>
-                    <div className="text-[var(--color-gold)] font-bold text-lg tracking-widest border border-[var(--color-gold)] px-6 py-2 inline-block rounded-full">
+                    <div className="text-gold-gradient font-bold text-lg tracking-widest border border-[var(--color-gold)] px-6 py-2 inline-block rounded-full">
                         FSC Regulated
                     </div>
                 </div>

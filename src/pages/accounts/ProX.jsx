@@ -18,12 +18,12 @@ const ProX = () => {
                     <div className="w-24 h-24 mx-auto mb-8 relative">
                         <div className="absolute inset-0 bg-[var(--color-gold)] rounded-full opacity-20 filter blur-xl animate-pulse-slow"></div>
                         <div className="relative z-10 w-full h-full border-2 border-[var(--color-gold)] rounded-full flex items-center justify-center">
-                            <span className="text-3xl font-[var(--font-heading)] font-bold text-[var(--color-gold)]">X</span>
+                            <span className="text-3xl font-[var(--font-heading)] font-bold text-gold-gradient">X</span>
                         </div>
                     </div>
 
                     <h1 className="text-5xl md:text-8xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)] tracking-tight">
-                        Pro <span className="text-[var(--color-gold)]">X</span>
+                        Pro <span className="text-gold-gradient">X</span>
                     </h1>
                     <h2 className="text-2xl md:text-3xl font-light text-gray-300 mb-8 tracking-wide">
                         Trading Without Compromise.
@@ -35,15 +35,15 @@ const ProX = () => {
 
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 border-t border-[rgba(255,215,0,0.2)] pt-10">
                         <div className="text-center">
-                            <div className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest mb-2">Min Deposit</div>
+                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Min Deposit</div>
                             <div className="text-3xl font-bold text-white">$15,000</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest mb-2">Spreads</div>
+                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Spreads</div>
                             <div className="text-3xl font-bold text-white">0.0 <span className="text-sm font-normal text-gray-500">Pips</span></div>
                         </div>
                         <div className="text-center">
-                            <div className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest mb-2">Commission</div>
+                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Commission</div>
                             <div className="text-3xl font-bold text-white">$3.50 <span className="text-sm font-normal text-gray-500">/ side</span></div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@ const ProX = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="flex justify-between text-sm mb-2 text-[var(--color-gold)] font-bold">
+                                        <div className="flex justify-between text-sm mb-2 text-gold-gradient font-bold">
                                             <span>Pro X (Raw)</span>
                                             <span>0.1 Pips</span>
                                         </div>
@@ -163,7 +163,7 @@ const ProX = () => {
                             </div>
                             <div className="p-6 border-b md:border-b-0 border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
                                 <span className="text-gray-500">Negative Balance Protection</span>
-                                <span className="text-[var(--color-gold)] font-bold font-mono uppercase">Included</span>
+                                <span className="text-gold-gradient font-bold font-mono uppercase">Included</span>
                             </div>
                             <div className="p-6 md:border-r border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
                                 <span className="text-gray-500">Margin Call</span>
@@ -234,10 +234,10 @@ const ProX = () => {
             {/* Block 6: The "Elite Entry" Call to Action */}
             <section className="py-32 bg-black text-center">
                 <div className="container mx-auto px-6">
-                    <p className="text-[var(--color-gold)] font-bold uppercase tracking-[0.2em] mb-4 text-xs">Exclusivity Redefined</p>
+                    <p className="text-gold-gradient font-bold uppercase tracking-[0.2em] mb-4 text-xs">Exclusivity Redefined</p>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 font-[var(--font-heading)]">The pinnacle of trading starts here.</h2>
 
-                    <button className="bg-transparent border border-[var(--color-gold)] text-[var(--color-gold)] px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[var(--color-gold)] hover:text-black transition-all duration-300 transform hover:-translate-y-1">
+                    <button className="bg-transparent border border-[var(--color-gold)] text-gold-gradient px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[var(--color-gold)] hover:text-black transition-all duration-300 transform hover:-translate-y-1">
                         Apply for Pro X Account
                     </button>
                 </div>

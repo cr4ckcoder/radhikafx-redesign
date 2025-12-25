@@ -117,7 +117,7 @@ const Home = () => {
             <section className="py-24 bg-[var(--color-navy)]">
                 <div className="container mx-auto px-6 text-center">
                     <FadeInSection>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12">Trade Global Markets</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gold-gradient mb-12">Trade Global Markets</h2>
                     </FadeInSection>
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                         {[
@@ -129,7 +129,7 @@ const Home = () => {
                         ].map((item, index) => (
                             <FadeInSection key={item.name} delay={index * 0.1}>
                                 <Link to={item.link} className="p-6 bg-[rgba(255,255,255,0.03)] border border-[var(--glass-border)] rounded-xl hover:border-[var(--color-gold)] transition-colors cursor-pointer group block h-full">
-                                    <div className="text-[var(--color-gold)] font-bold text-lg mb-2 group-hover:scale-110 transition-transform">{item.name}</div>
+                                    <div className="text-gold-gradient font-bold text-lg mb-2 group-hover:scale-110 transition-transform">{item.name}</div>
                                     <div className="text-sm text-gray-500">View Spreads →</div>
                                 </Link>
                             </FadeInSection>

@@ -20,6 +20,14 @@ const TradingHours = () => {
         return date.toLocaleTimeString('en-US', { hour12: false, timeZone: 'UTC' });
     };
 
+    const MarketStatus = ({ label, isOpen }) => (
+        <span className={`${isOpen ? 'text-green-500' : 'text-red-500'} flex items-center gap-1`}>
+            <span className={`w-2 h-2 rounded-full ${isOpen ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`}></span>
+            {label} {isOpen ? 'Open' : 'Closed'}
+        </span>
+    );
+
+
     return (
         <div className="bg-[var(--color-navy)] min-h-screen pt-20 md:pt-40 font-[var(--font-body)] text-white">
 
@@ -33,7 +41,7 @@ const TradingHours = () => {
                         <Globe size={14} /> Global Market Synchronization
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-[var(--font-heading)]">
-                        Stay Synchronized with <br /> <span className="text-[var(--color-gold)]">Global Markets</span>
+                        Stay Synchronized with <br /> <span className="text-gold-gradient">Global Markets</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-12 font-light">
                         Plan your trading week with precision. View real-time server hours, session openings, and upcoming holiday adjustments.
@@ -41,16 +49,16 @@ const TradingHours = () => {
 
                     {/* Live Server Time Clock */}
                     <div className="inline-block relative">
-                        <div className="absolute -inset-1 bg-gradient-to-r from-[var(--color-gold)] to-yellow-600 rounded-2xl blur opacity-30"></div>
+                        <div className="absolute -inset-1 bg-gold-gradient rounded-2xl blur opacity-30"></div>
                         <div className="relative bg-[#02040a] border border-[var(--glass-border)] rounded-xl p-8 shadow-2xl">
                             <div className="text-sm text-gray-500 uppercase tracking-widest mb-2 font-bold">Server Time (GMT+3)</div>
                             <div className="text-6xl md:text-8xl font-mono font-bold text-white tracking-widest tabular-nums text-shadow-glow">
                                 {formatTime(time)}
                             </div>
-                            <div className="mt-4 flex justify-center gap-4 text-xs font-bold uppercase">
-                                <span className="text-green-500 flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> London Open</span>
-                                <span className="text-green-500 flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> New York Open</span>
-                                <span className="text-red-500 flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-red-500"></span> Tokyo Closed</span>
+                            <div className="mt-4 flex justify-center gap-4 text-xs font-bold uppercase flex-wrap">
+                                <MarketStatus label="London" isOpen={time.getUTCHours() >= 10 && time.getUTCHours() < 19} />
+                                <MarketStatus label="New York" isOpen={time.getUTCHours() >= 15 && time.getUTCHours() <= 23} />
+                                <MarketStatus label="Tokyo" isOpen={time.getUTCHours() >= 2 && time.getUTCHours() < 11} />
                             </div>
                         </div>
                     </div>
@@ -260,7 +268,7 @@ const TradingHours = () => {
                             </p>
                         </div>
 
-                        <div className="bg-gradient-to-r from-[var(--color-gold)] to-yellow-600 p-6 rounded-xl text-[var(--color-navy)] flex items-center gap-6 shadow-lg">
+                        <div className="bg-gold-gradient p-6 rounded-xl text-[var(--color-navy)] flex items-center gap-6 shadow-lg">
                             <div className="hidden sm:block">
                                 <Smartphone size={48} strokeWidth={1.5} />
                             </div>

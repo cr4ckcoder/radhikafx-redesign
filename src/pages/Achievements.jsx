@@ -10,6 +10,10 @@ const Achievements = () => {
 
             {/* Block 1: The Hero Section (The Statement) */}
             <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden bg-black text-center px-6">
+                {/* Background Image Overlay */}
+                <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=2070&auto=format&fit=crop')" }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+
                 {/* Bokeh Golden Glow Effect */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,215,0,0.15)_0%,rgba(0,0,0,0)_60%)]"></div>
 
@@ -21,7 +25,7 @@ const Achievements = () => {
                 <div className="relative z-10 max-w-4xl mx-auto">
                     <div className="inline-flex items-center gap-2 px-6 py-2 bg-[rgba(255,215,0,0.05)] border border-[rgba(255,215,0,0.2)] rounded-full mb-8 backdrop-blur-md">
                         <Trophy size={16} className="text-[var(--color-gold)]" />
-                        <span className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-[0.2em]">Excellence Defined</span>
+                        <span className="text-gold-gradient text-xs font-bold uppercase tracking-[0.2em]">Excellence Defined</span>
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-[var(--font-heading)] font-bold text-white mb-8 leading-tight">
@@ -79,9 +83,9 @@ const Achievements = () => {
                     <p className="text-center text-gray-600 text-xs font-bold uppercase tracking-[0.3em] mb-8">Recognized By</p>
                     <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
                         {/* Placeholder Logos with Text for now */}
-                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]">Prof<span className="text-[var(--color-gold)]">X</span> Expo</div>
+                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]">Prof<span className="text-gold-gradient">X</span> Expo</div>
                         <div className="text-2xl font-bold text-white font-[var(--font-heading)]">FOREX <span className="text-gray-500">TRADERS</span> SUMMIT</div>
-                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]"><span className="text-[var(--color-gold)]">MENA</span> FINANCIAL AWARDS</div>
+                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]"><span className="text-gold-gradient">MENA</span> FINANCIAL AWARDS</div>
                     </div>
                 </div>
             </section>
@@ -91,11 +95,11 @@ const Achievements = () => {
                 <div className="container mx-auto px-6 max-w-4xl">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="text-center">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">2<span className="text-[var(--color-gold)]">+</span></div>
+                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">2<span className="text-gold-gradient">+</span></div>
                             <div className="text-gray-500 text-xs uppercase tracking-widest">Major Awards in 2025</div>
                         </div>
                         <div className="text-center border-l border-r border-gray-800">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">100<span className="text-[var(--color-gold)]">%</span></div>
+                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">100<span className="text-gold-gradient">%</span></div>
                             <div className="text-gray-500 text-xs uppercase tracking-widest">Commitment to Transparency</div>
                         </div>
                         <div className="text-center">

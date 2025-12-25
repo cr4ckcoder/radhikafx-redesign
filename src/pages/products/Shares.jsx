@@ -73,11 +73,11 @@ const Shares = () => {
 
                 <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
+                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-gold-gradient text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
                             Stocks & ETFs
                         </div>
                         <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
-                            Own a Piece of the <br /><span className="text-[var(--color-gold)]">Global Giants</span>
+                            Own a Piece of the <br /><span className="text-gold-gradient">Global Giants</span>
                         </h1>
                         <p className="text-xl text-gray-400 mb-10 leading-relaxed">
                             Trade CFDs on 500+ of the world’s most powerful companies. Go long or short on Apple, NVIDIA, Tesla, and more—all from one platform.
@@ -169,7 +169,7 @@ const Shares = () => {
                             <h2 className="text-3xl font-bold text-white mb-2">Market Movers</h2>
                             <p className="text-gray-400">Most active stocks today.</p>
                         </div>
-                        <Link to="/tools/trading-conditions" className="text-[var(--color-gold)] font-bold hover:text-white transition-colors hidden md:block">
+                        <Link to="/tools/trading-conditions" className="text-gold-gradient font-bold hover:text-white transition-colors hidden md:block">
                             View All Shares →
                         </Link>
                     </div>

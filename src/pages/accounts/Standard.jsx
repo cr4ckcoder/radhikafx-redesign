@@ -21,12 +21,12 @@ const Standard = () => {
                     <div className="w-24 h-24 mx-auto mb-8 relative">
                         <div className="absolute inset-0 bg-[var(--color-gold)] rounded-full opacity-20 filter blur-xl animate-pulse-slow"></div>
                         <div className="relative z-10 w-full h-full border-2 border-[var(--color-gold)] rounded-full flex items-center justify-center">
-                            <span className="text-3xl font-[var(--font-heading)] font-bold text-[var(--color-gold)]">S</span>
+                            <span className="text-3xl font-[var(--font-heading)] font-bold text-gold-gradient">S</span>
                         </div>
                     </div>
 
                     <h1 className="text-5xl md:text-8xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)] tracking-tight">
-                        Standard <span className="text-[var(--color-gold)]">Account</span>
+                        Standard <span className="text-gold-gradient">Account</span>
                     </h1>
                     <h2 className="text-2xl md:text-3xl font-light text-gray-300 mb-8 tracking-wide">
                         The Perfect Start.
@@ -38,15 +38,15 @@ const Standard = () => {
 
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 border-t border-[var(--color-gold)]/20 pt-10">
                         <div className="text-center">
-                            <div className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest mb-2">Min Deposit</div>
+                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Min Deposit</div>
                             <div className="text-3xl font-bold text-white">$100</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest mb-2">Spreads</div>
+                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Spreads</div>
                             <div className="text-3xl font-bold text-white">3.0 <span className="text-sm font-normal text-gray-500">Pips</span></div>
                         </div>
                         <div className="text-center">
-                            <div className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest mb-2">Commission</div>
+                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Commission</div>
                             <div className="text-3xl font-bold text-white">$0</div>
                         </div>
                     </div>
@@ -216,10 +216,10 @@ const Standard = () => {
             {/* Block 6: CTA */}
             <section className="py-32 bg-black text-center">
                 <div className="container mx-auto px-6">
-                    <p className="text-[var(--color-gold)] font-bold uppercase tracking-[0.2em] mb-4 text-xs">Start Your Journey</p>
+                    <p className="text-gold-gradient font-bold uppercase tracking-[0.2em] mb-4 text-xs">Start Your Journey</p>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 font-[var(--font-heading)]">Trading made simple.</h2>
 
-                    <button className="bg-transparent border border-[var(--color-gold)] text-[var(--color-gold)] px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[var(--color-gold)] hover:text-black transition-all duration-300 transform hover:-translate-y-1">
+                    <button className="bg-transparent border border-[var(--color-gold)] text-gold-gradient px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[var(--color-gold)] hover:text-black transition-all duration-300 transform hover:-translate-y-1">
                         Open Standard Account
                     </button>
                 </div>

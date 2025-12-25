@@ -12,8 +12,8 @@ const CPAAffiliate = () => {
             {/* Block 1: The "High-Yield" Hero */}
             <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#02040a]">
                 {/* Digital World Map Background (CSS Pattern or Image) */}
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')] bg-cover bg-center opacity-20 hover:opacity-25 transition-opacity duration-1000"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[#02040a]/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2070&auto=format&fit=crop')" }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                 {/* Tech Grid Overlay */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,215,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,215,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>

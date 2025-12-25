@@ -20,7 +20,7 @@ const Careers = () => {
                 <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/30 rounded-full mb-8 backdrop-blur-md">
                         <Globe size={16} className="text-[var(--color-gold)]" />
-                        <span className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest">Global Opportunities</span>
+                        <span className="text-gold-gradient text-xs font-bold uppercase tracking-widest">Global Opportunities</span>
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -86,7 +86,7 @@ const Careers = () => {
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row items-center gap-16">
                         <div className="w-full md:w-1/2">
-                            <div className="inline-block text-[var(--color-gold)] text-sm font-bold uppercase tracking-widest mb-4">Life at Radhika Capital Markets</div>
+                            <div className="inline-block text-gold-gradient text-sm font-bold uppercase tracking-widest mb-4">Life at Radhika Capital Markets</div>
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
                                 More Than Just a Job. <br />
                                 <span className="text-gray-500">It's a Career.</span>
@@ -178,7 +178,7 @@ const Careers = () => {
 
                             <div className="border-2 border-dashed border-gray-700 rounded-lg p-8 text-center hover:border-[var(--color-gold)]/50 transition-colors cursor-pointer bg-[#02040a]/50">
                                 <Upload className="mx-auto text-gray-500 mb-2" size={32} />
-                                <p className="text-gray-400 text-sm">Drag & drop your CV here, or <span className="text-[var(--color-gold)]">browse</span></p>
+                                <p className="text-gray-400 text-sm">Drag & drop your CV here, or <span className="text-gold-gradient">browse</span></p>
                                 <p className="text-gray-600 text-xs mt-1">PDF or DOCX up to 5MB</p>
                             </div>
 

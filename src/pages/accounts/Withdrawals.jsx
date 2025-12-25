@@ -25,17 +25,17 @@ const Withdrawals = () => {
 
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
                         Your Profits, Delivered at the <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-gold)] to-yellow-200">Speed of Light.</span>
+                        <span className="text-gold-gradient">Speed of Light.</span>
                     </h1>
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                         Experience seamless, 24/7 USDT withdrawals. We believe that getting your money out should be just as easy as putting it in.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <button className="px-8 py-4 bg-[var(--color-gold)] text-black font-bold rounded-lg hover:bg-white transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,215,0,0.3)] flex items-center justify-center gap-2">
+                        <button className="px-8 py-4 btn-gold text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,215,0,0.3)] flex items-center justify-center gap-2">
                             Request a Withdrawal <ArrowRight size={20} />
                         </button>
-                        <button className="px-8 py-4 bg-transparent border border-gray-600 text-white font-bold rounded-lg hover:bg-white/10 transition-colors">
+                        <button className="px-8 py-4 bg-transparent border border-gray-600 text-white font-bold rounded-lg hover:border-[var(--color-gold)] hover:text-gold-gradient transition-colors">
                             View History
                         </button>
                     </div>

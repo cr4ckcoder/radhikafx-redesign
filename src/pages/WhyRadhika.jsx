@@ -13,7 +13,7 @@ const FAQItem = ({ question, answer, isOpen, toggle }) => {
                 className="w-full py-6 flex items-center justify-between text-left focus:outline-none group"
                 onClick={toggle}
             >
-                <span className={`text-lg font-medium transition-colors ${isOpen ? 'text-[var(--color-gold)]' : 'text-gray-300 group-hover:text-white'}`}>
+                <span className={`text-lg font-medium transition-colors ${isOpen ? 'text-gold-gradient' : 'text-gray-300 group-hover:text-white'}`}>
                     {question}
                 </span>
                 {isOpen ? (
@@ -103,14 +103,19 @@ const WhyRadhika = () => {
             {/* Block 1: Hero Section with Heatmap Animation */}
             <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
                 {/* Background Animation (Heatmap/Trading feel) */}
+                {/* Background Animation (Heatmap/Trading feel) */}
                 <div className="absolute inset-0 bg-[#02040a]">
+                    {/* Background Image Overlay */}
+                    <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1614850523060-8da1d56e37ad?q=80&w=2070&auto=format&fit=crop')" }}></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+
                     <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(233,219,141,0.05)_0%,rgba(5,12,24,0)_50%)] animate-pulse"></div>
                     <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(14,35,78,0.4)_0%,rgba(5,12,24,0)_70%)] blur-[100px]"></div>
                     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--color-gold)] opacity-5 rounded-full filter blur-[120px] animate-blob"></div>
                 </div>
 
                 <div className="container mx-auto px-6 relative z-10 text-center">
-                    <div className="inline-block mb-6 px-4 py-1 rounded-full border border-[var(--color-gold)] text-[var(--color-gold)] text-sm font-bold tracking-wide uppercase bg-[rgba(233,219,141,0.05)]">
+                    <div className="inline-block mb-6 px-4 py-1 rounded-full border border-[var(--color-gold)] text-gold-gradient text-sm font-bold tracking-wide uppercase bg-[rgba(233,219,141,0.05)]">
                         Limitless Trading
                     </div>
                     <h1 className="text-5xl md:text-7xl font-bold font-[var(--font-heading)] mb-6 leading-tight">
@@ -123,7 +128,7 @@ const WhyRadhika = () => {
                         Experience a transparent, FSC-regulated environment built for traders who demand speed, security, and 24/7 reliability.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <Link to="/open-live-account" className="px-10 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-full hover:bg-yellow-400 hover:scale-105 transition-all shadow-[0_0_20px_rgba(233,219,141,0.3)]">
+                        <Link to="/open-live-account" className="px-10 py-4 btn-gold text-[var(--color-navy)] font-bold rounded-full hover:bg-yellow-400 hover:scale-105 transition-all shadow-[0_0_20px_rgba(233,219,141,0.3)]">
                             Open Live Account
                         </Link>
                         <Link to="/open-demo-account" className="px-10 py-4 bg-transparent border border-[var(--color-white)] text-[var(--color-white)] font-bold rounded-full hover:bg-[rgba(255,255,255,0.1)] transition-all">
@@ -165,7 +170,7 @@ const WhyRadhika = () => {
                                     <h3 className="text-2xl font-bold text-[var(--color-white)] mb-4">{item.title}</h3>
                                     <p className="text-gray-400 mb-6 leading-relaxed">{item.description}</p>
                                     {item.link && (
-                                        <Link to={item.link} className="inline-flex items-center text-[var(--color-gold)] font-bold text-sm uppercase tracking-wider hover:underline">
+                                        <Link to={item.link} className="inline-flex items-center text-gold-gradient font-bold text-sm uppercase tracking-wider hover:underline">
                                             {item.title} <ArrowRight size={16} className="ml-2" />
                                         </Link>
                                     )}
@@ -192,26 +197,26 @@ const WhyRadhika = () => {
                             <div className="p-6 text-center text-xl font-bold text-[var(--color-white)]">Pro</div>
                             <div className="p-6 text-center relative">
                                 <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[var(--color-gold)] text-[var(--color-navy)] text-xs font-bold px-3 py-1 rounded-full uppercase">Best Value</span>
-                                <span className="text-xl font-bold text-[var(--color-gold)]">Pro X</span>
+                                <span className="text-xl font-bold text-gold-gradient">Pro X</span>
                             </div>
 
                             {/* Row 1: Min Deposit */}
                             <div className="p-6 flex items-center font-bold text-gray-300 border-b border-[rgba(255,255,255,0.05)]">Min Deposit</div>
                             <div className="p-6 text-center text-[var(--color-white)] border-b border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] rounded-lg">$50</div>
                             <div className="p-6 text-center text-[var(--color-white)] border-b border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] rounded-lg">$500</div>
-                            <div className="p-6 text-center text-[var(--color-gold)] text-xl font-bold border-b border-[rgba(255,255,255,0.05)] bg-[rgba(233,219,141,0.05)] border-[var(--color-gold)] rounded-lg">$20,000</div>
+                            <div className="p-6 text-center text-gold-gradient text-xl font-bold border-b border-[rgba(255,255,255,0.05)] bg-[rgba(233,219,141,0.05)] border-[var(--color-gold)] rounded-lg">$20,000</div>
 
                             {/* Row 2: Spread */}
                             <div className="p-6 flex items-center font-bold text-gray-300 border-b border-[rgba(255,255,255,0.05)]">Target Spread</div>
                             <div className="p-6 text-center text-[var(--color-white)] border-b border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] rounded-lg">From 1.2</div>
                             <div className="p-6 text-center text-[var(--color-white)] border-b border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] rounded-lg">From 0.0</div>
-                            <div className="p-6 text-center text-[var(--color-gold)] font-bold border-b border-[rgba(255,255,255,0.05)] bg-[rgba(233,219,141,0.05)] border-[var(--color-gold)] rounded-lg">Raw 0.0</div>
+                            <div className="p-6 text-center text-gold-gradient font-bold border-b border-[rgba(255,255,255,0.05)] bg-[rgba(233,219,141,0.05)] border-[var(--color-gold)] rounded-lg">Raw 0.0</div>
 
                             {/* Row 3: Commission */}
                             <div className="p-6 flex items-center font-bold text-gray-300">Commission</div>
                             <div className="p-6 text-center text-[var(--color-white)] bg-[rgba(255,255,255,0.02)] rounded-lg">None</div>
                             <div className="p-6 text-center text-[var(--color-white)] bg-[rgba(255,255,255,0.02)] rounded-lg">$7 / lot</div>
-                            <div className="p-6 text-center text-[var(--color-gold)] font-bold bg-[rgba(233,219,141,0.05)] border-[var(--color-gold)] rounded-lg">$3.5 / lot</div>
+                            <div className="p-6 text-center text-gold-gradient font-bold bg-[rgba(233,219,141,0.05)] border-[var(--color-gold)] rounded-lg">$3.5 / lot</div>
                         </div>
                     </div>
                 </div>

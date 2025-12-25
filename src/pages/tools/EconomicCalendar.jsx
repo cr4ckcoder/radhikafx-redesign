@@ -171,7 +171,7 @@ const EconomicCalendar = () => {
                     </div>
 
                     {/* MT5 Integration Block */}
-                    <div className="mt-16 bg-gradient-to-r from-[var(--color-gold)] to-yellow-600 rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
+                    <div className="mt-16 bg-gold-gradient rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
                         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
                             <div className="max-w-xl text-[var(--color-navy)]">
                                 <h2 className="text-3xl font-bold mb-4">Integrated Trading on MT5</h2>
@@ -183,11 +183,36 @@ const EconomicCalendar = () => {
                                 </button>
                             </div>
                             {/* Mockup visual */}
-                            <div className="hidden md:block">
+                            <div className="hidden md:block relative">
                                 <CalendarIcon size={120} className="text-[var(--color-navy)] opacity-20 absolute -bottom-10 -right-10 rotate-12" />
-                                <div className="bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg rotate-3 transform hover:rotate-0 transition-all duration-500">
-                                    <div className="w-64 h-40 bg-gray-100 rounded border border-gray-300 flex items-center justify-center text-gray-400 font-mono text-xs">
-                                        [MT5 Calendar UI Mockup]
+                                <div className="bg-[#1e222d] w-80 rounded-lg shadow-2xl border border-gray-700 overflow-hidden rotate-3 transform hover:rotate-0 transition-all duration-500">
+                                    {/* Mockup Header */}
+                                    <div className="bg-[#2a2e39] p-3 border-b border-gray-700 flex items-center justify-between">
+                                        <div className="text-xs font-bold text-gray-400">Economic Calendar</div>
+                                        <div className="flex gap-1.5">
+                                            <div className="w-2 h-2 rounded-full bg-red-500/50"></div>
+                                            <div className="w-2 h-2 rounded-full bg-yellow-500/50"></div>
+                                            <div className="w-2 h-2 rounded-full bg-green-500/50"></div>
+                                        </div>
+                                    </div>
+                                    {/* Mockup Content */}
+                                    <div className="p-4 space-y-3">
+                                        <div className="flex items-center gap-3 text-[10px] text-gray-400 border-b border-gray-700/50 pb-2">
+                                            <div className="w-8">Time</div>
+                                            <div className="flex-1">Event</div>
+                                            <div className="w-6">Act</div>
+                                        </div>
+                                        {[
+                                            { time: '14:30', event: 'US CPI (YoY)', actual: '3.2%', color: 'text-green-400' },
+                                            { time: '15:15', event: 'ECB Rate Decision', actual: '4.5%', color: 'text-white' },
+                                            { time: '17:00', event: 'Crude Oil Inv', actual: '-2.1M', color: 'text-red-400' },
+                                        ].map((item, i) => (
+                                            <div key={i} className="flex items-center gap-3 text-[10px]">
+                                                <div className="w-8 text-gray-500">{item.time}</div>
+                                                <div className="flex-1 text-gray-300 truncate">{item.event}</div>
+                                                <div className={`w-6 font-mono ${item.color}`}>{item.actual}</div>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>

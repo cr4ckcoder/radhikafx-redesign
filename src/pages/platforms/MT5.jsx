@@ -68,7 +68,7 @@ const MT5 = () => {
                 <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
-                            One Platform. <br /><span className="text-[var(--color-gold)]">Infinite Possibilities.</span>
+                            One Platform. <br /><span className="text-gold-gradient">Infinite Possibilities.</span>
                         </h1>
                         <p className="text-xl text-gray-400 mb-8 leading-relaxed">
                             Harness the full power of MetaTrader 5 with Radhika Capital Markets. Institutional-grade execution, advanced technical analysis, and automated trading—all in one place.
@@ -175,19 +175,19 @@ const MT5 = () => {
                             <ul className="space-y-6">
                                 <li className="flex items-center justify-between text-white border-b border-[rgba(255,255,255,0.05)] pb-2">
                                     <span className="flex items-center gap-2"><Clock size={16} className="text-[var(--color-gold)]" /> Timeframes</span>
-                                    <span className="font-mono font-bold text-[var(--color-gold)]">21</span>
+                                    <span className="font-mono font-bold text-gold-gradient">21</span>
                                 </li>
                                 <li className="flex items-center justify-between text-white border-b border-[rgba(255,255,255,0.05)] pb-2">
                                     <span className="flex items-center gap-2"><Layers size={16} className="text-[var(--color-gold)]" /> Pending Order Types</span>
-                                    <span className="font-mono font-bold text-[var(--color-gold)]">6</span>
+                                    <span className="font-mono font-bold text-gold-gradient">6</span>
                                 </li>
                                 <li className="flex items-center justify-between text-white border-b border-[rgba(255,255,255,0.05)] pb-2">
                                     <span className="flex items-center gap-2"><Calendar size={16} className="text-[var(--color-gold)]" /> Economic Calendar</span>
-                                    <span className="font-mono font-bold text-[var(--color-gold)]">Built-in</span>
+                                    <span className="font-mono font-bold text-gold-gradient">Built-in</span>
                                 </li>
                                 <li className="flex items-center justify-between text-white border-b border-[rgba(255,255,255,0.05)] pb-2">
                                     <span className="flex items-center gap-2"><BarChart2 size={16} className="text-[var(--color-gold)]" /> Depth of Market</span>
-                                    <span className="font-mono font-bold text-[var(--color-gold)]">Yes</span>
+                                    <span className="font-mono font-bold text-gold-gradient">Yes</span>
                                 </li>
                             </ul>
                         </div>
@@ -414,7 +414,7 @@ const MT5 = () => {
             < section className="py-24 bg-[var(--color-navy)]" >
                 <div className="container mx-auto px-6 max-w-4xl">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center space-x-2 text-[var(--color-gold)] mb-4 font-bold uppercase tracking-widest text-sm">
+                        <div className="inline-flex items-center space-x-2 text-gold-gradient mb-4 font-bold uppercase tracking-widest text-sm">
                             <HelpCircle size={18} />
                             <span>Support</span>
                         </div>
@@ -433,7 +433,7 @@ const MT5 = () => {
                         ))}
                         <div className="mt-8 pt-8 border-t border-[rgba(255,255,255,0.05)] text-center">
                             <p className="text-gray-400 mb-4">Still have questions?</p>
-                            <button className="text-[var(--color-gold)] font-bold hover:text-white transition-colors">
+                            <button className="text-gold-gradient font-bold hover:text-white transition-colors">
                                 Contact our 24/7 Support Team
                             </button>
                         </div>

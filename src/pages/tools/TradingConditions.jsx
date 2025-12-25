@@ -34,20 +34,20 @@ const TradingConditions = () => {
                 </div>
 
                 <div className="container mx-auto px-6 text-center relative z-10">
-                    <div className="inline-block px-3 py-1 bg-[rgba(255,215,0,0.1)] border border-[var(--color-gold)] text-[var(--color-gold)] rounded-full text-xs font-bold uppercase tracking-wide mb-6">
-                        Technical Specification Sheet
+                    <div className="inline-block px-3 py-1 bg-[rgba(255,215,0,0.1)] border border-[var(--color-gold)] rounded-full text-xs font-bold uppercase tracking-wide mb-6">
+                        <span className="text-gold-gradient">Technical Specification Sheet</span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-[var(--font-heading)] leading-tight">
-                        Fair, Transparent, and <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-gold)] to-yellow-200">Competitive Conditions</span>
+                        Fair, Transparent, and <br /> <span className="text-gold-gradient">Competitive Conditions</span>
                     </h1>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
                         No hidden fees. No requotes. Just institutional-grade execution and ultra-tight pricing across all asset classes.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <button className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg shadow-[0_0_20px_rgba(255,215,0,0.3)] hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-all transform hover:-translate-y-1">
+                        <button className="px-8 py-4 btn-gold text-[var(--color-navy)] font-bold rounded-lg shadow-[0_0_20px_rgba(255,215,0,0.3)] hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-all transform hover:-translate-y-1">
                             View Live Spreads
                         </button>
-                        <button className="px-8 py-4 border border-[var(--glass-border)] bg-white/5 text-white font-bold rounded-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm">
+                        <button className="px-8 py-4 border border-[var(--glass-border)] bg-white/5 text-white font-bold rounded-lg hover:border-[var(--color-gold)] hover:text-gold-gradient transition-all flex items-center justify-center gap-2 backdrop-blur-sm">
                             <Download size={18} /> Download Contract Specs
                         </button>
                     </div>
@@ -163,7 +163,7 @@ const TradingConditions = () => {
                                 <button
                                     key={tab}
                                     onClick={() => setActiveTab(tab)}
-                                    className={`px-6 py-2 rounded-md text-sm font-bold transition-all ${activeTab === tab ? 'bg-[var(--color-gold)] text-[var(--color-navy)] shadow-lg' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
+                                    className={`px-6 py-2 rounded-md text-sm font-bold transition-all ${activeTab === tab ? 'btn-gold text-[var(--color-navy)] shadow-lg' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
                                 >
                                     {tab}
                                 </button>

@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
+import HeroBg from '../assets/hero-background.png';
 
 const ContactUs = () => {
     // Simulated World Clock Time
@@ -40,6 +41,8 @@ const ContactUs = () => {
             {/* Block 1: The "We’re Here" Hero */}
             <section className="relative py-24 md:py-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
                 {/* Abstract Support Visuals */}
+                <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2069&auto=format&fit=crop')" }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
                 <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.1)_0%,transparent_70%)]"></div>
 
@@ -49,7 +52,7 @@ const ContactUs = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                         </span>
-                        <span className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest">Support Active 24/7</span>
+                        <span className="text-gold-gradient text-xs font-bold uppercase tracking-widest">Support Active 24/7</span>
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-[var(--font-heading)] font-bold text-white mb-6 leading-tight">
@@ -85,7 +88,7 @@ const ContactUs = () => {
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Instant Support</h3>
                             <p className="text-gray-400 text-sm mb-6">Chat with our experts in real-time.</p>
-                            <button onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })} className="text-[var(--color-gold)] font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all">
+                            <button onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })} className="text-gold-gradient font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all">
                                 Start Chat <ArrowRight size={16} />
                             </button>
                         </div>
@@ -97,7 +100,7 @@ const ContactUs = () => {
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Detailed Inquiries</h3>
                             <p className="text-gray-400 text-sm mb-6">For technical or account support.</p>
-                            <a href="mailto:support@radhikafx.com" className="text-[var(--color-gold)] font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all">
+                            <a href="mailto:support@radhikafx.com" className="text-gold-gradient font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all">
                                 support@radhikafx.com <ArrowRight size={16} />
                             </a>
                         </div>
@@ -109,7 +112,7 @@ const ContactUs = () => {
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Speak to Us</h3>
                             <p className="text-gray-400 text-sm mb-6">Call our global dedicated line.</p>
-                            <a href="tel:+447462103568" className="text-[var(--color-gold)] font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all">
+                            <a href="tel:+447462103568" className="text-gold-gradient font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all">
                                 +44 7462 103568 <ArrowRight size={16} />
                             </a>
                         </div>
@@ -144,7 +147,7 @@ const ContactUs = () => {
                                     <div className="p-6">
                                         <h4 className="text-white font-bold mb-2">Dubai Office</h4>
                                         <p className="text-gray-400 text-sm mb-4">Dubai, UAE.</p>
-                                        <a href="https://www.google.com/maps/search/?api=1&query=Concord+Tower+Dubai+Media+City" target="_blank" rel="noopener noreferrer" className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Concord+Tower+Dubai+Media+City" target="_blank" rel="noopener noreferrer" className="text-gold-gradient text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +164,7 @@ const ContactUs = () => {
                                     <div className="p-6">
                                         <h4 className="text-white font-bold mb-2">Registered Office</h4>
                                         <p className="text-gray-400 text-sm mb-4">Cybercati, Ebene, Mauritius.</p>
-                                        <a href="https://www.google.com/maps/search/?api=1&query=Cybercati+Ebene+Mauritius" target="_blank" rel="noopener noreferrer" className="text-[var(--color-gold)] text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Cybercati+Ebene+Mauritius" target="_blank" rel="noopener noreferrer" className="text-gold-gradient text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
                                     </div>
                                 </div>
                             </div>

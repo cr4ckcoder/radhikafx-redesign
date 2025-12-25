@@ -108,6 +108,8 @@ const FAQ = () => {
 
             {/* Block 1: The Knowledge Hub Hero */}
             <section className="relative py-20 md:py-32 flex flex-col items-center justify-center text-center px-6 bg-[#02040a] overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop')" }}></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.1)_0%,rgba(0,0,0,0)_70%)]"></div>
 
                 <div className="relative z-10 max-w-3xl mx-auto w-full">

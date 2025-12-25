@@ -96,18 +96,18 @@ const Header = () => {
                 <div className="container mx-auto px-6 h-full flex items-center justify-between">
                     {/* Left: Contact Info */}
                     <div className="flex items-center gap-6 text-sm">
-                        <a href="tel:+447462103568" className="flex items-center gap-2 text-gray-400 hover:text-[var(--color-gold)] transition-colors">
+                        <a href="tel:+447462103568" className="flex items-center gap-2 text-gray-400 hover-text-gold-gradient transition-colors">
                             <span>+44 7462 103568</span>
                         </a>
                         <span className="w-px h-4 bg-gray-700"></span>
-                        <Link to="/contact-us" className="text-gray-400 hover:text-[var(--color-gold)] transition-colors">
+                        <Link to="/contact-us" className="text-gray-400 hover-text-gold-gradient transition-colors">
                             Contact Us
                         </Link>
                     </div>
 
                     {/* Right: Actions (Moved from Main Nav) */}
                     <div className="flex items-center gap-4">
-                        <a href="https://cabinet.radhikafx.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-white)] hover:text-gold-gradient font-medium transition-colors">
+                        <a href="https://cabinet.radhikafx.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-white)] hover-text-gold-gradient font-medium transition-colors">
                             Login
                         </a>
                         <Link
@@ -122,24 +122,24 @@ const Header = () => {
 
             <div className="container mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
-                <Link to="/" className="flex items-center gap-2 group">
-                    <img src={Logo} alt="Radhika Capital Markets" className="h-14 w-auto object-contain" />
+                <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
+                    <img src={Logo} alt="Radhika Capital Markets" className="h-10 md:h-12 lg:h-14 w-auto object-contain" />
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex items-center gap-8">
-                    {navItems.map((item) => (
+                <nav className="hidden md:flex items-center gap-4 lg:gap-8">
+                    {navItems.filter(item => item.name !== 'Contact Us').map((item) => (
                         <div key={item.name} className="relative group">
                             {item.path ? (
                                 <Link
                                     to={item.path}
-                                    className="flex items-center space-x-1 text-[var(--color-white)] hover:text-[var(--color-gold)] transition-colors font-medium"
+                                    className="flex items-center space-x-1 text-[var(--color-white)] hover-text-gold-gradient transition-colors font-medium text-sm lg:text-base"
                                 >
                                     <span>{item.name}</span>
                                 </Link>
                             ) : (
                                 <>
-                                    <button className="flex items-center space-x-1 text-[var(--color-white)] hover:text-[var(--color-gold)] transition-colors font-medium cursor-default">
+                                    <button className="flex items-center space-x-1 text-[var(--color-white)] hover-text-gold-gradient transition-colors font-medium cursor-default text-sm lg:text-base">
                                         <span>{item.name}</span>
                                         <ChevronDown size={14} />
                                     </button>
@@ -155,7 +155,7 @@ const Header = () => {
                                                             href={subItem.path}
                                                             target="_blank"
                                                             rel="noopener noreferrer"
-                                                            className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[rgba(255,255,255,0.05)] text-gray-300 hover:text-gold-gradient transition-colors"
+                                                            className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[rgba(255,255,255,0.05)] text-gray-300 hover-text-gold-gradient transition-colors"
                                                         >
                                                             <span className="text-[var(--color-gold)]">{subItem.icon}</span>
                                                             <span className="font-medium">{subItem.name}</span>
@@ -164,7 +164,7 @@ const Header = () => {
                                                         <Link
                                                             key={subItem.name}
                                                             to={subItem.path}
-                                                            className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[rgba(255,255,255,0.05)] text-gray-300 hover:text-gold-gradient transition-colors"
+                                                            className="flex items-center space-x-3 p-3 rounded-lg hover:bg-[rgba(255,255,255,0.05)] text-gray-300 hover-text-gold-gradient transition-colors"
                                                         >
                                                             <span className="text-[var(--color-gold)]">{subItem.icon}</span>
                                                             <span className="font-medium">{subItem.name}</span>
@@ -216,7 +216,7 @@ const Header = () => {
                                                 <Link
                                                     key={subItem.name}
                                                     to={subItem.path}
-                                                    className="text-gray-300 py-1 hover:text-gold-gradient"
+                                                    className="text-gray-300 py-1 hover-text-gold-gradient"
                                                     onClick={() => setMobileMenuOpen(false)}
                                                 >
                                                     {subItem.name}

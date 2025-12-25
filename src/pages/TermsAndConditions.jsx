@@ -94,7 +94,7 @@ const TermsAndConditions = () => {
                 {/* Block 2: Table of Contents (Sticky Sidebar) */}
                 <div className="hidden lg:block w-1/4 relative">
                     <div className="sticky top-32 border-r-2 border-gray-800 pr-6">
-                        <h3 className="font-bold text-[var(--color-gold)] text-xs uppercase tracking-wider mb-6">Table of Contents</h3>
+                        <h3 className="font-bold text-gold-gradient text-xs uppercase tracking-wider mb-6">Table of Contents</h3>
                         <nav className="space-y-1">
                             {sections.map((section) => (
                                 <button
@@ -227,7 +227,7 @@ const TermsAndConditions = () => {
                         <section id="section-15">
                             <h2 className="text-2xl font-bold text-white mb-6">15. Contact</h2>
                             <p className="text-lg leading-relaxed text-gray-400 mb-4">
-                                If you have any questions regarding this Agreement, please contact our support team at <a href="mailto:support@radhikafx.com" className="text-[var(--color-gold)] hover:text-white font-bold transition-colors">support@radhikafx.com</a>.
+                                If you have any questions regarding this Agreement, please contact our support team at <a href="mailto:support@radhikafx.com" className="text-gold-gradient hover:text-white font-bold transition-colors">support@radhikafx.com</a>.
                             </p>
                         </section>
 

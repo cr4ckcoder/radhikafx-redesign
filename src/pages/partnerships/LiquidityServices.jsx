@@ -31,7 +31,7 @@ const LiquidityServices = () => {
                     </div>
                     <h1 className="text-4xl md:text-7xl font-bold font-[var(--font-heading)] text-white mb-6 uppercase tracking-tight">
                         Institutional-Grade <br />
-                        <span className="text-[var(--color-gold)]">Liquidity Solutions</span>
+                        <span className="text-gold-gradient">Liquidity Solutions</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12 font-light border-l-2 border-[var(--color-gold)] pl-6 text-left md:text-center md:border-l-0 md:pl-0">
                         Powering brokers, hedge funds, and professional trading firms with deep, multi-asset liquidity and ultra-low latency execution via our global data center network.
@@ -61,7 +61,7 @@ const LiquidityServices = () => {
                 </div>
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold mb-12 uppercase tracking-wider flex items-center gap-4">
-                        <span className="w-8 h-8 bg-[var(--color-gold)]"></span>
+                        <span className="w-8 h-8 bg-gold-gradient"></span>
                         Multi-Asset Ecosystem
                     </h2>
 
@@ -78,7 +78,7 @@ const LiquidityServices = () => {
                                 <h3 className="text-xl font-bold text-white mb-2 font-mono uppercase">{item.title}</h3>
                                 <p className="text-sm text-gray-400 leading-relaxed rounded-none">{item.desc}</p>
                                 <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <div className="w-2 h-2 bg-[var(--color-gold)]"></div>
+                                    <div className="w-2 h-2 bg-gold-gradient"></div>
                                 </div>
                             </div>
                         ))}
@@ -97,7 +97,7 @@ const LiquidityServices = () => {
                 <div className="container mx-auto px-6 relative z-10">
                     <h2 className="text-3xl font-bold mb-16 uppercase tracking-wider flex items-center gap-4 justify-end text-right">
                         Liquidity Bridge
-                        <span className="w-8 h-8 bg-[var(--color-gold)]"></span>
+                        <span className="w-8 h-8 bg-gold-gradient"></span>
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
@@ -212,17 +212,17 @@ const LiquidityServices = () => {
 
                             <Anchor size={48} className="mx-auto text-[var(--color-gold)] mb-6" />
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-[var(--font-heading)] uppercase">
-                                Upgrade Your <span className="text-[var(--color-gold)]">Liquidity Today</span>
+                                Upgrade Your <span className="text-gold-gradient">Liquidity Today</span>
                             </h2>
                             <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
                                 Ready to optimize your execution? Our liquidity specialists are ready to discuss a tailored solution for your brokerage or fund.
                             </p>
 
                             <div className="flex flex-col md:flex-row justify-center gap-6">
-                                <Link to="/contact-us" className="px-12 py-4 bg-[var(--color-gold)] text-black font-bold uppercase tracking-widest hover:bg-white transition-colors rounded-none">
+                                <Link to="/contact-us" className="px-12 py-4 btn-gold text-[var(--color-navy)] font-bold uppercase tracking-widest hover:bg-white transition-colors rounded-none">
                                     Contact Institutional Sales
                                 </Link>
-                                <button className="px-12 py-4 border border-[var(--color-gold)] text-[var(--color-gold)] font-bold uppercase tracking-widest hover:bg-[rgba(185,156,0,0.1)] transition-colors rounded-none">
+                                <button className="px-12 py-4 border border-[var(--color-gold)] text-[var(--color-gold)] font-bold uppercase tracking-widest hover:bg-[rgba(185,156,0,0.1)] hover:text-gold-gradient transition-colors rounded-none">
                                     Download Liquidity Deck (PDF)
                                 </button>
                             </div>

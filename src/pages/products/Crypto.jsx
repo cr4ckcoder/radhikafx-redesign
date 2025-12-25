@@ -47,11 +47,11 @@ const Crypto = () => {
 
                 <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-[var(--color-gold)] text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
+                        <div className="inline-block px-3 py-1 mb-6 border border-[var(--color-gold)] rounded-full text-gold-gradient text-xs font-bold uppercase tracking-widest bg-[rgba(233,219,141,0.05)]">
                             Crypto CFDs
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight font-[var(--font-heading)]">
-                            Trade the <span className="text-[var(--color-gold)]">Future of Finance</span> 24/7.
+                            Trade the <span className="text-gold-gradient">Future of Finance</span> 24/7.
                         </h1>
                         <p className="text-xl text-gray-400 mb-8 leading-relaxed">
                             Don't just HODL—Trade. Access 50+ of the world's most popular Crypto CFDs with up to 1:20 leverage, instant execution, and zero storage risks.
@@ -183,7 +183,7 @@ const Crypto = () => {
                         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
 
                         <div className="md:w-1/2 relative z-10">
-                            <div className="inline-flex items-center space-x-2 text-[var(--color-gold)] mb-6 font-bold uppercase tracking-widest text-sm">
+                            <div className="inline-flex items-center space-x-2 text-gold-gradient mb-6 font-bold uppercase tracking-widest text-sm">
                                 <Activity size={18} />
                                 <span>Engineered for Volatility</span>
                             </div>
@@ -248,7 +248,7 @@ const Crypto = () => {
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                         Forex stops on Friday, but Crypto keeps going. Enjoy uninterrupted access to digital markets even on weekends. Our dedicated crypto support team is available whenever the market is moving.
                     </p>
-                    <div className="text-[var(--color-gold)] font-bold text-lg tracking-widest border border-[var(--color-gold)] px-6 py-2 inline-block rounded-full">
+                    <div className="text-gold-gradient font-bold text-lg tracking-widest border border-[var(--color-gold)] px-6 py-2 inline-block rounded-full">
                         24 / 7 / 365
                     </div>
                 </div>

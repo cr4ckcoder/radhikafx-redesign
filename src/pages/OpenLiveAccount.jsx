@@ -200,8 +200,10 @@ const OpenLiveAccount = () => {
     return (
         <div className="min-h-screen bg-[#02040a] font-[var(--font-body)] pt-20 md:pt-40">
             {/* Block 1: The "Low-Friction" Hero */}
-            <section className="bg-gradient-to-b from-[#050A14] to-[#02040a] py-16 border-b border-gray-900">
-                <div className="container mx-auto px-6 text-center">
+            <section className="relative bg-[#050A14] py-16 border-b border-gray-900 overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1611974765270-ca1258634369?q=80&w=2070&auto=format&fit=crop')" }}></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-[#050A14]/80 to-[#02040a]"></div>
+                <div className="container mx-auto px-6 text-center relative z-10">
                     <h1 className="text-4xl md:text-5xl font-[var(--font-heading)] font-bold text-white mb-4">
                         Start Your Trading Journey <span className="text-gold-gradient">in 3 Simple Steps</span>
                     </h1>
@@ -224,8 +226,8 @@ const OpenLiveAccount = () => {
                                         {/* Progress Bar */}
                                         <div className="mb-10">
                                             <div className="flex justify-between text-xs font-bold uppercase text-gray-500 mb-2">
-                                                <span className={step >= 1 ? 'text-[var(--color-gold)]' : ''}>1. Account Setup</span>
-                                                <span className={step >= 2 ? 'text-[var(--color-gold)]' : ''}>2. Location & Extras</span>
+                                                <span className={step >= 1 ? 'text-gold-gradient' : ''}>1. Account Setup</span>
+                                                <span className={step >= 2 ? 'text-gold-gradient' : ''}>2. Location & Extras</span>
                                             </div>
                                             <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
                                                 <div
@@ -360,7 +362,7 @@ const OpenLiveAccount = () => {
                                             {otpTimer > 0 ? (
                                                 <p className="text-sm text-gray-500">Resend code in {otpTimer}s</p>
                                             ) : (
-                                                <button onClick={requestOtp} className="text-sm text-[var(--color-gold)] hover:underline">Resend Verification Code</button>
+                                                <button onClick={requestOtp} className="text-sm text-gold-gradient hover:underline">Resend Verification Code</button>
                                             )}
                                         </div>
 
@@ -401,7 +403,7 @@ const OpenLiveAccount = () => {
                                 </div>
                                 <h4 className="text-white font-bold mb-2">Need help?</h4>
                                 <p className="text-sm text-gray-400 mb-4">Our onboarding specialists are ready to assist you.</p>
-                                <Link to="/contact-us" className="text-[var(--color-gold)] text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                                <Link to="/contact-us" className="text-gold-gradient text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all">
                                     Contact Support <ChevronRight size={16} />
                                 </Link>
                             </div>
