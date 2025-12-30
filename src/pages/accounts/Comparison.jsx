@@ -22,16 +22,15 @@ const Comparison = () => {
     }, []);
 
     const features = [
-        { name: "Ideal For", standard: "Beginners & Retail", pro: "Active Traders", prox: "Scalpers & High Volume" },
-        { name: "Min. Deposit", standard: "$100", pro: "$1,000", prox: "$10,000" },
-        { name: "Spreads From", standard: "3.0 Pips", pro: "2.5 Pips", prox: "0.0 Pips (Raw)" },
-        { name: "Commission", standard: "$0", pro: "$0", prox: "$3.50 / lot" },
-        { name: "Max Leverage", standard: "1:500", pro: "1:200", prox: "1:200" },
+        { name: "Minimum Deposit", standard: "$100", pro: "$1,000", prox: "$10,000" },
+        { name: "Spreads", standard: "From 3.0 Pips", pro: "From 2.5 Pips", prox: "Raw Spreads (0.0)" },
+        { name: "Commission", standard: "$0", pro: "$0", prox: "Low Commission" },
+        { name: "Execution", standard: "Market / STP", pro: "Market / STP", prox: "ECN / Institutional" },
+        { name: "Leverage", standard: "Up to 1:500", pro: "Up to 1:200", prox: "Up to 1:200" },
         { name: "Platform", standard: "MT5", pro: "MT5", prox: "MT5" },
-        { name: "Min. Lot Size", standard: "0.01 Lots", pro: "0.01 Lots", prox: "0.01 Lots" },
-        { name: "Execution", standard: "STP", pro: "STP", prox: "ECN (Raw)" },
-        { name: "Expert Advisors", standard: <Check size={20} className="mx-auto text-green-500" />, pro: <Check size={20} className="mx-auto text-green-500" />, prox: <span className="font-bold text-gold-gradient">Optimized</span> },
-        { name: "Personal Manager", standard: "Email/Chat", pro: "Priority Support", prox: "Direct Relationship Mgr" },
+        { name: "Assets", standard: "500+ Instruments", pro: "500+ Instruments", prox: "All Asset Classes" },
+        { name: "Min. Trade Size", standard: "0.01 Lots", pro: "0.01 Lots", prox: "0.01 Lots" },
+        { name: "Base Currency", standard: "USDT", pro: "USDT", prox: "USDT" },
     ];
 
     return (

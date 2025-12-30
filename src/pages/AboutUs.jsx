@@ -3,6 +3,7 @@ import {
     Globe, Shield, TrendingUp, Users, CheckCircle,
     Lock, Server, Smartphone, Monitor
 } from 'lucide-react';
+import mt5Image from '../assets/mt5.png';
 
 const Counter = ({ end, suffix = "", duration = 2000 }) => {
     const [count, setCount] = useState(0);
@@ -262,17 +263,14 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div className="lg:w-1/2 relative">
-                            {/* Abstract Tech Representation */}
-                            <div className="relative w-full aspect-video bg-gradient-to-br from-[#1a2d4d] to-[#050c18] rounded-xl border border-[var(--glass-border)] shadow-2xl flex items-center justify-center overflow-hidden">
-                                <div className="absolute inset-0 grid grid-cols-12 gap-1 opacity-10">
-                                    {[...Array(144)].map((_, i) => (
-                                        <div key={i} className="bg-white rounded-[1px]"></div>
-                                    ))}
-                                </div>
-                                <div className="z-10 text-center">
-                                    <p className="text-gold-gradient font-mono mb-2">RADHIKA.MT5.PRO</p>
-                                    <h3 className="text-4xl font-bold text-white tracking-widest">LIVE</h3>
-                                </div>
+                            {/* MT5 Platform Image */}
+                            <div className="relative w-full rounded-xl border border-[var(--glass-border)] shadow-2xl overflow-hidden group">
+                                <div className="absolute inset-0 bg-gold-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                                <img
+                                    src={mt5Image}
+                                    alt="MetaTrader 5 Platform"
+                                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
+                                />
                             </div>
                         </div>
                     </div>

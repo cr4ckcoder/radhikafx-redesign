@@ -47,8 +47,8 @@ const Pro = () => {
                             <div className="text-3xl font-bold text-white">2.5 <span className="text-sm font-normal text-gray-500">Pips</span></div>
                         </div>
                         <div className="text-center">
-                            <div className="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Commission</div>
-                            <div className="text-3xl font-bold text-white">$0</div>
+                            <div className="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Leverage</div>
+                            <div className="text-3xl font-bold text-white">1:200</div>
                         </div>
                     </div>
                 </div>
@@ -140,40 +140,44 @@ const Pro = () => {
                 </div>
             </section>
 
-            {/* Block 4: Detailed Specifications */}
-            <section className="py-24 bg-[#050505]">
-                <div className="container mx-auto px-6 max-w-4xl">
+            {/* Block 4: Pro Account Includes (New Layout) */}
+            <section className="py-24 bg-black">
+                <div className="container mx-auto px-6 max-w-5xl">
                     <div className="text-center mb-12">
-                        <h2 className="text-2xl font-bold text-white">Account Specifications</h2>
+                        <h2 className="text-3xl font-bold text-white mb-2">Pro Account Includes:</h2>
                     </div>
 
-                    <div className="border-t border-b border-gray-800">
-                        <div className="grid grid-cols-1 md:grid-cols-2">
-                            <div className="p-6 border-b md:border-b-0 md:border-r border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Execution Model</span>
-                                <span className="text-white font-bold font-mono">DMA / STP</span>
-                            </div>
-                            <div className="p-6 border-b md:border-b-0 border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Max Leverage</span>
-                                <span className="text-white font-bold font-mono">1:400</span>
-                            </div>
-                            <div className="p-6 border-b md:border-b-0 md:border-r border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Account Currency</span>
-                                <span className="text-white font-bold font-mono">USD / EUR</span>
-                            </div>
-                            <div className="p-6 border-b md:border-b-0 border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Min Lot Size</span>
-                                <span className="text-white font-bold font-mono">0.01</span>
-                            </div>
-                            <div className="p-6 md:border-r border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Margin Call</span>
-                                <span className="text-white font-bold font-mono">100%</span>
-                            </div>
-                            <div className="p-6 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Stop Out</span>
-                                <span className="text-white font-bold font-mono">50%</span>
-                            </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                        {/* Item 1 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Trading Platform: <span className="text-[var(--color-gold)] font-bold">MT5</span></span>
                         </div>
+                        {/* Item 2 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Minimum Initial Deposit: <span className="text-[var(--color-gold)] font-bold">$1000</span></span>
+                        </div>
+                        {/* Item 3 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Spreads: <span className="text-[var(--color-gold)] font-bold">From 2.5 pips</span></span>
+                        </div>
+                        {/* Item 4 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Leverage: <span className="text-[var(--color-gold)] font-bold">Up to 1:200</span></span>
+                        </div>
+                        {/* Item 5 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Account Type: <span className="text-white font-bold">Commission-free*</span></span>
+                        </div>
+                        {/* Item 6 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Support: <span className="text-[var(--color-gold)] font-bold">24/7 customer support</span></span>
+                        </div>
+                    </div>
+
+                    <div className="text-center">
+                        <p className="text-gray-400 text-lg">
+                            The Pro Account is ideal for traders who demand more flexibility, lower trading costs, and advanced support.
+                        </p>
                     </div>
                 </div>
             </section>

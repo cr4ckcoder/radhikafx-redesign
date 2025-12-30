@@ -242,47 +242,55 @@ const Home = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         {/* Standard */}
                         <FadeInSection delay={0.0}>
-                            <div className="bg-[#0a1629] border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-colors h-full">
-                                <h3 className="text-2xl font-bold text-white mb-2">Standard</h3>
-                                <p className="text-gray-400 text-sm mb-6">For new traders.</p>
-                                <div className="text-3xl font-bold text-gold-gradient mb-6">$100 <span className="text-sm text-gray-500 font-normal">min deposit</span></div>
-                                <ul className="space-y-4 mb-8 text-sm text-gray-300">
-                                    <li className="flex items-center gap-3"><CheckCircle size={14} className="text-gray-500" /> Spreads from 1.5</li>
-                                    <li className="flex items-center gap-3"><CheckCircle size={14} className="text-gray-500" /> Zero Commission</li>
-                                    <li className="flex items-center gap-3"><CheckCircle size={14} className="text-gray-500" /> MT5 Platform</li>
+                            <div className="bg-[#0a1629] border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-colors h-full flex flex-col text-center">
+                                <div className="mb-6">
+                                     <span className="bg-gradient-to-r from-yellow-700 to-yellow-600 text-white px-8 py-2 font-bold text-sm rounded shadow-lg">Standard Account</span>
+                                </div>
+                                <p className="text-gray-400 text-sm mb-8 flex-grow leading-relaxed px-2">
+                                    Enjoy professional trading solutions with enhanced tools and a wide range of benefits designed for seasoned traders.
+                                </p>
+                                <ul className="space-y-3 mb-8 text-sm text-gray-300 text-left pl-4">
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Minimum Deposit: $100</span></li>
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spread: 3 pips</span></li>
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:300</span></li>
                                 </ul>
-                                <Link to="/accounts/standard" className="block w-full py-3 border border-gray-600 text-white text-center rounded-lg hover:bg-gray-800 transition-colors">View Details</Link>
+                                <Link to="/accounts/standard" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(218,165,32,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
 
-                        {/* Pro (Highlighted) */}
+                        {/* Pro */}
                         <FadeInSection delay={0.2}>
-                            <div className="bg-[#0a1629] border-2 border-[var(--color-gold)] rounded-2xl p-8 relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(255,215,0,0.1)] h-full">
-                                <div className="absolute top-0 right-0 left-0 bg-gold-gradient text-[#02040a] text-center text-xs font-bold uppercase py-1 rounded-t-lg">Most Popular</div>
-                                <h3 className="text-2xl font-bold text-white mb-2 mt-4">Pro</h3>
-                                <p className="text-gray-400 text-sm mb-6">For experienced traders.</p>
-                                <div className="text-3xl font-bold text-gold-gradient mb-6">$1,000 <span className="text-sm text-gray-500 font-normal">min deposit</span></div>
-                                <ul className="space-y-4 mb-8 text-sm text-gray-300">
-                                    <li className="flex items-center gap-3"><CheckCircle size={14} className="text-[var(--color-gold)]" /> Spreads from 0.0</li>
-                                    <li className="flex items-center gap-3"><CheckCircle size={14} className="text-[var(--color-gold)]" /> $7/lot Commission</li>
-                                    <li className="flex items-center gap-3"><CheckCircle size={14} className="text-[var(--color-gold)]" /> Dedicated Manager</li>
+                            <div className="bg-[#0a1629] border border-[var(--color-gold)] rounded-2xl p-8 relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(255,215,0,0.1)] h-full flex flex-col text-center">
+                                <div className="mb-6">
+                                     <span className="bg-gradient-to-r from-yellow-700 to-yellow-600 text-white px-8 py-2 font-bold text-sm rounded shadow-lg">Pro Account</span>
+                                </div>
+                                <p className="text-gray-400 text-sm mb-8 flex-grow leading-relaxed px-2">
+                                    Designed for experienced traders, the Pro Account offers advanced tools to maximize your trading potential.
+                                </p>
+                                <ul className="space-y-3 mb-8 text-sm text-gray-300 text-left pl-4">
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Minimum Deposit: $1,000</span></li>
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spreads : 2.5 pips</span></li>
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage : Up to 1:200</span></li>
                                 </ul>
-                                <Link to="/accounts/pro" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:bg-white transition-colors">Start Trading</Link>
+                                <Link to="/accounts/pro" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(218,165,32,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
 
                         {/* Pro X */}
                         <FadeInSection delay={0.4}>
-                            <div className="bg-[#0a1629] border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-colors h-full">
-                                <h3 className="text-2xl font-bold text-white mb-2">Pro X</h3>
-                                <p className="text-gray-400 text-sm mb-6">For institutional volume.</p>
-                                <div className="text-3xl font-bold text-gold-gradient mb-6">$5,000 <span className="text-sm text-gray-500 font-normal">min deposit</span></div>
-                                <ul className="space-y-4 mb-8 text-sm text-gray-300">
-                                    <li className="flex items-center gap-3"><CheckCircle size={14} className="text-gray-500" /> Spreads from 0.0</li>
-                                    <li className="flex items-center gap-3"><CheckCircle size={14} className="text-gray-500" /> $3/lot Commission</li>
-                                    <li className="flex items-center gap-3"><CheckCircle size={14} className="text-gray-500" /> VPS Included</li>
+                            <div className="bg-[#0a1629] border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-colors h-full flex flex-col text-center">
+                                <div className="mb-6">
+                                     <span className="bg-gradient-to-r from-yellow-700 to-yellow-600 text-white px-8 py-2 font-bold text-sm rounded shadow-lg">Pro X Account</span>
+                                </div>
+                                <p className="text-gray-400 text-sm mb-8 flex-grow leading-relaxed px-2">
+                                    Gain deeper trading insights and access aggregated data from multiple accounts with the Pro X Account.
+                                </p>
+                                <ul className="space-y-3 mb-8 text-sm text-gray-300 text-left pl-4">
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Minimum Deposit: $10,000</span></li>
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spread: Raw Spread</span></li>
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:200</span></li>
                                 </ul>
-                                <Link to="/accounts/pro-x" className="block w-full py-3 border border-gray-600 text-white text-center rounded-lg hover:bg-gray-800 transition-colors">View Details</Link>
+                                <Link to="/accounts/pro-x" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(218,165,32,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
                     </div>

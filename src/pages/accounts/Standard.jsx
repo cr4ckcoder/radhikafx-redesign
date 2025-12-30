@@ -29,11 +29,11 @@ const Standard = () => {
                         Standard <span className="text-gold-gradient">Account</span>
                     </h1>
                     <h2 className="text-2xl md:text-3xl font-light text-gray-300 mb-8 tracking-wide">
-                        The Perfect Start.
+                        Professional Trading.
                     </h2>
 
                     <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed">
-                        Kickstart your trading journey with full market access and zero commissions. Ideal for beginners and retail traders looking for simplicity.
+                        Enjoy professional trading solutions with enhanced tools and a wide range of benefits designed for seasoned traders.
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 border-t border-[var(--color-gold)]/20 pt-10">
@@ -42,12 +42,12 @@ const Standard = () => {
                             <div className="text-3xl font-bold text-white">$100</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Spreads</div>
-                            <div className="text-3xl font-bold text-white">3.0 <span className="text-sm font-normal text-gray-500">Pips</span></div>
+                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Spread</div>
+                            <div className="text-3xl font-bold text-white">3 <span className="text-sm font-normal text-gray-500">pips</span></div>
                         </div>
                         <div className="text-center">
-                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Commission</div>
-                            <div className="text-3xl font-bold text-white">$0</div>
+                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Leverage</div>
+                            <div className="text-3xl font-bold text-white">1:300</div>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@ const Standard = () => {
                             </div>
                             <div className="p-6 border-b md:border-b-0 border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
                                 <span className="text-gray-500">Max Leverage</span>
-                                <span className="text-white font-bold font-mono">1:500</span>
+                                <span className="text-white font-bold font-mono">1:300</span>
                             </div>
                             <div className="p-6 border-b md:border-b-0 md:border-r border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
                                 <span className="text-gray-500">Account Currency</span>

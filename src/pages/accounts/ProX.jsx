@@ -43,8 +43,8 @@ const ProX = () => {
                             <div className="text-3xl font-bold text-white">0.0 <span className="text-sm font-normal text-gray-500">Pips</span></div>
                         </div>
                         <div className="text-center">
-                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Commission</div>
-                            <div className="text-3xl font-bold text-white">$3.50 <span className="text-sm font-normal text-gray-500">/ side</span></div>
+                            <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Leverage</div>
+                            <div className="text-3xl font-bold text-white">1:200</div>
                         </div>
                     </div>
                 </div>
@@ -140,40 +140,44 @@ const ProX = () => {
                 </div>
             </section>
 
-            {/* Block 4: Detailed Specifications */}
-            <section className="py-24 bg-[#050505]">
-                <div className="container mx-auto px-6 max-w-4xl">
+            {/* Block 4: Pro X Account Includes (New Layout) */}
+            <section className="py-24 bg-black">
+                <div className="container mx-auto px-6 max-w-5xl">
                     <div className="text-center mb-12">
-                        <h2 className="text-2xl font-bold text-white">Institutional Grade Specs</h2>
+                        <h2 className="text-3xl font-bold text-white mb-2">Pro X Account Includes:</h2>
                     </div>
 
-                    <div className="border-t border-b border-gray-800">
-                        <div className="grid grid-cols-1 md:grid-cols-2">
-                            <div className="p-6 border-b md:border-b-0 md:border-r border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Execution Model</span>
-                                <span className="text-white font-bold font-mono">ECN / DMA (Raw)</span>
-                            </div>
-                            <div className="p-6 border-b md:border-b-0 border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Max Leverage</span>
-                                <span className="text-white font-bold font-mono">1:200</span>
-                            </div>
-                            <div className="p-6 border-b md:border-b-0 md:border-r border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Account Currency</span>
-                                <span className="text-white font-bold font-mono">USD / USDT</span>
-                            </div>
-                            <div className="p-6 border-b md:border-b-0 border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Negative Balance Protection</span>
-                                <span className="text-gold-gradient font-bold font-mono uppercase">Included</span>
-                            </div>
-                            <div className="p-6 md:border-r border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Margin Call</span>
-                                <span className="text-white font-bold font-mono">100%</span>
-                            </div>
-                            <div className="p-6 flex justify-between items-center group hover:bg-white/5 transition-colors">
-                                <span className="text-gray-500">Stop Out</span>
-                                <span className="text-white font-bold font-mono">50%</span>
-                            </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                        {/* Item 1 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Trading Platform: <span className="text-[var(--color-gold)] font-bold">MT5</span></span>
                         </div>
+                        {/* Item 2 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Minimum Initial Deposit: <span className="text-[var(--color-gold)] font-bold">$10,000</span></span>
+                        </div>
+                        {/* Item 3 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Spreads: <span className="text-[var(--color-gold)] font-bold">From Raw Spread</span></span>
+                        </div>
+                        {/* Item 4 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Leverage: <span className="text-[var(--color-gold)] font-bold">Up to 1:200</span></span>
+                        </div>
+                        {/* Item 5 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-white font-medium">Institutional-grade, ultra-fast processing</span>
+                        </div>
+                        {/* Item 6 */}
+                        <div className="border border-slate-700/50 rounded-full py-4 px-6 flex items-center justify-center bg-[#0a0a0a]">
+                            <span className="text-gray-300 font-medium">Support: <span className="text-[var(--color-gold)] font-bold">24/7 customer support</span></span>
+                        </div>
+                    </div>
+
+                    <div className="text-center">
+                        <p className="text-gray-400 text-lg">
+                            The Pro X Account is tailored for serious traders who require top-tier conditions, professional-grade infrastructure, and maximum transparency.
+                        </p>
                     </div>
                 </div>
             </section>
