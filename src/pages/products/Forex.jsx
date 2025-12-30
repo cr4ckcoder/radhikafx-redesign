@@ -48,7 +48,7 @@ const Forex = () => {
             <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#02040a]">
                 {/* Simulated Time-lapse Background */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20 filter blur-[80px] animate-pulse-slow"></div>
-                <div className="absolute inset-0 bg-cover bg-center opacity-40 filter grayscale" style={{ backgroundImage: `url(${ForexBg})` }}></div>
+                <div className="absolute inset-0 bg-cover bg-center opacity-10 filter grayscale" style={{ backgroundImage: `url(${ForexBg})` }}></div>
 
                 <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
