@@ -64,8 +64,7 @@ const Header = () => {
             icon: <Users size={18} />,
             dropdown: [
                 { name: 'IB Programme', icon: <Briefcase size={16} />, path: '/partnership/ib-programme' },
-                { name: 'CPA Affiliate', icon: <TrendingUp size={16} />, path: '/partnership/cpa-affiliate' },
-                { name: 'Liquidity Services', icon: <Database size={16} />, path: '/partnership/liquidity-services' }
+                { name: 'CPA Affiliate', icon: <TrendingUp size={16} />, path: '/partnership/cpa-affiliate' }
             ]
         },
         {

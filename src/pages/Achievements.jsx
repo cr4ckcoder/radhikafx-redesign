@@ -15,7 +15,7 @@ const Achievements = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                 {/* Bokeh Golden Glow Effect */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,215,0,0.15)_0%,rgba(0,0,0,0)_60%)]"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(96,189,71,0.15)_0%,rgba(0,0,0,0)_60%)]"></div>
 
                 {/* Floating Particles/Stars */}
                 <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[var(--color-gold)] rounded-full opacity-60 animate-pulse"></div>
@@ -23,7 +23,7 @@ const Achievements = () => {
                 <div className="absolute bottom-1/3 right-1/4 w-3 h-3 bg-[var(--color-gold)] rounded-full opacity-20 animate-bounce-slow"></div>
 
                 <div className="relative z-10 max-w-4xl mx-auto">
-                    <div className="inline-flex items-center gap-2 px-6 py-2 bg-[rgba(255,215,0,0.05)] border border-[rgba(255,215,0,0.2)] rounded-full mb-8 backdrop-blur-md">
+                    <div className="inline-flex items-center gap-2 px-6 py-2 bg-[rgba(96,189,71,0.05)] border border-[rgba(96,189,71,0.2)] rounded-full mb-8 backdrop-blur-md">
                         <Trophy size={16} className="text-[var(--color-gold)]" />
                         <span className="text-gold-gradient text-xs font-bold uppercase tracking-[0.2em]">Excellence Defined</span>
                     </div>
@@ -48,14 +48,14 @@ const Achievements = () => {
 
 
                         {/* Card 2 */}
-                        <div className="w-full max-w-xl bg-[#0a1629]/50 backdrop-blur-sm border border-[rgba(255,215,0,0.1)] rounded-2xl p-8 hover:border-[var(--color-gold)] transition-all duration-500 hover:transform hover:-translate-y-2 group shadow-2xl relative overflow-hidden">
+                        <div className="w-full max-w-xl bg-[#0a1629]/50 backdrop-blur-sm border border-[rgba(96,189,71,0.1)] rounded-2xl p-8 hover:border-[var(--color-gold)] transition-all duration-500 hover:transform hover:-translate-y-2 group shadow-2xl relative overflow-hidden">
                             {/* Sash */}
                             <div className="absolute top-0 right-0 bg-[var(--color-gold)] text-black text-xs font-bold px-4 py-1 rounded-bl-lg z-20">
                                 2025 WINNER
                             </div>
 
                             <div className="relative z-10">
-                                <div className="w-24 h-24 bg-gradient-to-br from-[var(--color-gold)] to-yellow-600 rounded-full flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(255,215,0,0.3)] mx-auto group-hover:scale-110 transition-transform duration-500">
+                                <div className="w-24 h-24 bg-gradient-to-br from-[var(--color-gold)] to-[#4A8739] rounded-full flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(96,189,71,0.3)] mx-auto group-hover:scale-110 transition-transform duration-500">
                                     <Award size={48} className="text-[#0a1629]" />
                                 </div>
 
@@ -113,7 +113,7 @@ const Achievements = () => {
             {/* Block 5: The "Next Chapter" Footer CTA */}
             <section className="py-24 bg-[#000a14]">
                 <div className="container mx-auto px-6">
-                    <div className="max-w-4xl mx-auto rounded-3xl p-1 bg-gradient-to-r from-[#b8860b] via-[var(--color-gold)] to-[#b8860b]">
+                    <div className="max-w-4xl mx-auto rounded-3xl p-1 bg-gradient-to-r from-[#4A8739] via-[var(--color-gold)] to-[#4A8739]">
                         <div className="bg-[#050505] rounded-[22px] px-8 py-16 text-center">
                             <h2 className="text-3xl md:text-5xl font-[var(--font-heading)] font-bold text-white mb-6">
                                 Trade with an Award-Winning Broker.
@@ -122,7 +122,7 @@ const Achievements = () => {
                                 Experience the excellence that the industry is talking about. Join Radhika Capital Markets today.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center gap-6">
-                                <button className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded hover:bg-white transition-colors shadow-lg shadow-yellow-900/20">
+                                <button className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded hover:bg-white transition-colors shadow-lg shadow-green-900/20">
                                     Open Live Account
                                 </button>
                                 <button className="px-8 py-4 bg-transparent border border-gray-600 text-white font-bold rounded hover:bg-white/10 transition-colors">

@@ -3,6 +3,7 @@ import {
     Briefcase, TrendingUp, Users, PieChart, BarChart2,
     Gift, Shield, Globe, CheckCircle, Smartphone
 } from 'lucide-react';
+import LiveAccountForm from '../../components/LiveAccountForm';
 
 const IBProgramme = () => {
     return (
@@ -191,65 +192,7 @@ const IBProgramme = () => {
                         </div>
 
                         {/* Right Side: Form */}
-                        <div className="bg-[#0a1629] p-8 md:p-10 rounded-2xl border border-gray-800 shadow-2xl">
-                            <form className="space-y-6">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div>
-                                        <label className="block text-gray-400 text-xs font-bold uppercase mb-2">First Name</label>
-                                        <input type="text" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="John" />
-                                    </div>
-                                    <div>
-                                        <label className="block text-gray-400 text-xs font-bold uppercase mb-2">Last Name</label>
-                                        <input type="text" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Doe" />
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label className="block text-gray-400 text-xs font-bold uppercase mb-2">Email Address</label>
-                                    <input type="email" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="john@example.com" />
-                                </div>
-
-                                <div>
-                                    <label className="block text-gray-400 text-xs font-bold uppercase mb-2">Phone Number</label>
-                                    <input type="tel" className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="+1 (555) 000-0000" />
-                                </div>
-
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div>
-                                        <label className="block text-gray-400 text-xs font-bold uppercase mb-2">Years of Experience</label>
-                                        <div className="relative">
-                                            <select className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none">
-                                                <option>New to Partnership</option>
-                                                <option>1-2 Years</option>
-                                                <option>3-5 Years</option>
-                                                <option>5+ Years</option>
-                                            </select>
-                                            <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500">
-                                                <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" /></svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-gray-400 text-xs font-bold uppercase mb-2">Average Monthly Volume</label>
-                                        <div className="relative">
-                                            <select className="w-full bg-[#050c18] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none">
-                                                <option>0 - 50 Lots</option>
-                                                <option>50 - 200 Lots</option>
-                                                <option>200 - 500 Lots</option>
-                                                <option>500+ Lots</option>
-                                            </select>
-                                            <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500">
-                                                <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" /></svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button type="button" className="w-full py-4 bg-[var(--color-gold)] text-[#02040a] font-bold rounded hover:bg-white transition-colors shadow-lg shadow-yellow-900/20">
-                                    Submit Application
-                                </button>
-                            </form>
-                        </div>
+                        <LiveAccountForm isIB={true} className="shadow-2xl" />
 
                     </div>
                 </div>

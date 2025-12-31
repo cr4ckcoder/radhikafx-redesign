@@ -235,7 +235,7 @@ const Commodities = () => {
             {/* Block 5: Closing Guarantee */}
             <section className="py-24 bg-[#0a1629]">
                 <div className="container mx-auto px-6 text-center">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-tr from-yellow-600 to-yellow-900 rounded-full flex items-center justify-center shadow-lg shadow-yellow-900/30 mb-8 animate-pulse-slow">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-tr from-[var(--color-gold)] to-[#4A8739] rounded-full flex items-center justify-center shadow-lg shadow-[rgba(96,189,71,0.3)] mb-8 animate-pulse-slow">
                         <Globe size={40} className="text-white" />
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
