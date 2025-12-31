@@ -3,7 +3,7 @@
 
 @theme {
   /* Brand Colors */
-  --color-navy: #02050a;
+  --color-navy: #000a14;
   /* Updated logic: Deep Navy/Black */
   --color-gold: #60bd47;
   --color-white: #ffffff;
@@ -60,7 +60,7 @@ h1 {
 }
 
 .stroke-gold-gradient {
-  stroke: linear-gradient(to right, linear-gradient(273deg, #60bd47 0%, #4A8739 100%));
+  stroke: #fff;
   /* Overrides currentColor */
   stroke-width: 2px;
 }

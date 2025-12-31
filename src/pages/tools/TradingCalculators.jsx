@@ -67,7 +67,7 @@ const TradingCalculators = () => {
             </section>
 
             {/* Block 2: The "Big Three" Calculators */}
-            <section className="py-20 bg-[#02040a]">
+            <section className="py-20 bg-[#000a14]">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
@@ -124,13 +124,13 @@ const TradingCalculators = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        <div className="bg-[#02040a] rounded-xl border border-[var(--glass-border)] p-6">
+                        <div className="bg-[#000a14] rounded-xl border border-[var(--glass-border)] p-6">
                             <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2"><TrendingUp size={18} className="text-blue-400" /> Fibonacci Calculator</h3>
                             <div className="bg-[var(--color-navy)] rounded border border-[var(--glass-border)] overflow-hidden mt-4">
                                 <FXVerifyWidget config={fibConfig} />
                             </div>
                         </div>
-                        <div className="bg-[#02040a] rounded-xl border border-[var(--glass-border)] p-6">
+                        <div className="bg-[#000a14] rounded-xl border border-[var(--glass-border)] p-6">
                             <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2"><Calculator size={18} className="text-green-400" /> Position Size Calculator</h3>
                             <div className="bg-[var(--color-navy)] rounded border border-[var(--glass-border)] overflow-hidden mt-4">
                                 <FXVerifyWidget config={positionSizeConfig} />
@@ -141,7 +141,7 @@ const TradingCalculators = () => {
             </section>
 
             {/* Block 4: Why Use & Safe Trading */}
-            <section className="py-20 bg-[#02040a] border-t border-[var(--glass-border)]">
+            <section className="py-20 bg-[#000a14] border-t border-[var(--glass-border)]">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
@@ -190,7 +190,7 @@ const TradingCalculators = () => {
                                 Never risk more than <strong>1–2% of your account balance</strong> on a single trade. Professional traders prioritize capital preservation above all else.
                             </p>
 
-                            <div className="bg-[#02040a]/50 p-6 rounded-xl border border-[var(--glass-border)] relative z-10">
+                            <div className="bg-[#000a14]/50 p-6 rounded-xl border border-[var(--glass-border)] relative z-10">
                                 <div className="text-sm font-bold text-gray-400 uppercase mb-2">Example</div>
                                 <p className="text-white font-mono text-sm">
                                     Account: $10,000 <br />

@@ -36,7 +36,7 @@ const ContactUs = () => {
     }, []);
 
     return (
-        <div className="pt-20 md:pt-40 bg-[#02040a] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[#000a14] font-[var(--font-body)]">
 
             {/* Block 1: The "We’re Here" Hero */}
             <section className="relative py-24 md:py-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
@@ -78,7 +78,7 @@ const ContactUs = () => {
             </section>
 
             {/* Block 2: The "Quick Connect" Cards */}
-            <section className="py-12 bg-[#02040a] relative z-10 -mt-8">
+            <section className="py-12 bg-[#000a14] relative z-10 -mt-8">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         {/* Live Chat */}
@@ -86,9 +86,9 @@ const ContactUs = () => {
                             <div className="w-14 h-14 bg-[var(--color-gold)]/10 rounded-full flex items-center justify-center mx-auto mb-6 text-[var(--color-gold)] group-hover:scale-110 transition-transform">
                                 <MessageSquare size={28} />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-2">Instant Support</h3>
+                            <h3 className="text-xl font-bold text-white mb-2 ">Instant Support</h3>
                             <p className="text-gray-400 text-sm mb-6">Chat with our experts in real-time.</p>
-                            <button onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })} className="text-gold-gradient font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all">
+                            <button onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })} className="text-gold-gradient font-bold text-sm flex items-center justify-center gap-2 group-hover:gap-3 transition-all mx-auto">
                                 Start Chat <ArrowRight size={16} />
                             </button>
                         </div>
@@ -131,40 +131,21 @@ const ContactUs = () => {
 
                         {/* Map & Office Info */}
                         <div className="space-y-12 pt-8">
-                            <div>
-                                <h3 className="flex items-center gap-3 text-xl font-bold text-white mb-6">
-                                    <Globe className="text-[var(--color-gold)]" size={24} />
-                                    Global Headquarters
-                                </h3>
-                                <div className="bg-[#0a1629] rounded-xl overflow-hidden border border-gray-800">
-                                    {/* Placeholder Map Image */}
-                                    <div className="h-48 bg-gray-800 relative">
-                                        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512453979798-5ea932a235c8?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40"></div>
-                                        <div className="absolute bottom-4 left-4">
-                                            <span className="bg-black/50 text-white text-xs px-2 py-1 rounded backdrop-blur">Dubai, UAE</span>
-                                        </div>
-                                    </div>
-                                    <div className="p-6">
-                                        <h4 className="text-white font-bold mb-2">Dubai Office</h4>
-                                        <p className="text-gray-400 text-sm mb-4">Dubai, UAE.</p>
-                                        <a href="https://www.google.com/maps/search/?api=1&query=Concord+Tower+Dubai+Media+City" target="_blank" rel="noopener noreferrer" className="text-gold-gradient text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
                             <div>
                                 <div className="bg-[#0a1629] rounded-xl overflow-hidden border border-gray-800">
                                     {/* Placeholder Map Image */}
                                     <div className="h-48 bg-gray-800 relative">
-                                        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542259681-d2508c9081e7?q=80&w=2069&auto=format&fit=crop')] bg-cover bg-center opacity-40"></div>
+                                        <div className="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyuesf8zktMjfBeoh4V6MvMbuPY_9AZeM_lMzDOfF4C7kNcBbPHnAAnoRroBNdObLKvQS1giyBtOXGBoN9Fu5lFi-0MGw0lbh_8gCNspbUveayQkIOqNYsKaAwAYjyeHZSh5yz94A=w408-h906-k-no')] bg-cover bg-center opacity-40"></div>
                                         <div className="absolute bottom-4 left-4">
                                             <span className="bg-black/50 text-white text-xs px-2 py-1 rounded backdrop-blur">Mauritius</span>
                                         </div>
                                     </div>
                                     <div className="p-6">
                                         <h4 className="text-white font-bold mb-2">Registered Office</h4>
-                                        <p className="text-gray-400 text-sm mb-4">Cybercati, Ebene, Mauritius.</p>
-                                        <a href="https://www.google.com/maps/search/?api=1&query=Cybercati+Ebene+Mauritius" target="_blank" rel="noopener noreferrer" className="text-gold-gradient text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
+                                        <p className="text-gray-400 text-sm mb-4">Level 6, Ken Lee Building, 20 Edith Cavell Street, Port Louis 11302, Mauritius.</p>
+                                        <a href="https://maps.app.goo.gl/ndYBV84MBiEGrQuq7" target="_blank" rel="noopener noreferrer" className="text-gold-gradient text-xs font-bold uppercase tracking-wider hover:text-white transition-colors">View on Google Maps</a>
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +156,7 @@ const ContactUs = () => {
             </section>
 
             {/* Block 5: The "Self-Service" Alternative */}
-            <section className="py-16 bg-[#02040a]">
+            <section className="py-16 bg-[#000a14]">
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto bg-gradient-to-r from-gray-900 to-[#0a1629] rounded-2xl p-8 md:p-12 border border-gray-800 flex flex-col md:flex-row items-center justify-between gap-8">
                         <div className="flex items-start gap-6">

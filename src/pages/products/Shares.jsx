@@ -51,7 +51,7 @@ const Shares = () => {
         <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The "Iconic Brands" Hero */}
-            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#02040a]">
+            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000a14]">
                 {/* Floating Logos Background Animation */}
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1611974765270-ca12586343bb?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
                 <div className="absolute inset-0 overflow-hidden opacity-20">

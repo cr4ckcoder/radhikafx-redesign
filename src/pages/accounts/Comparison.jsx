@@ -24,7 +24,6 @@ const Comparison = () => {
     const features = [
         { name: "Minimum Deposit", standard: "$100", pro: "$1,000", prox: "$10,000" },
         { name: "Spreads", standard: "From 3.0 Pips", pro: "From 2.5 Pips", prox: "Raw Spreads (0.0)" },
-        { name: "Commission", standard: "$0", pro: "$0", prox: "Low Commission" },
         { name: "Execution", standard: "Market / STP", pro: "Market / STP", prox: "ECN / Institutional" },
         { name: "Leverage", standard: "Up to 1:500", pro: "Up to 1:200", prox: "Up to 1:200" },
         { name: "Platform", standard: "MT5", pro: "MT5", prox: "MT5" },
@@ -86,40 +85,7 @@ const Comparison = () => {
                 </div>
             </section>
 
-            {/* Block 3: Hidden Costs Transparency */}
-            <section className="py-24 bg-[var(--color-dark)] relative">
-                <div className="container mx-auto px-6 text-center">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 border border-[var(--color-gold)]/30 bg-[var(--color-gold)]/10 rounded-full mb-8 text-[var(--color-gold)]">
-                        <ShieldCheck size={16} />
-                        <span className="text-xs font-bold uppercase tracking-widest">Transparency First</span>
-                    </div>
-                    <h2 className="text-3xl font-bold text-white mb-12">No Hidden Fees. No Surprise Requotes.</h2>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="p-8 border border-gray-800 rounded-2xl bg-[#0a1629] hover:border-[var(--color-gold)] transition-colors group">
-                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white group-hover:text-[var(--color-gold)] transition-colors">
-                                <DollarSign size={24} />
-                            </div>
-                            <h3 className="text-white font-bold mb-2">Funding</h3>
-                            <p className="text-gray-400 text-sm">Instant USDT deposits with <span className="text-white font-bold">0% processing fees</span>.</p>
-                        </div>
-                        <div className="p-8 border border-gray-800 rounded-2xl bg-[#0a1629] hover:border-[var(--color-gold)] transition-colors group">
-                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white group-hover:text-[var(--color-gold)] transition-colors">
-                                <CreditCard size={24} />
-                            </div>
-                            <h3 className="text-white font-bold mb-2">Withdrawal</h3>
-                            <p className="text-gray-400 text-sm">Standard (24h), Pro (Same Day), Pro X (Priority).</p>
-                        </div>
-                        <div className="p-8 border border-gray-800 rounded-2xl bg-[#0a1629] hover:border-[var(--color-gold)] transition-colors group">
-                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-white group-hover:text-[var(--color-gold)] transition-colors">
-                                <Check size={24} />
-                            </div>
-                            <h3 className="text-white font-bold mb-2">Islamic / Swap-Free</h3>
-                            <p className="text-gray-400 text-sm">Available upon request for all account types.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          
 
             {/* Block 4: "Which one is right for me?" */}
             <section className="py-24 bg-[var(--color-navy)]">

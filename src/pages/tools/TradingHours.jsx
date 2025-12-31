@@ -50,7 +50,7 @@ const TradingHours = () => {
                     {/* Live Server Time Clock */}
                     <div className="inline-block relative">
                         <div className="absolute -inset-1 bg-gold-gradient rounded-2xl blur opacity-30"></div>
-                        <div className="relative bg-[#02040a] border border-[var(--glass-border)] rounded-xl p-8 shadow-2xl">
+                        <div className="relative bg-[#000a14] border border-[var(--glass-border)] rounded-xl p-8 shadow-2xl">
                             <div className="text-sm text-gray-500 uppercase tracking-widest mb-2 font-bold">Server Time (GMT+3)</div>
                             <div className="text-6xl md:text-8xl font-mono font-bold text-white tracking-widest tabular-nums text-shadow-glow">
                                 {formatTime(time)}
@@ -66,7 +66,7 @@ const TradingHours = () => {
             </section>
 
             {/* Block 2: Interactive Session Map */}
-            <section className="py-20 bg-[#02040a] border-b border-[var(--glass-border)]">
+            <section className="py-20 bg-[#000a14] border-b border-[var(--glass-border)]">
                 <div className="container mx-auto px-6">
                     <h2 className="text-2xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
                         <MapPin className="stroke-gold-gradient" /> Market Sessions Overview (GMT+3)
@@ -112,7 +112,7 @@ const TradingHours = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {/* Forex Card */}
-                        <div className="bg-[#02040a] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
+                        <div className="bg-[#000a14] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-xl font-bold text-white">Forex</h3>
                                 <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-bold rounded">24/5</span>
@@ -133,7 +133,7 @@ const TradingHours = () => {
                         </div>
 
                         {/* Metals Card */}
-                        <div className="bg-[#02040a] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
+                        <div className="bg-[#000a14] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-xl font-bold text-white">Metals</h3>
                                 <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-bold rounded">Daily Break</span>
@@ -155,7 +155,7 @@ const TradingHours = () => {
                         </div>
 
                         {/* Crypto Card */}
-                        <div className="bg-[#02040a] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
+                        <div className="bg-[#000a14] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-xl font-bold text-white">Crypto</h3>
                                 <span className="px-2 py-1 bg-[var(--color-gold)] text-[var(--color-navy)] text-xs font-bold rounded">24/7/365</span>
@@ -172,7 +172,7 @@ const TradingHours = () => {
                         </div>
 
                         {/* Indices Card */}
-                        <div className="bg-[#02040a] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
+                        <div className="bg-[#000a14] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-xl font-bold text-white">Indices (US30)</h3>
                                 <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs font-bold rounded">Session</span>
@@ -194,7 +194,7 @@ const TradingHours = () => {
                         </div>
 
                         {/* Share Card */}
-                        <div className="bg-[#02040a] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
+                        <div className="bg-[#000a14] p-6 rounded-xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all">
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-xl font-bold text-white">US Shares</h3>
                                 <span className="px-2 py-1 bg-white/10 text-white text-xs font-bold rounded">NYSE/NASDAQ</span>
@@ -218,7 +218,7 @@ const TradingHours = () => {
             </section>
 
             {/* Block 4: Holiday Notice & Tech Info */}
-            <section className="py-20 bg-[#02040a] border-t border-[var(--glass-border)]">
+            <section className="py-20 bg-[#000a14] border-t border-[var(--glass-border)]">
                 <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                     {/* Holiday Bulletin */}

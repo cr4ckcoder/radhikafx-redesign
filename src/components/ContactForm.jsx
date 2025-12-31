@@ -217,7 +217,7 @@ const ContactForm = () => {
                                 value={formData.firstname}
                                 onChange={handleChange}
                                 required
-                                className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                         <div>
@@ -228,7 +228,7 @@ const ContactForm = () => {
                                 value={formData.lastname}
                                 onChange={handleChange}
                                 required
-                                className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                     </div>
@@ -242,7 +242,7 @@ const ContactForm = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                         <div>
@@ -253,7 +253,7 @@ const ContactForm = () => {
                                 value={formData.mobile}
                                 onChange={handleChange}
                                 required
-                                className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                     </div>
@@ -266,7 +266,7 @@ const ContactForm = () => {
                                     name="department"
                                     value={formData.department}
                                     onChange={handleChange}
-                                    className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none"
+                                    className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none"
                                 >
                                     <option>General Support</option>
                                     <option>Sales & Accounts</option>
@@ -285,7 +285,7 @@ const ContactForm = () => {
                                 name="country_name"
                                 value={formData.country_name}
                                 onChange={handleChange}
-                                className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                     </div>
@@ -298,7 +298,7 @@ const ContactForm = () => {
                             value={formData.ticket_title}
                             onChange={handleChange}
                             required
-                            className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                            className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                         />
                     </div>
 
@@ -310,7 +310,7 @@ const ContactForm = () => {
                             value={formData.description}
                             onChange={handleChange}
                             required
-                            className="w-full bg-[#02040a] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                            className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                         ></textarea>
                     </div>
 
@@ -336,7 +336,7 @@ const ContactForm = () => {
                                 maxLength="1"
                                 value={digit}
                                 onChange={(e) => handleOtpChange(e.target, index)}
-                                className="w-12 h-14 bg-[#02040a] border border-gray-700 rounded text-center text-xl font-bold text-white focus:border-[var(--color-gold)] focus:outline-none"
+                                className="w-12 h-14 bg-[#000a14] border border-gray-700 rounded text-center text-xl font-bold text-white focus:border-[var(--color-gold)] focus:outline-none"
                             />
                         ))}
                     </div>

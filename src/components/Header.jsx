@@ -79,7 +79,10 @@ const Header = () => {
                 { name: 'Education', icon: <BookOpen size={16} />, path: 'https://www.radhikafx.com/radhika-blogs/' }
             ]
         },
-        { name: 'Contact Us', icon: <Mail size={18} />, path: '/contact-us' }
+        { name: 'Contact Us', icon: <Mail size={18} />, path: '/contact-us' },
+        { name: 'Liquidity Services', icon: <Database size={16} />, path: '/partnership/liquidity-services' }
+
+
     ];
 
     return (
@@ -92,7 +95,7 @@ const Header = () => {
             }}
         >
             {/* Top Bar (Desktop Only) */}
-            <div className="hidden md:flex h-[50px] bg-[#02040a] border-b border-[var(--glass-border)]">
+            <div className="hidden md:flex h-[50px] bg-[#000a14] border-b border-[var(--glass-border)]">
                 <div className="container mx-auto px-6 h-full flex items-center justify-between">
                     {/* Left: Contact Info */}
                     <div className="flex items-center gap-6 text-sm">

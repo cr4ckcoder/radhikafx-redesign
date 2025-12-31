@@ -111,7 +111,7 @@ const Achievements = () => {
             </section>
 
             {/* Block 5: The "Next Chapter" Footer CTA */}
-            <section className="py-24 bg-[#02040a]">
+            <section className="py-24 bg-[#000a14]">
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto rounded-3xl p-1 bg-gradient-to-r from-[#b8860b] via-[var(--color-gold)] to-[#b8860b]">
                         <div className="bg-[#050505] rounded-[22px] px-8 py-16 text-center">

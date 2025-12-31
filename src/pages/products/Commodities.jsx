@@ -46,7 +46,7 @@ const Commodities = () => {
         <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The Tactical Hero */}
-            <section className="relative min-h-[600px] flex items-center bg-[#02040a] border-b border-[rgba(255,255,255,0.05)] overflow-hidden">
+            <section className="relative min-h-[600px] flex items-center bg-[#000a14] border-b border-[rgba(255,255,255,0.05)] overflow-hidden">
                 {/* Background Overlay */}
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop')] bg-cover bg-center opacity-10 grayscale"></div>
 

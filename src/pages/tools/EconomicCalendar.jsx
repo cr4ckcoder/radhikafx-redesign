@@ -81,7 +81,7 @@ const EconomicCalendar = () => {
                     </div>
 
                     {/* Quick Stats / Sidebar Teaser (Mobile/Desktop) */}
-                    <div className="hidden lg:block w-full max-w-sm bg-[#02040a] p-6 rounded-xl border border-[var(--glass-border)] shadow-xl">
+                    <div className="hidden lg:block w-full max-w-sm bg-[#000a14] p-6 rounded-xl border border-[var(--glass-border)] shadow-xl">
                         <div className="flex items-center gap-2 mb-4 border-b border-white/10 pb-4">
                             <Radio className="text-red-500" size={20} />
                             <span className="font-bold text-white">Upcoming High Impact</span>
@@ -115,7 +115,7 @@ const EconomicCalendar = () => {
             </section>
 
             {/* Block 2: The Economic Calendar Widget (Full Width) */}
-            <section className="py-10 bg-[#02040a]">
+            <section className="py-10 bg-[#000a14]">
                 <div className="w-[98%] max-w-[1920px] mx-auto px-2 md:px-6">
                     <div className="bg-[var(--color-navy)] rounded-xl border border-[var(--glass-border)] shadow-2xl overflow-hidden p-4 min-h-[800px]">
                         <div className="flex items-center justify-between mb-4 px-2">
@@ -137,7 +137,7 @@ const EconomicCalendar = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
                         {/* Education - Step 1 */}
-                        <div className="bg-[#02040a] p-8 rounded-2xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all group">
+                        <div className="bg-[#000a14] p-8 rounded-2xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all group">
                             <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center text-red-500 mb-6 group-hover:scale-110 transition-transform">
                                 <AlertTriangle size={24} />
                             </div>
@@ -148,7 +148,7 @@ const EconomicCalendar = () => {
                         </div>
 
                         {/* Education - Step 2 */}
-                        <div className="bg-[#02040a] p-8 rounded-2xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all group">
+                        <div className="bg-[#000a14] p-8 rounded-2xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all group">
                             <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
                                 <Layers size={24} />
                             </div>
@@ -159,7 +159,7 @@ const EconomicCalendar = () => {
                         </div>
 
                         {/* Education - Step 3 */}
-                        <div className="bg-[#02040a] p-8 rounded-2xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all group">
+                        <div className="bg-[#000a14] p-8 rounded-2xl border border-[var(--glass-border)] hover:border-[var(--color-gold)] transition-all group">
                             <div className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
                                 <TrendingUp size={24} />
                             </div>

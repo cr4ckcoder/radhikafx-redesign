@@ -139,7 +139,7 @@ const Home = () => {
             </section>
 
             {/* Block 4: The "Platform Advantage" (MT5) */}
-            <section className="py-24 bg-[#02040a] relative overflow-hidden">
+            <section className="py-24 bg-[#000a14] relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/3 h-full bg-yellow-900/10 blur-[100px] pointer-events-none"></div>
 
                 <div className="container mx-auto px-6">
@@ -233,7 +233,7 @@ const Home = () => {
             </section>
 
             {/* Block 6: The "Account Comparison" */}
-            <section className="py-24 bg-[#02040a]">
+            <section className="py-24 bg-[#000a14]">
                 <div className="container mx-auto px-6">
                     <FadeInSection className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-white mb-4">Accounts Designed for Performance</h2>
@@ -328,7 +328,7 @@ const Home = () => {
 
             {/* Block 7: The "Radhika Education" Teaser (HIDDEN AS PER REQUEST) */}
             {/*
-            <section className="py-24 bg-[#02040a]">
+            <section className="py-24 bg-[#000a14]">
                 <div className="container mx-auto px-6">
                     <div className="flex justify-between items-end mb-12">
                         <div>

@@ -15,7 +15,7 @@ const TradingConditions = () => {
         <div className="bg-[var(--color-navy)] min-h-screen pt-20 md:pt-40 font-[var(--font-body)] text-white">
 
             {/* 0. Quick Links / Jump To */}
-            <div className="bg-[#02040a]/90 backdrop-blur-md border-b border-[var(--glass-border)] sticky top-20 z-40">
+            <div className="bg-[#000a14]/90 backdrop-blur-md border-b border-[var(--glass-border)] sticky top-20 z-40">
                 <div className="container mx-auto px-6 py-4 flex gap-6 overflow-x-auto text-sm font-medium text-gray-400 no-scrollbar">
                     <button onClick={() => scrollToSection('execution')} className="hover:text-[var(--color-gold)] whitespace-nowrap transition-colors">Execution Policy</button>
                     <button onClick={() => scrollToSection('core')} className="hover:text-[var(--color-gold)] whitespace-nowrap transition-colors">Core Conditions</button>
@@ -55,7 +55,7 @@ const TradingConditions = () => {
             </section>
 
             {/* 2. Core Conditions (Icon Grid) */}
-            <section id="core" className="py-24 bg-[#02040a]">
+            <section id="core" className="py-24 bg-[#000a14]">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {/* Card 1 */}
@@ -110,7 +110,7 @@ const TradingConditions = () => {
                         <p className="text-gray-400">Critical risk management parameters for your trading.</p>
                     </div>
 
-                    <div className="overflow-x-auto rounded-2xl border border-[var(--glass-border)] bg-[#02040a]">
+                    <div className="overflow-x-auto rounded-2xl border border-[var(--glass-border)] bg-[#000a14]">
                         <table className="w-full text-left border-collapse">
                             <thead>
                                 <tr className="bg-white/5 text-[var(--color-gold)] text-xs uppercase tracking-widest font-bold">
@@ -151,7 +151,7 @@ const TradingConditions = () => {
             </section>
 
             {/* 4. Contract Specs */}
-            <section id="specs" className="py-24 bg-[#02040a]">
+            <section id="specs" className="py-24 bg-[#000a14]">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                         <div>
@@ -244,7 +244,7 @@ const TradingConditions = () => {
                                 )}
                             </tbody>
                         </table>
-                        <div className="p-6 border-t border-[var(--glass-border)] bg-[#02040a] text-center">
+                        <div className="p-6 border-t border-[var(--glass-border)] bg-[#000a14] text-center">
                             <button className="text-[var(--color-gold)] font-bold text-sm hover:text-white transition-colors flex items-center justify-center gap-2 mx-auto">
                                 <Download size={16} /> Download Full Contract Specifications (PDF) - Updated Dec 2025
                             </button>
@@ -259,7 +259,7 @@ const TradingConditions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                         {/* No Requote Shield */}
-                        <div className="bg-[#02040a] rounded-2xl p-10 text-white relative overflow-hidden border border-[var(--glass-border)]">
+                        <div className="bg-[#000a14] rounded-2xl p-10 text-white relative overflow-hidden border border-[var(--glass-border)]">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-gold)] rounded-full filter blur-[100px] opacity-10"></div>
                             <div className="relative z-10">
                                 <Shield className="stroke-gold-gradient mb-6" size={48} />

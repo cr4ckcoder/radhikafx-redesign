@@ -6,10 +6,10 @@ import {
 
 const IBProgramme = () => {
     return (
-        <div className="pt-20 md:pt-40 bg-[#02040a] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[#000a14] font-[var(--font-body)]">
 
             {/* Block 1: The Partnership Hero */}
-            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#02040a]">
+            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000a14]">
                 {/* Background Image Overlay */}
                 <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2070&auto=format&fit=crop')" }}></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
@@ -94,7 +94,7 @@ const IBProgramme = () => {
             </section>
 
             {/* Block 3: The IB Advantage (Feature Grid) */}
-            <section className="py-24 bg-[#02040a]">
+            <section className="py-24 bg-[#000a14]">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="flex flex-col items-center text-center">
@@ -161,7 +161,7 @@ const IBProgramme = () => {
             </section>
 
             {/* Block 5: The Registration Portal (Optimized Form) */}
-            <section id="registration-form" className="py-24 bg-[#02040a] relative">
+            <section id="registration-form" className="py-24 bg-[#000a14] relative">
                 <div className="container mx-auto px-6 max-w-6xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 

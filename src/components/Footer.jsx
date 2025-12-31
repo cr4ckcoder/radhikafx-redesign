@@ -39,7 +39,7 @@ const Footer = () => {
                             <div className="space-y-4 text-sm mb-8">
                                 <div className="flex items-start gap-3">
                                     <MapPin size={18} className="stroke-gold-gradient flex-shrink-0 mt-1" />
-                                    <span>Dubai, UAE.</span>
+                                    <span>Level 6, Ken Lee Building, 20 Edith Cavell Street, Port Louis 11302, Mauritius.</span>
                                 </div>
                                 <div className="flex items-start gap-4 text-sm hover:text-[var(--color-gold)] transition-colors">
                                     <Mail size={18} className="stroke-gold-gradient flex-shrink-0 mt-1" />
