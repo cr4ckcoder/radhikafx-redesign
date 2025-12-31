@@ -41,10 +41,10 @@ const AboutUs = () => {
 
             {/* Block 1: The Identity Hero */}
             <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-[#000a14]">
+                <div className="absolute inset-0 bg-[#091830]">
                     {/* Background Image Overlay */}
                     <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2070&auto=format&fit=crop')" }}></div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#091830] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                     {/* World Map / Ticker placeholder Visual */}
                     <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#e9db8d_1px,transparent_1px)] [background-size:40px_40px]"></div>

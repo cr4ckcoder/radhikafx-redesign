@@ -12,11 +12,11 @@ const OpenLiveAccount = () => {
     }, []);
 
     return (
-        <div className="min-h-screen bg-[#000a14] font-[var(--font-body)] pt-20 md:pt-40">
+        <div className="min-h-screen bg-[#091830] font-[var(--font-body)] pt-20 md:pt-40">
             {/* Block 1: The "Low-Friction" Hero */}
             <section className="relative bg-[#050A14] py-16 border-b border-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1611974765270-ca1258634369?q=80&w=2070&auto=format&fit=crop')" }}></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-[#050A14]/80 to-[#02040a]"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-[#050A14]/80 to-[#091830]"></div>
                 <div className="container mx-auto px-6 text-center relative z-10">
                     <h1 className="text-4xl md:text-5xl font-[var(--font-heading)] font-bold text-white mb-4">
                         Start Your Trading Journey <span className="text-gold-gradient">in 3 Simple Steps</span>

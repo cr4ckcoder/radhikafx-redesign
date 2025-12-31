@@ -45,7 +45,7 @@ const Forex = () => {
         <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The Hero Section (Velocity & Scale) */}
-            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000a14]">
+            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#091830]">
                 {/* Simulated Time-lapse Background */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20 filter blur-[80px] animate-pulse-slow"></div>
                 <div className="absolute inset-0 bg-cover bg-center opacity-10 filter grayscale" style={{ backgroundImage: `url(${ForexBg})` }}></div>
@@ -212,7 +212,7 @@ const Forex = () => {
 
                         <div className="md:w-1/2 relative z-10">
                             {/* Visual for Execution */}
-                            <div className="bg-[#000a14] rounded-xl border border-gray-700 p-6 shadow-2xl relative">
+                            <div className="bg-[#091830] rounded-xl border border-gray-700 p-6 shadow-2xl relative">
                                 <div className="space-y-4">
                                     <div className="flex justify-between items-center bg-gray-900/50 p-3 rounded-lg border border-gray-800">
                                         <div className="flex items-center gap-3">

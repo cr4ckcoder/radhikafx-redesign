@@ -13,8 +13,8 @@ const Funding = () => {
         <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The "Instant Liquidity" Hero */}
-            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000a14]">
-                <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-gold)]/10 to-[#02040a]"></div>
+            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#091830]">
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-gold)]/10 to-[#091830]"></div>
 
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <div className="w-20 h-20 bg-[var(--color-gold)]/20 rounded-full flex items-center justify-center mx-auto mb-8 animate-pulse-slow">

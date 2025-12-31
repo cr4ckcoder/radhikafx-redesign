@@ -179,7 +179,7 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
                         Welcome to Radhika Capital Markets. Your application has been received.
                         Please check your email <strong>{formData.email}</strong> for login credentials and next steps.
                     </p>
-                    <Link to="/" className="btn-gold inline-flex px-8 py-3 rounded text-[#02040a] font-bold">
+                    <Link to="/" className="btn-gold inline-flex px-8 py-3 rounded text-[#091830] font-bold">
                         Return to Home
                     </Link>
                 </div>
@@ -219,21 +219,21 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-gray-500 text-xs font-bold uppercase mb-2">First Name</label>
-                                        <input type="text" name="firstname" value={formData.firstname} onChange={handleChange} className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="John" />
+                                        <input type="text" name="firstname" value={formData.firstname} onChange={handleChange} className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="John" />
                                     </div>
                                     <div>
                                         <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Last Name</label>
-                                        <input type="text" name="lastname" value={formData.lastname} onChange={handleChange} className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Doe" />
+                                        <input type="text" name="lastname" value={formData.lastname} onChange={handleChange} className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Doe" />
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Email Address</label>
-                                        <input type="email" name="email" value={formData.email} onChange={handleChange} className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="john@example.com" />
+                                        <input type="email" name="email" value={formData.email} onChange={handleChange} className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="john@example.com" />
                                     </div>
                                     <div>
                                         <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Mobile Number</label>
-                                        <input type="tel" name="mobile" value={formData.mobile} onChange={handleChange} className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="+1 234 567 8900" />
+                                        <input type="tel" name="mobile" value={formData.mobile} onChange={handleChange} className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="+1 234 567 8900" />
                                     </div>
                                 </div>
                             </div>
@@ -246,17 +246,17 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Country</label>
-                                        <input type="text" name="country_name" value={formData.country_name} onChange={handleChange} className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Select your country" />
+                                        <input type="text" name="country_name" value={formData.country_name} onChange={handleChange} className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Select your country" />
                                     </div>
                                     <div>
                                         <label className="block text-gray-500 text-xs font-bold uppercase mb-2">City</label>
-                                        <input type="text" name="city" value={formData.city} onChange={handleChange} className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="City" />
+                                        <input type="text" name="city" value={formData.city} onChange={handleChange} className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="City" />
                                     </div>
                                 </div>
 
                                 <div>
                                     <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Affiliate Code (Optional)</label>
-                                    <input type="text" name="parent_affiliate_code" value={formData.parent_affiliate_code} onChange={handleChange} className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Enter code here" />
+                                    <input type="text" name="parent_affiliate_code" value={formData.parent_affiliate_code} onChange={handleChange} className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Enter code here" />
                                 </div>
 
                                 <div className="pt-4 border-t border-gray-800">
@@ -267,7 +267,7 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
                                             name="is_ib_request"
                                             checked={formData.is_ib_request}
                                             onChange={handleChange}
-                                            className="w-5 h-5 rounded border-gray-700 bg-[#000a14] text-[var(--color-gold)] focus:ring-[var(--color-gold)]"
+                                            className="w-5 h-5 rounded border-gray-700 bg-[#091830] text-[var(--color-gold)] focus:ring-[var(--color-gold)]"
                                         />
                                         <label htmlFor="ib_toggle" className="text-white cursor-pointer select-none">Interested in becoming an IB?</label>
                                     </div>
@@ -284,7 +284,7 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
                             <button
                                 onClick={handleNextStep}
                                 disabled={loading}
-                                className="btn-gold px-8 py-3 rounded text-[#02040a] font-bold flex items-center gap-2"
+                                className="btn-gold px-8 py-3 rounded text-[#091830] font-bold flex items-center gap-2"
                             >
                                 {loading ? <Loader2 className="animate-spin" /> : (
                                     <>
@@ -313,7 +313,7 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
                                 maxLength="1"
                                 value={digit}
                                 onChange={(e) => handleOtpChange(e.target, index)}
-                                className="w-12 h-14 bg-[#000a14] border border-gray-700 rounded text-center text-xl font-bold text-white focus:border-[var(--color-gold)] focus:outline-none"
+                                className="w-12 h-14 bg-[#091830] border border-gray-700 rounded text-center text-xl font-bold text-white focus:border-[var(--color-gold)] focus:outline-none"
                             />
                         ))}
                     </div>
@@ -321,7 +321,7 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
                     <button
                         onClick={submitFinal}
                         disabled={loading}
-                        className="btn-gold w-full max-w-sm mx-auto px-8 py-3 rounded text-[#02040a] font-bold mb-4 flex items-center justify-center gap-2"
+                        className="btn-gold w-full max-w-sm mx-auto px-8 py-3 rounded text-[#091830] font-bold mb-4 flex items-center justify-center gap-2"
                     >
                         {loading ? <Loader2 className="animate-spin" /> : 'Verify & Open Account'}
                     </button>

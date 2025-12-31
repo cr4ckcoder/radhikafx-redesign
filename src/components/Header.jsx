@@ -94,7 +94,7 @@ const Header = () => {
             }}
         >
             {/* Top Bar (Desktop Only) */}
-            <div className="hidden md:flex h-[50px] bg-[#000a14] border-b border-[var(--glass-border)]">
+            <div className="hidden md:flex h-[50px] bg-[#091830] border-b border-[var(--glass-border)]">
                 <div className="container mx-auto px-6 h-full flex items-center justify-between">
                     {/* Left: Contact Info */}
                     <div className="flex items-center gap-6 text-sm">

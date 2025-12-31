@@ -10,9 +10,9 @@ const Regulations = () => {
         <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The Authority Hero */}
-            <section className="relative py-24 md:py-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-[#000a14]">
+            <section className="relative py-24 md:py-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-[#091830]">
                 <div className="absolute inset-0 bg-cover bg-center opacity-40 filter grayscale" style={{ backgroundImage: `url(${RegulationsBg})` }}></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#091830] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                 <div className="relative z-10 max-w-4xl mx-auto">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#0a1629] border border-gray-700 rounded-full mb-8 shadow-sm">

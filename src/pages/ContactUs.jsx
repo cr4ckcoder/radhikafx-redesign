@@ -36,13 +36,13 @@ const ContactUs = () => {
     }, []);
 
     return (
-        <div className="pt-20 md:pt-40 bg-[#000a14] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[#091830] font-[var(--font-body)]">
 
             {/* Block 1: The "We’re Here" Hero */}
             <section className="relative py-24 md:py-32 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
                 {/* Abstract Support Visuals */}
                 <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2069&auto=format&fit=crop')" }}></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#091830] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
                 <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.1)_0%,transparent_70%)]"></div>
 
@@ -78,7 +78,7 @@ const ContactUs = () => {
             </section>
 
             {/* Block 2: The "Quick Connect" Cards */}
-            <section className="py-12 bg-[#000a14] relative z-10 -mt-8">
+            <section className="py-12 bg-[#091830] relative z-10 -mt-8">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         {/* Live Chat */}
@@ -156,7 +156,7 @@ const ContactUs = () => {
             </section>
 
             {/* Block 5: The "Self-Service" Alternative */}
-            <section className="py-16 bg-[#000a14]">
+            <section className="py-16 bg-[#091830]">
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto bg-gradient-to-r from-gray-900 to-[#0a1629] rounded-2xl p-8 md:p-12 border border-gray-800 flex flex-col md:flex-row items-center justify-between gap-8">
                         <div className="flex items-start gap-6">

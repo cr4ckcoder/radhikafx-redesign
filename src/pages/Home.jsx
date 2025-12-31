@@ -67,7 +67,7 @@ const Home = () => {
                         className="w-full h-full object-cover object-bottom opacity-60 animate-slide-up"
                     />
                     {/* Dark Overlay Gradient - Fades from solid navy top to transparent bottom */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#02040a] via-[#02040a]/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#091830] via-[#091830]/80 to-transparent"></div>
                     {/* Bottom fade to blend with next section */}
                     <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[var(--color-navy)] to-transparent"></div>
                 </div>
@@ -85,7 +85,7 @@ const Home = () => {
                     <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
                         <Link
                             to="/open-live-account"
-                            className="px-10 py-4 btn-gold text-[#02040a] text-lg font-bold rounded-lg transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] transform hover:-translate-y-1 block text-center"
+                            className="px-10 py-4 btn-gold text-[#091830] text-lg font-bold rounded-lg transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] transform hover:-translate-y-1 block text-center"
                         >
                             Open a Live Account
                         </Link>
@@ -139,7 +139,7 @@ const Home = () => {
             </section>
 
             {/* Block 4: The "Platform Advantage" (MT5) */}
-            <section className="py-24 bg-[#000a14] relative overflow-hidden">
+            <section className="py-24 bg-[#091830] relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/3 h-full bg-yellow-900/10 blur-[100px] pointer-events-none"></div>
 
                 <div className="container mx-auto px-6">
@@ -233,7 +233,7 @@ const Home = () => {
             </section>
 
             {/* Block 6: The "Account Comparison" */}
-            <section className="py-24 bg-[#000a14]">
+            <section className="py-24 bg-[#091830]">
                 <div className="container mx-auto px-6">
                     <FadeInSection className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-white mb-4">Accounts Designed for Performance</h2>
@@ -254,7 +254,7 @@ const Home = () => {
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spread: 3 pips</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:300</span></li>
                                 </ul>
-                                <Link to="/accounts/standard" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
+                                <Link to="/accounts/standard" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
 
@@ -272,7 +272,7 @@ const Home = () => {
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spreads : 2.5 pips</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage : Up to 1:200</span></li>
                                 </ul>
-                                <Link to="/accounts/pro" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
+                                <Link to="/accounts/pro" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
 
@@ -290,7 +290,7 @@ const Home = () => {
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spread: Raw Spread</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:200</span></li>
                                 </ul>
-                                <Link to="/accounts/pro-x" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
+                                <Link to="/accounts/pro-x" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
                     </div>
@@ -328,7 +328,7 @@ const Home = () => {
 
             {/* Block 7: The "Radhika Education" Teaser (HIDDEN AS PER REQUEST) */}
             {/*
-            <section className="py-24 bg-[#000a14]">
+            <section className="py-24 bg-[#091830]">
                 <div className="container mx-auto px-6">
                     <div className="flex justify-between items-end mb-12">
                         <div>

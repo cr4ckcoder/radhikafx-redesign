@@ -105,10 +105,10 @@ const WhyRadhika = () => {
             <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
                 {/* Background Animation (Heatmap/Trading feel) */}
                 {/* Background Animation (Heatmap/Trading feel) */}
-                <div className="absolute inset-0 bg-[#000a14]">
+                <div className="absolute inset-0 bg-[#091830]">
                     {/* Background Image Overlay */}
                     <div className="absolute inset-0 bg-cover bg-center opacity-40 filter grayscale" style={{ backgroundImage: `url(${WhyChooseUsBg})` }}></div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#091830] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                     <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(233,219,141,0.05)_0%,rgba(5,12,24,0)_50%)] animate-pulse"></div>
                     <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(14,35,78,0.4)_0%,rgba(5,12,24,0)_70%)] blur-[100px]"></div>

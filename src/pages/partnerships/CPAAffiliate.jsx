@@ -7,13 +7,13 @@ import {
 
 const CPAAffiliate = () => {
     return (
-        <div className="pt-20 md:pt-40 bg-[#000a14] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[#091830] font-[var(--font-body)]">
 
             {/* Block 1: The "High-Yield" Hero */}
-            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000a14]">
+            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#091830]">
                 {/* Digital World Map Background (CSS Pattern or Image) */}
                 <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2070&auto=format&fit=crop')" }}></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#091830] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                 {/* Tech Grid Overlay */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,215,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,215,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
@@ -90,7 +90,7 @@ const CPAAffiliate = () => {
             </section>
 
             {/* Block 3: The "Qualified Lead" Transparency */}
-            <section className="py-24 bg-[#000a14] relative overflow-hidden">
+            <section className="py-24 bg-[#091830] relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-4xl relative z-10">
                     <div className="bg-[#0a1629]/80 backdrop-blur-md rounded-2xl p-10 border border-gray-800 shadow-2xl relative">
                         {/* Glowing Border effect */}
@@ -187,7 +187,7 @@ const CPAAffiliate = () => {
             </section>
 
             {/* Block 5: CPA vs. IB (Which one is for you?) */}
-            <section className="py-24 bg-[#000a14]">
+            <section className="py-24 bg-[#091830]">
                 <div className="container mx-auto px-6 max-w-5xl">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-white">Choose Your Path</h2>

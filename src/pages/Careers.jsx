@@ -9,10 +9,10 @@ const Careers = () => {
         <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The Visionary Hero */}
-            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000a14]">
+            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#091830]">
                 {/* Background Image Overlay */}
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 filter grayscale"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#091830] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                 {/* Gold Glow */}
                 <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-[var(--color-gold)]/10 via-transparent to-transparent pointer-events-none"></div>
@@ -82,7 +82,7 @@ const Careers = () => {
             </section>
 
             {/* Block 3: The "Why Radhika Capital Markets?" Section */}
-            <section className="py-24 bg-[#000a14] overflow-hidden">
+            <section className="py-24 bg-[#091830] overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row items-center gap-16">
                         <div className="w-full md:w-1/2">
@@ -140,18 +140,18 @@ const Careers = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-gray-400 text-sm font-bold mb-2">Full Name</label>
-                                    <input type="text" className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="John Doe" />
+                                    <input type="text" className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="John Doe" />
                                 </div>
                                 <div>
                                     <label className="block text-gray-400 text-sm font-bold mb-2">Email Address</label>
-                                    <input type="email" className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="john@example.com" />
+                                    <input type="email" className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="john@example.com" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-gray-400 text-sm font-bold mb-2">Position of Interest</label>
-                                    <select className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors">
+                                    <select className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors">
                                         <option>Select a position...</option>
                                         <option>Software Engineer</option>
                                         <option>Marketing Specialist</option>
@@ -162,7 +162,7 @@ const Careers = () => {
                                 </div>
                                 <div>
                                     <label className="block text-gray-400 text-sm font-bold mb-2">Years of Experience</label>
-                                    <select className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors">
+                                    <select className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors">
                                         <option>0-2 Years</option>
                                         <option>3-5 Years</option>
                                         <option>5-10 Years</option>
@@ -173,10 +173,10 @@ const Careers = () => {
 
                             <div>
                                 <label className="block text-gray-400 text-sm font-bold mb-2">Cover Letter / Message</label>
-                                <textarea rows="4" className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Tell us why you're a great fit..."></textarea>
+                                <textarea rows="4" className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Tell us why you're a great fit..."></textarea>
                             </div>
 
-                            <div className="border-2 border-dashed border-gray-700 rounded-lg p-8 text-center hover:border-[var(--color-gold)]/50 transition-colors cursor-pointer bg-[#000a14]/50">
+                            <div className="border-2 border-dashed border-gray-700 rounded-lg p-8 text-center hover:border-[var(--color-gold)]/50 transition-colors cursor-pointer bg-[#091830]/50">
                                 <Upload className="mx-auto text-gray-500 mb-2" size={32} />
                                 <p className="text-gray-400 text-sm">Drag & drop your CV here, or <span className="text-gold-gradient">browse</span></p>
                                 <p className="text-gray-600 text-xs mt-1">PDF or DOCX up to 5MB</p>
@@ -191,7 +191,7 @@ const Careers = () => {
             </section>
 
             {/* Block 5: The "What Happens Next?" (Process Transparency) */}
-            <section className="py-24 bg-[#000a14] border-t border-gray-900">
+            <section className="py-24 bg-[#091830] border-t border-gray-900">
                 <div className="container mx-auto px-6 max-w-5xl">
                     <div className="flex flex-col md:flex-row justify-between items-center relative">
                         {/* Connecting Line (Desktop) */}
@@ -202,7 +202,7 @@ const Careers = () => {
                             { step: "2", title: "Review", desc: "Our HR team evaluates your profile." },
                             { step: "3", title: "Interview", desc: "Shortlisted candidates are invited for a meeting." }
                         ].map((item, index) => (
-                            <div key={index} className="flex flex-col items-center text-center relative z-10 bg-[#000a14] px-4 py-6 md:py-0">
+                            <div key={index} className="flex flex-col items-center text-center relative z-10 bg-[#091830] px-4 py-6 md:py-0">
                                 <div className="w-12 h-12 rounded-full bg-gray-800 border-2 border-gray-700 flex items-center justify-center text-gray-400 font-bold mb-4 group-hover:border-cyan-500 group-hover:text-cyan-500 transition-colors">
                                     {item.step}
                                 </div>

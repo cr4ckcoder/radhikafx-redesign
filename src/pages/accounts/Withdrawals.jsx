@@ -9,7 +9,7 @@ const Withdrawals = () => {
         <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The "Financial Freedom" Hero */}
-            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000a14]">
+            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#091830]">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(38,161,123,0.1)_0%,rgba(0,0,0,0)_70%)]"></div>
 
                 <div className="container mx-auto px-6 relative z-10 text-center">
@@ -17,7 +17,7 @@ const Withdrawals = () => {
                         <div className="w-24 h-24 relative">
                             <div className="absolute inset-0 border-4 border-gray-800 rounded-full"></div>
                             <div className="absolute inset-0 border-t-4 border-[var(--color-gold)] rounded-full animate-spin-slow"></div>
-                            <div className="absolute inset-2 bg-[#000a14] rounded-full flex items-center justify-center">
+                            <div className="absolute inset-2 bg-[#091830] rounded-full flex items-center justify-center">
                                 <Gauge size={40} className="text-[var(--color-gold)]" />
                             </div>
                         </div>

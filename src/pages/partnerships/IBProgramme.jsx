@@ -7,13 +7,13 @@ import LiveAccountForm from '../../components/LiveAccountForm';
 
 const IBProgramme = () => {
     return (
-        <div className="pt-20 md:pt-40 bg-[#000a14] font-[var(--font-body)]">
+        <div className="pt-20 md:pt-40 bg-[#091830] font-[var(--font-body)]">
 
             {/* Block 1: The Partnership Hero */}
-            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000a14]">
+            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#091830]">
                 {/* Background Image Overlay */}
                 <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2070&auto=format&fit=crop')" }}></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#091830] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
 
                 {/* Gold Glow */}
@@ -36,7 +36,7 @@ const IBProgramme = () => {
 
                     <button
                         onClick={() => document.getElementById('registration-form').scrollIntoView({ behavior: 'smooth' })}
-                        className="px-8 py-4 bg-[var(--color-gold)] text-[#02040a] font-bold rounded-full hover:bg-white transition-colors shadow-[0_0_30px_rgba(255,215,0,0.2)]"
+                        className="px-8 py-4 bg-[var(--color-gold)] text-[#091830] font-bold rounded-full hover:bg-white transition-colors shadow-[0_0_30px_rgba(255,215,0,0.2)]"
                     >
                         Become a Partner Today
                     </button>
@@ -95,7 +95,7 @@ const IBProgramme = () => {
             </section>
 
             {/* Block 3: The IB Advantage (Feature Grid) */}
-            <section className="py-24 bg-[#000a14]">
+            <section className="py-24 bg-[#091830]">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="flex flex-col items-center text-center">
@@ -150,7 +150,7 @@ const IBProgramme = () => {
                             { step: "3", title: "Earn", desc: "Receive commissions instantly as your clients start trading." }
                         ].map((item, index) => (
                             <div key={index} className="flex flex-col items-center text-center relative z-10 bg-[#050505] px-4 py-8 md:py-0 w-full md:w-1/3">
-                                <div className="w-14 h-14 rounded-full bg-[var(--color-gold)] text-[#02040a] font-bold text-xl flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(255,215,0,0.3)]">
+                                <div className="w-14 h-14 rounded-full bg-[var(--color-gold)] text-[#091830] font-bold text-xl flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(255,215,0,0.3)]">
                                     {item.step}
                                 </div>
                                 <h4 className="text-white font-bold text-xl mb-2">{item.title}</h4>
@@ -162,7 +162,7 @@ const IBProgramme = () => {
             </section>
 
             {/* Block 5: The Registration Portal (Optimized Form) */}
-            <section id="registration-form" className="py-24 bg-[#000a14] relative">
+            <section id="registration-form" className="py-24 bg-[#091830] relative">
                 <div className="container mx-auto px-6 max-w-6xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 

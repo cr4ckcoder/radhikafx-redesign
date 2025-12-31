@@ -217,7 +217,7 @@ const ContactForm = () => {
                                 value={formData.firstname}
                                 onChange={handleChange}
                                 required
-                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                         <div>
@@ -228,7 +228,7 @@ const ContactForm = () => {
                                 value={formData.lastname}
                                 onChange={handleChange}
                                 required
-                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                     </div>
@@ -242,7 +242,7 @@ const ContactForm = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                         <div>
@@ -253,7 +253,7 @@ const ContactForm = () => {
                                 value={formData.mobile}
                                 onChange={handleChange}
                                 required
-                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                     </div>
@@ -266,7 +266,7 @@ const ContactForm = () => {
                                     name="department"
                                     value={formData.department}
                                     onChange={handleChange}
-                                    className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none"
+                                    className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none"
                                 >
                                     <option>General Support</option>
                                     <option>Sales & Accounts</option>
@@ -285,7 +285,7 @@ const ContactForm = () => {
                                 name="country_name"
                                 value={formData.country_name}
                                 onChange={handleChange}
-                                className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                                className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                             />
                         </div>
                     </div>
@@ -298,7 +298,7 @@ const ContactForm = () => {
                             value={formData.ticket_title}
                             onChange={handleChange}
                             required
-                            className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                            className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                         />
                     </div>
 
@@ -310,14 +310,14 @@ const ContactForm = () => {
                             value={formData.description}
                             onChange={handleChange}
                             required
-                            className="w-full bg-[#000a14] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
+                            className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                         ></textarea>
                     </div>
 
                     <button
                         type="submit"
                         disabled={loading}
-                        className="btn-gold w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-[#02040a] font-bold"
+                        className="btn-gold w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-[#091830] font-bold"
                     >
                         {loading ? <Loader2 className="animate-spin" /> : <>Start Verification <Send size={18} /></>}
                     </button>
@@ -336,7 +336,7 @@ const ContactForm = () => {
                                 maxLength="1"
                                 value={digit}
                                 onChange={(e) => handleOtpChange(e.target, index)}
-                                className="w-12 h-14 bg-[#000a14] border border-gray-700 rounded text-center text-xl font-bold text-white focus:border-[var(--color-gold)] focus:outline-none"
+                                className="w-12 h-14 bg-[#091830] border border-gray-700 rounded text-center text-xl font-bold text-white focus:border-[var(--color-gold)] focus:outline-none"
                             />
                         ))}
                     </div>
@@ -344,7 +344,7 @@ const ContactForm = () => {
                     <button
                         onClick={verifyOtpAndSubmit}
                         disabled={loading}
-                        className="btn-gold w-full px-8 py-3 rounded text-[#02040a] font-bold mb-4 flex items-center justify-center gap-2"
+                        className="btn-gold w-full px-8 py-3 rounded text-[#091830] font-bold mb-4 flex items-center justify-center gap-2"
                     >
                         {loading ? <Loader2 className="animate-spin" /> : 'Verify & Submit'}
                     </button>

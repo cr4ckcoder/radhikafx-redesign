@@ -3,12 +3,12 @@
 
 @theme {
   /* Brand Colors */
-  --color-navy: #000a14;
+  --color-navy: #091830;
   /* Updated logic: Deep Navy/Black */
   --color-gold: #60bd47;
   --color-white: #ffffff;
-  --color-dark: #02040a;
-  --color-black: #000000;
+  --color-dark: #091830;
+  --color-black: #091830;
   --color-card: rgba(5, 12, 24, 0.7);
   --gradient-gold: linear-gradient(to right,
        #60bd47 0%,

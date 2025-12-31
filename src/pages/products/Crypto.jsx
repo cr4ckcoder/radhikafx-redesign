@@ -41,7 +41,7 @@ const Crypto = () => {
         <div className="pt-20 md:pt-40 bg-[var(--color-navy)] font-[var(--font-body)]">
 
             {/* Block 1: The High-Action Hero */}
-            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#000a14]">
+            <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-[#091830]">
                 {/* Matrix-like background effect */}
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2832&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
 
@@ -207,7 +207,7 @@ const Crypto = () => {
 
                         <div className="md:w-1/2 relative z-10">
                             {/* Mock Depth of Market */}
-                            <div className="bg-[#000a14] rounded-xl border border-gray-700 p-4 font-mono text-xs shadow-2xl">
+                            <div className="bg-[#091830] rounded-xl border border-gray-700 p-4 font-mono text-xs shadow-2xl">
                                 <div className="flex justify-between text-gray-500 mb-2 border-b border-gray-800 pb-2">
                                     <span>Bid Volume</span>
                                     <span>Bid</span>

@@ -12,7 +12,7 @@ const Achievements = () => {
             <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden bg-black text-center px-6">
                 {/* Background Image Overlay */}
                 <div className="absolute inset-0 bg-cover bg-center opacity-20 filter grayscale" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=2070&auto=format&fit=crop')" }}></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#091830] via-[rgba(2,4,10,0.8)] to-[rgba(2,4,10,0.4)]"></div>
 
                 {/* Bokeh Golden Glow Effect */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(96,189,71,0.15)_0%,rgba(0,0,0,0)_60%)]"></div>
@@ -111,7 +111,7 @@ const Achievements = () => {
             </section>
 
             {/* Block 5: The "Next Chapter" Footer CTA */}
-            <section className="py-24 bg-[#000a14]">
+            <section className="py-24 bg-[#091830]">
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto rounded-3xl p-1 bg-gradient-to-r from-[#4A8739] via-[var(--color-gold)] to-[#4A8739]">
                         <div className="bg-[#050505] rounded-[22px] px-8 py-16 text-center">
