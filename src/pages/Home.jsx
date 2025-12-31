@@ -244,7 +244,7 @@ const Home = () => {
                         <FadeInSection delay={0.0}>
                             <div className="bg-[#0a1629] border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-colors h-full flex flex-col text-center">
                                 <div className="mb-6">
-                                     <span className="bg-gradient-to-r from-yellow-700 to-yellow-600 text-white px-8 py-2 font-bold text-sm rounded shadow-lg">Standard Account</span>
+                                     <span className="bg-gold-gradient text-white px-8 py-2 font-bold text-sm rounded shadow-lg">Standard Account</span>
                                 </div>
                                 <p className="text-gray-400 text-sm mb-8 flex-grow leading-relaxed px-2">
                                     Enjoy professional trading solutions with enhanced tools and a wide range of benefits designed for seasoned traders.
@@ -254,15 +254,15 @@ const Home = () => {
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spread: 3 pips</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:300</span></li>
                                 </ul>
-                                <Link to="/accounts/standard" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(218,165,32,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
+                                <Link to="/accounts/standard" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
 
                         {/* Pro */}
                         <FadeInSection delay={0.2}>
-                            <div className="bg-[#0a1629] border border-[var(--color-gold)] rounded-2xl p-8 relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(255,215,0,0.1)] h-full flex flex-col text-center">
+                            <div className="bg-[#0a1629] border border-[var(--color-gold)] rounded-2xl p-8 relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(96,189,71,0.1)] h-full flex flex-col text-center">
                                 <div className="mb-6">
-                                     <span className="bg-gradient-to-r from-yellow-700 to-yellow-600 text-white px-8 py-2 font-bold text-sm rounded shadow-lg">Pro Account</span>
+                                     <span className="bg-gold-gradient text-white px-8 py-2 font-bold text-sm rounded shadow-lg">Pro Account</span>
                                 </div>
                                 <p className="text-gray-400 text-sm mb-8 flex-grow leading-relaxed px-2">
                                     Designed for experienced traders, the Pro Account offers advanced tools to maximize your trading potential.
@@ -272,7 +272,7 @@ const Home = () => {
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spreads : 2.5 pips</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage : Up to 1:200</span></li>
                                 </ul>
-                                <Link to="/accounts/pro" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(218,165,32,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
+                                <Link to="/accounts/pro" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
 
@@ -280,7 +280,7 @@ const Home = () => {
                         <FadeInSection delay={0.4}>
                             <div className="bg-[#0a1629] border border-gray-800 rounded-2xl p-8 hover:border-gray-600 transition-colors h-full flex flex-col text-center">
                                 <div className="mb-6">
-                                     <span className="bg-gradient-to-r from-yellow-700 to-yellow-600 text-white px-8 py-2 font-bold text-sm rounded shadow-lg">Pro X Account</span>
+                                     <span className="bg-gold-gradient text-white px-8 py-2 font-bold text-sm rounded shadow-lg">Pro X Account</span>
                                 </div>
                                 <p className="text-gray-400 text-sm mb-8 flex-grow leading-relaxed px-2">
                                     Gain deeper trading insights and access aggregated data from multiple accounts with the Pro X Account.
@@ -290,7 +290,7 @@ const Home = () => {
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spread: Raw Spread</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:200</span></li>
                                 </ul>
-                                <Link to="/accounts/pro-x" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(218,165,32,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
+                                <Link to="/accounts/pro-x" className="block w-full py-3 btn-gold text-[#02040a] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
                     </div>
