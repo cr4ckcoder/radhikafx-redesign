@@ -5,25 +5,20 @@
   /* Brand Colors */
   --color-navy: #02050a;
   /* Updated logic: Deep Navy/Black */
-  --color-gold: #C6A347;
+  --color-gold: #60bd47;
   --color-white: #ffffff;
   --color-dark: #02040a;
   --color-black: #000000;
   --color-card: rgba(5, 12, 24, 0.7);
   --gradient-gold: linear-gradient(to right,
-      #8f6b29 0%,
+       #60bd47 0%,
       /* Dark Bronze/Gold */
-      #fde08d 25%,
-      /* Bright Highlight */
-      #df9f28 50%,
-      /* Mid-tone Gold */
-      #fde08d 75%,
-      /* Pale/Champagne Gold */
-      #8f6b29 100%
+      #4A8739 100%
+      
       /* Dark Bronze Finish */
     );
 
-  --gradient-gold-hover: linear-gradient(to right, linear-gradient(273deg, #DFA00D 0%, #794107 100%));
+  --gradient-gold-hover: linear-gradient(to right, linear-gradient(273deg, #60bd47 0%, #4A8739 100%));
 
 
   /* Fonts */
@@ -65,7 +60,7 @@ h1 {
 }
 
 .stroke-gold-gradient {
-  stroke: url(#gold-gradient) !important;
+  stroke: linear-gradient(to right, linear-gradient(273deg, #60bd47 0%, #4A8739 100%));
   /* Overrides currentColor */
   stroke-width: 2px;
 }
