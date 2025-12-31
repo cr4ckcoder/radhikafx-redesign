@@ -111,8 +111,24 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        <p className="text-xs text-gray-500 leading-relaxed text-center mb-4">
-                            Radhika Capital Markets Ltd operating under brand name Radhika Capital Markets is an Investment Dealer regulated by the Financial Services Commission (FSC) of Mauritius with a Global Business License and an Investment Dealer License number GB22200742 - Registration No. 190425 | Authorised Representative Number : 00000572.
+                        <p className="text-xs text-gray-500 leading-relaxed text-left mb-4">
+                            <b>Radhika Capital Markets Ltd</b>
+                            Registered in Mauritius (Company No. 224657)
+                            Global Business Licence No. GB25204826
+                            Investment Dealer (Full Service Dealer, Excluding Underwriting)
+                            Regulated by the Financial Services Commission (FSC), Mauritius
+                            <br />
+                            <br />
+                            Risk Warning:
+                            Trading in Forex, CFDs, and other leveraged products involves significant risk. You may lose more than your initial investment. Ensure you understand the risks and seek independent professional advice if necessary.
+                            <br />
+                            <br />
+                            Jurisdictional Restrictions:
+                            Information on this site is not directed at residents in any country or jurisdiction where such distribution or use would be contrary to local law or regulation, including India and the United Arab Emirates (UAE).
+                            <br />
+                            <br />
+                            Website Disclaimer:
+                            The information on this website is for general informational purposes only and does not constitute financial advice. By using this website, you acknowledge and accept the terms outlined in our Risk Disclosure Statement, Client Agreement, Privacy Policy, and Terms & Conditions.
                         </p>
 
                         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600 pt-4 border-t border-gray-800">
