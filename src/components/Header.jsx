@@ -125,7 +125,7 @@ const Header = () => {
             <div className="container mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
-                    <img src={Logo} alt="Radhika Capital Markets" className="h-10 md:h-12 lg:h-14 w-auto object-contain" />
+                    <img src={Logo} alt="Radhika Capital Markets" className="h-12 md:h-16 lg:h-20 w-auto object-contain" />
                 </Link>
 
                 {/* Desktop Navigation */}
