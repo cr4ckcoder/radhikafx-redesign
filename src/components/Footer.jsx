@@ -112,7 +112,7 @@ const Footer = () => {
                         </div>
 
                         <p className="text-xs text-gray-500 leading-relaxed text-left mb-4">
-                            <b>Radhika Capital Markets Ltd</b>
+                            <b>Radhika Capital Markets Ltd </b>
                             Registered in Mauritius (Company No. 224657)
                             Global Business Licence No. GB25204826
                             Investment Dealer (Full Service Dealer, Excluding Underwriting)
