@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     Flame, Droplet, Wheat, ArrowUpRight, ArrowDownRight,
     Shield, Layers, Zap, Scale, BarChart3, ChevronRight, Activity, Globe
@@ -63,12 +64,12 @@ const Commodities = () => {
                             From Energy to Agriculture—capitalize on global price movements with up to 1:20 leverage and lightning-fast execution on MT5.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <button className="px-8 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors">
-                                Start Trading Commodities
-                            </button>
-                            <button className="px-8 py-3 bg-transparent border border-[var(--color-gold)] text-[var(--color-gold)] font-bold rounded-lg hover:bg-[rgba(233,219,141,0.1)] transition-colors">
-                                View Contract Specs
-                            </button>
+                            <Link to="/open-live-account" className="px-8 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors">
+                                Open Live Account
+                            </Link>
+                            <Link to="/open-demo-account" className="px-8 py-3 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
+                                Open Demo Account
+                            </Link>
                         </div>
                     </div>
 
@@ -98,8 +99,8 @@ const Commodities = () => {
                                 </svg>
                             </div>
                             <div className="flex gap-2 mt-4">
-                                <button className="flex-1 py-3 bg-red-500/20 text-red-500 font-bold rounded hover:bg-red-500 hover:text-white transition-colors">SELL</button>
-                                <button className="flex-1 py-3 bg-green-500/20 text-green-500 font-bold rounded hover:bg-green-500 hover:text-white transition-colors">BUY</button>
+                                <Link to="/open-live-account" className="flex-1 py-3 bg-red-500/20 text-red-500 font-bold rounded hover:bg-red-500 hover:text-white transition-colors text-center">SELL</Link>
+                                <Link to="/open-live-account" className="flex-1 py-3 bg-green-500/20 text-green-500 font-bold rounded hover:bg-green-500 hover:text-white transition-colors text-center">BUY</Link>
                             </div>
                         </div>
                     </div>
@@ -166,9 +167,9 @@ const Commodities = () => {
                             <h2 className="text-3xl font-bold text-white mb-2">Trade Essentials</h2>
                             <p className="text-gray-400">Energies, Metals, and Agriculture.</p>
                         </div>
-                        <button className="text-gold-gradient font-bold hover:text-white transition-colors hidden md:block">
+                        <Link to="/tools/trading-conditions" className="text-gold-gradient font-bold hover:text-white transition-colors hidden md:block">
                             View All Commodities →
-                        </button>
+                        </Link>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -216,7 +217,7 @@ const Commodities = () => {
                         <div className="md:w-1/2 relative z-10 order-1 md:order-2">
                             <div className="inline-flex items-center space-x-2 text-gold-gradient mb-6 font-bold uppercase tracking-widest text-sm">
                                 <BarChart3 size={18} />
-                                <span>The Inventory Edge</span>
+                                <span >The Inventory Edge</span>
                             </div>
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
                                 Stay Ahead of Supply & Demand
@@ -224,9 +225,9 @@ const Commodities = () => {
                             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
                                 Commodities are driven by fundamentals. Stay ahead with our Economic Calendar for weekly Crude Oil Inventories and USDA reports.
                             </p>
-                            <button className="px-8 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors">
+                            <Link to="/tools/economic-calendar" className="px-8 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors block w-fit">
                                 View Economic Calendar
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

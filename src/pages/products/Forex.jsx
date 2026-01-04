@@ -29,6 +29,8 @@ const ForexCard = ({ pair, name, price, change, isPositive }) => (
 );
 
 
+import { Link } from 'react-router-dom';
+
 const Forex = () => {
 
     const forexSymbols = [
@@ -62,12 +64,12 @@ const Forex = () => {
                             Trade 60+ Currency Pairs with deep liquidity, no requotes, and spreads starting from 0.0 pips. Experience the Radhika Capital Markets edge in the $7.5 trillion-a-day market.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <button className="px-8 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors">
+                            <Link to="/open-live-account" className="px-8 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors">
                                 Start Trading Forex
-                            </button>
-                            <button className="px-8 py-3 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
-                                View Live Spreads
-                            </button>
+                            </Link>
+                            <Link to="/open-demo-account" className="px-8 py-3 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
+                                Open Demo Account
+                            </Link>
                         </div>
                     </div>
                     {/* 3D Visual */}

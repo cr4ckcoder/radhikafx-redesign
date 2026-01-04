@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     Cpu, Zap, BarChart2, CheckCircle, Shield, Award,
     Terminal, ArrowRight, Layers, Sliders, TrendingUp, Anchor,
@@ -222,9 +223,9 @@ const Pro = () => {
                     <p className="text-slate-400 font-bold uppercase tracking-[0.2em] mb-4 text-xs">Upgrade Your Trading</p>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 font-[var(--font-heading)]">Professional Grade.</h2>
 
-                    <button className="bg-transparent border border-slate-400 text-slate-400 px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-slate-400 hover:text-black transition-all duration-300 transform hover:-translate-y-1">
+                    <Link to="/open-live-account" className="inline-block bg-transparent border border-slate-400 text-slate-400 px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-slate-400 hover:text-black transition-all duration-300 transform hover:-translate-y-1">
                         Open Pro Account
-                    </button>
+                    </Link>
                 </div>
             </section>
 

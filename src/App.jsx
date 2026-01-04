@@ -28,6 +28,7 @@ import TradingConditions from './pages/tools/TradingConditions';
 import TradingHours from './pages/tools/TradingHours';
 import EconomicCalendar from './pages/tools/EconomicCalendar';
 import TradingCalculators from './pages/tools/TradingCalculators';
+import Education from './pages/tools/Education';
 import RiskDisclaimer from './pages/RiskDisclaimer';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -86,6 +87,7 @@ function App() {
             <Route path="/tools/trading-hours" element={<TradingHours />} />
             <Route path="/tools/economic-calendar" element={<EconomicCalendar />} />
             <Route path="/tools/calculators" element={<TradingCalculators />} />
+            <Route path="/tools/education" element={<Education />} />
             <Route path="/risk-disclaimer" element={<RiskDisclaimer />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
     Monitor, Smartphone, Tablet, Calendar, Code, Clock,
     Layers, Zap, BarChart2, Check, Download, MousePointer,
@@ -75,12 +76,12 @@ const MT5 = () => {
                             Harness the full power of MetaTrader 5 with Radhika Capital Markets. Institutional-grade execution, advanced technical analysis, and automated trading—all in one place.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <button className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors shadow-lg shadow-yellow-900/20 flex items-center gap-2">
+                            <a href="#downloads" className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors shadow-lg shadow-yellow-900/20 flex items-center gap-2">
                                 <Download size={20} /> Download MT5 Now
-                            </button>
-                            <button className="px-8 py-4 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
+                            </a>
+                            <Link to="/open-live-account" className="px-8 py-4 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
                                 WebTrader Access
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -338,7 +339,7 @@ const MT5 = () => {
             </section >
 
             {/* Block 4.5: Download Links (Added per user request) */}
-            < section className="py-20 bg-black border-y border-[rgba(255,255,255,0.1)]" >
+            < section id="downloads" className="py-20 bg-black border-y border-[rgba(255,255,255,0.1)]" >
                 <div className="container mx-auto px-6 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-[var(--font-heading)]">
                         Start Trading with Radhika Capital Markets MT5
@@ -434,9 +435,9 @@ const MT5 = () => {
                         ))}
                         <div className="mt-8 pt-8 border-t border-[rgba(255,255,255,0.05)] text-center">
                             <p className="text-gray-400 mb-4">Still have questions?</p>
-                            <button className="text-gold-gradient font-bold hover:text-white transition-colors">
+                            <Link to="/contact-us" className="text-gold-gradient font-bold hover:text-white transition-colors">
                                 Contact our 24/7 Support Team
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

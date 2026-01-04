@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
     Zap, Shield, Wallet, Repeat, Clock, Activity,
     ArrowUpRight, ArrowDownRight, BarChart2, Lock
@@ -57,12 +58,12 @@ const Crypto = () => {
                             Don't just HODL—Trade. Access 50+ of the world's most popular Crypto CFDs with up to 1:20 leverage, instant execution, and zero storage risks.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <button className="px-8 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors">
-                                Start Trading Crypto
-                            </button>
-                            <button className="px-8 py-3 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
-                                View All Coins
-                            </button>
+                            <Link to="/open-live-account" className="px-8 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors text-center">
+                                Open Live Account
+                            </Link>
+                            <Link to="/open-demo-account" className="px-8 py-3 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors text-center">
+                                Open Demo Account
+                            </Link>
                         </div>
                     </div>
 
@@ -91,8 +92,8 @@ const Crypto = () => {
                                 </svg>
                             </div>
                             <div className="flex gap-2 mt-4">
-                                <button className="flex-1 py-3 bg-red-500/20 text-red-500 font-bold rounded hover:bg-red-500 hover:text-white transition-colors">SELL</button>
-                                <button className="flex-1 py-3 bg-green-500/20 text-green-500 font-bold rounded hover:bg-green-500 hover:text-white transition-colors">BUY</button>
+                                <Link to="/open-live-account" className="flex-1 py-3 bg-red-500/20 text-red-500 font-bold rounded hover:bg-red-500 hover:text-white transition-colors text-center">SELL</Link>
+                                <Link to="/open-live-account" className="flex-1 py-3 bg-green-500/20 text-green-500 font-bold rounded hover:bg-green-500 hover:text-white transition-colors text-center">BUY</Link>
                             </div>
                         </div>
                     </div>
@@ -159,9 +160,9 @@ const Crypto = () => {
                             <h2 className="text-3xl font-bold text-white mb-2">Market Leaders</h2>
                             <p className="text-gray-400">From the Big Two to the fastest Altcoins.</p>
                         </div>
-                        <button className="text-[var(--color-gold)] font-bold hover:text-white transition-colors hidden md:block">
+                        <Link to="/tools/trading-conditions" className="text-[var(--color-gold)] font-bold hover:text-white transition-colors hidden md:block">
                             View All 50+ Coins →
-                        </button>
+                        </Link>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

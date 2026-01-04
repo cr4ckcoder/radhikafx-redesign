@@ -84,10 +84,10 @@ const Shares = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link to="/open-live-account" className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors shadow-lg shadow-yellow-900/20 text-center">
-                                Start Trading Shares
+                                Open Live Account
                             </Link>
-                            <Link to="/tools/trading-conditions" className="px-8 py-4 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors text-center">
-                                View Full Symbol List
+                            <Link to="/open-demo-account" className="px-8 py-4 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors text-center">
+                                Open Demo Account
                             </Link>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     Award, Star, Trophy, Users, Globe, ArrowRight, MapPin,
     Calendar, CheckCircle
@@ -61,7 +62,7 @@ const Achievements = () => {
 
                                 <h3 className="text-2xl font-[var(--font-heading)] font-bold text-white text-center mb-2">Best Forex Trading Experience</h3>
                                 <div className="flex items-center justify-center gap-2 text-[var(--color-gold)] text-sm mb-6">
-                                    <MapPin size={14} /> Forex Traders Summit, Dubai
+                                    <MapPin size={14} /> Forex Expo, Dubai
                                 </div>
 
                                 <p className="text-gray-400 text-center text-sm leading-relaxed border-t border-gray-800 pt-6">
@@ -90,25 +91,7 @@ const Achievements = () => {
                 </div>
             </section>
 
-            {/* Block 4: The Milestone Counter */}
-            <section className="py-24 bg-[#050505]">
-                <div className="container mx-auto px-6 max-w-4xl">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="text-center">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">2<span className="text-gold-gradient">+</span></div>
-                            <div className="text-gray-500 text-xs uppercase tracking-widest">Major Awards in 2025</div>
-                        </div>
-                        <div className="text-center border-l border-r border-gray-800">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">100<span className="text-gold-gradient">%</span></div>
-                            <div className="text-gray-500 text-xs uppercase tracking-widest">Commitment to Transparency</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-[var(--font-heading)]">Global</div>
-                            <div className="text-gray-500 text-xs uppercase tracking-widest">Industry Recognition</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             {/* Block 5: The "Next Chapter" Footer CTA */}
             <section className="py-24 bg-[#091830]">
@@ -122,12 +105,12 @@ const Achievements = () => {
                                 Experience the excellence that the industry is talking about. Join Radhika Capital Markets today.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center gap-6">
-                                <button className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded hover:bg-white transition-colors shadow-lg shadow-green-900/20">
+                                <Link to="/open-live-account" className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded hover:bg-white transition-colors shadow-lg shadow-green-900/20">
                                     Open Live Account
-                                </button>
-                                <button className="px-8 py-4 bg-transparent border border-gray-600 text-white font-bold rounded hover:bg-white/10 transition-colors">
+                                </Link>
+                                <Link to="/contact-us" className="px-8 py-4 bg-transparent border border-gray-600 text-white font-bold rounded hover:bg-white/10 transition-colors">
                                     Contact Our Team
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     Globe, TrendingUp, DollarSign, Layers, PieChart, Info,
     Smartphone, Zap, ArrowRight, BarChart, ArrowUpRight, ArrowDownRight, Activity
@@ -25,7 +26,7 @@ const IndexCard = ({ name, code, country, spread, isPositive }) => (
                 <div className="text-xs text-gray-500 mb-1">Spread from</div>
                 <div className="text-xl font-mono font-bold text-gold-gradient">{spread}</div>
             </div>
-            <button className="text-sm font-bold text-white border-b border-white/20 hover:border-white transition-colors">Trade</button>
+            <Link to="/open-live-account" className="text-sm font-bold text-white border-b border-white/20 hover:border-white transition-colors">Trade</Link>
         </div>
         <div className="w-full h-1 bg-gray-700 rounded-full overflow-hidden mt-6">
             <div className="h-full bg-blue-500" style={{ width: `${Math.random() * 40 + 40}%` }}></div>
@@ -65,12 +66,12 @@ const Indices = () => {
                             Take a position on the global markets. Trade the world's most liquid Indices with 0.0 pips starting spreads and ultra-fast execution.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors">
-                                Start Trading Indices
-                            </button>
-                            <button className="px-8 py-4 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
-                                Try Demo Account
-                            </button>
+                            <Link to="/open-live-account" className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg hover:bg-white transition-colors text-center">
+                                Open Live Account
+                            </Link>
+                            <Link to="/open-demo-account" className="px-8 py-4 bg-transparent border border-[var(--color-white)] text-white font-bold rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors text-center">
+                                Open Demo Account
+                            </Link>
                         </div>
                     </div>
 
@@ -161,9 +162,9 @@ const Indices = () => {
                             <h2 className="text-3xl font-bold text-white mb-2">Global Benchmarks</h2>
                             <p className="text-gray-400">The pulse of the world's biggest economies.</p>
                         </div>
-                        <button className="text-gold-gradient font-bold hover:text-white transition-colors hidden md:block">
+                        <Link to="/tools/trading-conditions" className="text-gold-gradient font-bold hover:text-white transition-colors hidden md:block">
                             View Contract Specs →
-                        </button>
+                        </Link>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <IndexCard name="US Tech 100" code="NAS100" country="USA" spread="1.2" isPositive={true} />
@@ -183,15 +184,15 @@ const Indices = () => {
                         <div className="md:w-1/2 relative z-10">
                             <div className="inline-flex items-center space-x-2 text-blue-400 mb-6 font-bold uppercase tracking-widest text-sm">
                                 <BarChart size={18} />
-                                <span>Market Knowledge</span>
+                                <span >Market Knowledge</span>
                             </div>
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">What moves the Indices?</h2>
                             <p className="text-xl text-gray-300 mb-10 leading-relaxed">
                                 Stay updated on Interest Rate Decisions, GDP Data, and Corporate Earnings Seasons. Our integrated Economic Calendar on MT5 ensures you never miss a market-moving event.
                             </p>
-                            <button className="px-8 py-3 border border-blue-500 text-blue-400 hover:bg-blue-500/10 rounded-full transition-colors font-bold">
-                                Explorer Economic Calendar
-                            </button>
+                            <Link to="/tools/economic-calendar" className="px-8 py-3 border border-blue-500 text-blue-400 hover:bg-blue-500/10 rounded-full transition-colors font-bold inline-block">
+                                Explore Economic Calendar
+                            </Link>
                         </div>
                         <div className="md:w-1/2 relative z-10 flex justify-center">
                             {/* Calendar Visual */}

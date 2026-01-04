@@ -40,15 +40,15 @@ const LiquidityServices = () => {
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
                         <div className="flex flex-col items-center gap-2">
                             <Server size={32} className="stroke-gold-gradient" />
-                            <span className="font-mono text-xs text-gray-400 uppercase">Equinix NY4</span>
+                            <span className="font-mono text-xs text-gray-400 uppercase">NY4 Data Center</span>
                         </div>
                         <div className="flex flex-col items-center gap-2">
                             <Server size={32} className="stroke-gold-gradient" />
-                            <span className="font-mono text-xs text-gray-400 uppercase">Equinix LD4</span>
+                            <span className="font-mono text-xs text-gray-400 uppercase">LD4 Data Center</span>
                         </div>
                         <div className="flex flex-col items-center gap-2">
                             <Server size={32} className="stroke-gold-gradient" />
-                            <span className="font-mono text-xs text-gray-400 uppercase">Equinix TY3</span>
+                            <span className="font-mono text-xs text-gray-400 uppercase">TY3 Data Center</span>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@ const LiquidityServices = () => {
                         {/* Rows */}
                         {[
                             { f: "Connectivity", v: "FIX API 4.4, Liquidity Bridge, MT5 White Label" },
-                            { f: "Data Centers", v: "Equinix LD4 (London), NY4 (New York)" },
+                            { f: "Data Centers", v: "LD4 (London), NY4 (New York)" },
                             { f: "Execution Speed", v: "Ultra-Low Latency (<10ms Internal)" },
                             { f: "Reporting", v: "Real-time Back Office & STP Reports" },
                             { f: "Settlement", v: "Net Open Position / Daily Settlement" },

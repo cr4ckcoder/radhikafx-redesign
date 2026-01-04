@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
     Globe, Shield, TrendingUp, Users, CheckCircle,
     Lock, Server, Smartphone, Monitor
@@ -253,13 +254,14 @@ const AboutUs = () => {
                                     One-Click Trading
                                 </li>
                             </ul>
+
                             <div className="flex gap-4">
-                                <button className="flex items-center gap-2 px-6 py-3 bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.1)] text-white rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
+                                <Link to="/platforms/mt5" className="flex items-center gap-2 px-6 py-3 bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.1)] text-white rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
                                     <Monitor size={20} /> Desktop
-                                </button>
-                                <button className="flex items-center gap-2 px-6 py-3 bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.1)] text-white rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
+                                </Link>
+                                <Link to="/platforms/mt5" className="flex items-center gap-2 px-6 py-3 bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.1)] text-white rounded-lg hover:bg-[rgba(255,255,255,0.1)] transition-colors">
                                     <Smartphone size={20} /> Mobile
-                                </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="lg:w-1/2 relative">
@@ -284,12 +286,12 @@ const AboutUs = () => {
                         Ready to start your journey with a <br /><span className="text-gold-gradient">regulated partner?</span>
                     </h2>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <button className="px-10 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-full hover:bg-[var(--color-white)] transition-all transform hover:scale-105 shadow-xl text-lg">
+                        <Link to="/open-live-account" className="px-10 py-4 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-full hover:bg-[var(--color-white)] transition-all transform hover:scale-105 shadow-xl text-lg">
                             Open Live Account
-                        </button>
-                        <button className="px-10 py-4 bg-transparent border-2 border-[var(--color-gold)] text-gold-gradient font-bold rounded-full hover:bg-[rgba(233,219,141,0.1)] transition-colors text-lg">
+                        </Link>
+                        <Link to="/contact-us" className="px-10 py-4 bg-transparent border-2 border-[var(--color-gold)] text-gold-gradient font-bold rounded-full hover:bg-[rgba(233,219,141,0.1)] transition-colors text-lg">
                             Contact Support
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>

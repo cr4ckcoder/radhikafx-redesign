@@ -1,4 +1,5 @@
 import React, { useEffect, memo } from 'react';
+import { Link } from 'react-router-dom';
 import { Radio, Activity, TrendingUp, AlertTriangle, Smartphone, Info, Calendar as CalendarIcon, Filter, Layers } from 'lucide-react';
 
 // Wrapper for the TradingView Widget
@@ -178,9 +179,9 @@ const EconomicCalendar = () => {
                                 <p className="font-medium opacity-90 text-lg mb-8">
                                     Did you know our MetaTrader 5 platform has an Economic Calendar built-in? Get alerts directly on your charts so you never get caught off guard.
                                 </p>
-                                <button className="px-8 py-3 bg-[var(--color-navy)] text-white font-bold rounded-lg hover:shadow-lg hover:scale-105 transition-all flex items-center gap-2">
+                                <Link to="/platforms/mt5#downloads" className="px-8 py-3 bg-[var(--color-navy)] text-white font-bold rounded-lg hover:shadow-lg hover:scale-105 transition-all flex items-center gap-2 w-fit">
                                     <Smartphone size={20} /> Download MT5
-                                </button>
+                                </Link>
                             </div>
                             {/* Mockup visual */}
                             <div className="hidden md:block relative">

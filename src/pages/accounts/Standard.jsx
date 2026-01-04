@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     Zap, Shield, Smartphone, Globe, CheckCircle,
     TrendingUp, Activity, BarChart2, ArrowRight
@@ -219,9 +220,9 @@ const Standard = () => {
                     <p className="text-gold-gradient font-bold uppercase tracking-[0.2em] mb-4 text-xs">Start Your Journey</p>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 font-[var(--font-heading)]">Trading made simple.</h2>
 
-                    <button className="bg-transparent border border-[var(--color-gold)] text-gold-gradient px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[var(--color-gold)] hover:text-black transition-all duration-300 transform hover:-translate-y-1">
+                    <Link to="/open-live-account" className="inline-block bg-transparent border border-[var(--color-gold)] text-gold-gradient px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[var(--color-gold)] hover:text-black transition-all duration-300 transform hover:-translate-y-1">
                         Open Standard Account
-                    </button>
+                    </Link>
                 </div>
             </section>
 

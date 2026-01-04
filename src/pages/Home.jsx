@@ -254,7 +254,7 @@ const Home = () => {
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spread: 3 pips</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:300</span></li>
                                 </ul>
-                                <Link to="/accounts/standard" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
+                                <Link to="/open-live-account" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
 
@@ -272,7 +272,7 @@ const Home = () => {
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spreads : 2.5 pips</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage : Up to 1:200</span></li>
                                 </ul>
-                                <Link to="/accounts/pro" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
+                                <Link to="/open-live-account" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
 
@@ -290,7 +290,7 @@ const Home = () => {
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spread: Raw Spread</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:200</span></li>
                                 </ul>
-                                <Link to="/accounts/pro-x" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
+                                <Link to="/open-live-account" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>
                         </FadeInSection>
                     </div>

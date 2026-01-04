@@ -75,7 +75,7 @@ const Header = () => {
                 { name: 'Trading Hours', icon: <Clock size={16} />, path: '/tools/trading-hours' },
                 { name: 'Economic Calendar', icon: <Calendar size={16} />, path: '/tools/economic-calendar' },
                 { name: 'Calculators', icon: <Calculator size={16} />, path: '/tools/calculators' },
-                { name: 'Education', icon: <BookOpen size={16} />, path: 'https://www.radhikafx.com/radhika-blogs/' }
+                { name: 'Education', icon: <BookOpen size={16} />, path: '/tools/education' }
             ]
         },
         { name: 'Contact Us', icon: <Mail size={18} />, path: '/contact-us' },
@@ -109,6 +109,12 @@ const Header = () => {
 
                     {/* Right: Actions (Moved from Main Nav) */}
                     <div className="flex items-center gap-4">
+                        <Link
+                            to="/partnership/ib-programme"
+                            className="px-4 py-2 border border-[var(--color-gold)] text-[var(--color-gold)] font-bold rounded-full transition-all hover:bg-[var(--color-gold)] hover:text-[var(--color-navy)] whitespace-nowrap text-sm"
+                        >
+                            IB Registration
+                        </Link>
                         <a href="https://cabinet.radhikafx.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-white)] hover-text-gold-gradient font-medium transition-colors">
                             Login
                         </a>
