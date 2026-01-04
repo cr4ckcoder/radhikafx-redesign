@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown, User, Globe, Activity, Briefcase, BarChart2, Star, Flame, TrendingUp, PieChart, Repeat, DollarSign, Zap, Monitor, Award, Diamond, Check, Wallet, ArrowUpRight, Scale, Trophy, HelpCircle, Users, Mail, Clock, Calendar, Calculator, BookOpen, Database } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronUp, User, Globe, Activity, Briefcase, BarChart2, Star, Flame, TrendingUp, PieChart, Repeat, DollarSign, Zap, Monitor, Award, Diamond, Check, Wallet, ArrowUpRight, Scale, Trophy, HelpCircle, Users, Mail, Clock, Calendar, Calculator, BookOpen, Database } from 'lucide-react';
 import Logo from '../assets/logo.png';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [activeMobileDropdown, setActiveMobileDropdown] = useState(null);
+
+    const toggleMobileDropdown = (name) => {
+        setActiveMobileDropdown(activeMobileDropdown === name ? null : name);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -210,34 +215,59 @@ const Header = () => {
                             {item.path ? (
                                 <Link
                                     to={item.path}
-                                    className="text-[var(--color-white)] text-lg font-medium py-2"
+                                    className="text-[var(--color-white)] text-lg font-medium py-2 block border-b border-[rgba(255,255,255,0.05)]"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     {item.name}
                                 </Link>
                             ) : (
                                 <>
-                                    <span className="text-[var(--color-white)] text-lg font-medium py-2 opacity-50">{item.name}</span>
-                                    {item.dropdown && (
-                                        <div className="pl-4 flex flex-col space-y-2 border-l border-[rgba(255,255,255,0.1)] ml-2 mt-1">
-                                            {item.dropdown.map((subItem) => (
-                                                <Link
-                                                    key={subItem.name}
-                                                    to={subItem.path}
-                                                    className="text-gray-300 py-1 hover-text-gold-gradient"
-                                                    onClick={() => setMobileMenuOpen(false)}
-                                                >
-                                                    {subItem.name}
-                                                </Link>
-                                            ))}
-                                        </div>
-                                    )}
+                                    <button
+                                        onClick={() => toggleMobileDropdown(item.name)}
+                                        className="flex items-center justify-between w-full text-[var(--color-white)] text-lg font-medium py-2 border-b border-[rgba(255,255,255,0.05)]"
+                                    >
+                                        <span className={activeMobileDropdown === item.name ? 'text-[var(--color-gold)]' : ''}>{item.name}</span>
+                                        {activeMobileDropdown === item.name ? <ChevronUp size={20} className="text-[var(--color-gold)]" /> : <ChevronDown size={20} />}
+                                    </button>
+                                    
+                                    <div className={`overflow-hidden transition-all duration-300 ease-in-out ${activeMobileDropdown === item.name ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                        {item.dropdown && (
+                                            <div className="pl-4 flex flex-col space-y-2 py-2 bg-[rgba(255,255,255,0.02)]">
+                                                {item.dropdown.map((subItem) => (
+                                                    subItem.path.startsWith('http') ? (
+                                                        <a
+                                                            key={subItem.name}
+                                                            href={subItem.path}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="text-gray-400 py-2 hover-text-gold-gradient flex items-center gap-2"
+                                                            onClick={() => setMobileMenuOpen(false)}
+                                                        >
+                                                            <span className="text-[var(--color-gold)] opacity-70">{subItem.icon}</span>
+                                                            {subItem.name}
+                                                        </a>
+                                                    ) : (
+                                                        <Link
+                                                            key={subItem.name}
+                                                            to={subItem.path}
+                                                            className="text-gray-400 py-2 hover-text-gold-gradient flex items-center gap-2"
+                                                            onClick={() => setMobileMenuOpen(false)}
+                                                        >
+                                                            <span className="text-[var(--color-gold)] opacity-70">{subItem.icon}</span>
+                                                            {subItem.name}
+                                                        </Link>
+                                                    )
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
                                 </>
                             )}
                         </div>
                     ))}
                     <div className="pt-4 flex flex-col space-y-3">
                         <a href="https://cabinet.radhikafx.com/" target="_blank" rel="noopener noreferrer" className="w-full py-2 border border-[var(--color-gold)] text-gold-gradient rounded-lg text-center block">Login</a>
+                        <Link to="/partnership/ib-programme" onClick={() => setMobileMenuOpen(false)} className="w-full py-2 border border-[var(--color-gold)] text-gold-gradient rounded-lg text-center block">IB Registration</Link>
                         <Link to="/open-live-account" onClick={() => setMobileMenuOpen(false)} className="w-full py-2 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded-lg text-center">Open Live Account</Link>
                     </div>
                 </div>
