@@ -116,8 +116,8 @@ const ContactForm = () => {
         // Add form fields to 'value' JSON as expected by the CRM
         // Mapping fields to match Vtiger expectations strictly based on success response
         const formValues = {
-            firstname: formData.firstname,
-            lastname: formData.lastname,
+            firstname: formData.firstname.replace(/[^a-zA-Z\s]/g, ''),
+            lastname: formData.lastname.replace(/[^a-zA-Z\s]/g, ''),
             email: formData.email,
             mobile: formData.mobile.replace(/\D/g, ''),
             country_name: formData.country_name,

@@ -139,6 +139,9 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
 
         const formValues = {
             ...formData,
+            firstname: formData.firstname.replace(/[^a-zA-Z\s]/g, ''),
+            lastname: formData.lastname.replace(/[^a-zA-Z\s]/g, ''),
+            city: formData.city.replace(/[^a-zA-Z\s]/g, ''),
             mobile: formData.mobile.replace(/\D/g, ''),
             leadstatus: 'New',
             leadsource: 'Web Site',
