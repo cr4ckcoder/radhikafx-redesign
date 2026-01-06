@@ -117,7 +117,7 @@ const ContactForm = () => {
             firstname: formData.firstname,
             lastname: formData.lastname,
             email: formData.email,
-            mobile: formData.mobile,
+            mobile: formData.mobile.replace(/\D/g, ''),
             country_name: formData.country_name,
             city: '', // Empty city if not collected, but included as per old form
             ticket_title: formData.ticket_title,

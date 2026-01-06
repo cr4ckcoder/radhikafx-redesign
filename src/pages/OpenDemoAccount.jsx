@@ -144,6 +144,7 @@ const OpenDemoAccount = () => {
 
         const formValues = {
             ...formData,
+            mobile: formData.mobile.replace(/\D/g, ''),
             leadstatus: 'New',
             leadsource: 'Web Site',
             // Custom fields matching assumed CRM schema
