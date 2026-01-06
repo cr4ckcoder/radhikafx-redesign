@@ -4,6 +4,7 @@ import {
     AlertCircle, Loader2, Globe, Clock, Building2, User
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { COUNTRIES } from '../data/countries';
 
 const OpenDemoAccount = () => {
     // Steps: 1 = Account Setup, 2 = Trading Prefs, 3 = Verification
@@ -114,7 +115,8 @@ const OpenDemoAccount = () => {
                 setStatus({ type: 'success', msg: `OTP sent to ${formData.email}` });
                 setOtpTimer(15);
             } else {
-                setStatus({ type: 'error', msg: data.error?.message || 'Failed to send OTP.' });
+                const errorMsg = (typeof data.error === 'string' ? data.error : data.error?.message) || data.message || JSON.stringify(data.error) || 'Failed to send OTP.';
+                setStatus({ type: 'error', msg: errorMsg });
             }
         } catch (error) {
             console.error(error);
@@ -168,7 +170,8 @@ const OpenDemoAccount = () => {
             if (data.success) {
                 setView('SUCCESS');
             } else {
-                setStatus({ type: 'error', msg: data.error?.message || 'Verification failed.' });
+                const errorMsg = (typeof data.error === 'string' ? data.error : data.error?.message) || data.message || JSON.stringify(data.error) || 'Verification failed.';
+                setStatus({ type: 'error', msg: errorMsg });
             }
         } catch (error) {
             console.error(error);
@@ -279,7 +282,12 @@ const OpenDemoAccount = () => {
                                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                                         <div>
                                                             <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Country</label>
-                                                            <input type="text" name="country_name" value={formData.country_name} onChange={handleChange} className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors" placeholder="Select your country" />
+                                                            <select name="country_name" value={formData.country_name} onChange={handleChange} className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none">
+                                                                <option value="" disabled>Select Country</option>
+                                                                {COUNTRIES.map((country) => (
+                                                                    <option key={country} value={country}>{country}</option>
+                                                                ))}
+                                                            </select>
                                                         </div>
                                                         <div>
                                                             <label className="block text-gray-500 text-xs font-bold uppercase mb-2">City</label>
@@ -337,6 +345,12 @@ const OpenDemoAccount = () => {
                                         </div>
                                         <h3 className="text-2xl font-bold text-white mb-2">Security Verification</h3>
                                         <p className="text-gray-400 mb-8">Enter the 6-digit code sent to <span className="text-white font-mono">{formData.email}</span></p>
+
+                                        {status.msg && (
+                                            <div className={`mb-6 p-4 rounded flex items-center gap-2 max-w-sm mx-auto ${status.type === 'error' ? 'bg-red-500/10 text-red-400 border border-red-500/20' : 'bg-green-500/10 text-green-400 border border-green-500/20'}`}>
+                                                <AlertCircle size={18} /> {status.msg}
+                                            </div>
+                                        )}
 
                                         <div className="flex justify-center gap-3 mb-8">
                                             {otp.map((digit, index) => (

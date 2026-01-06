@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { COUNTRIES } from '../data/countries';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -80,7 +81,8 @@ const ContactForm = () => {
                 setStatus({ type: 'success', msg: `OTP sent to ${formData.email}` });
                 startTimer();
             } else {
-                setStatus({ type: 'error', msg: data.error?.message || 'Failed to send OTP.' });
+                const errorMsg = (typeof data.error === 'string' ? data.error : data.error?.message) || data.message || JSON.stringify(data.error) || 'Failed to send OTP.';
+                setStatus({ type: 'error', msg: errorMsg });
             }
         } catch (error) {
             console.error(error);
@@ -148,7 +150,8 @@ const ContactForm = () => {
             if (data.success) {
                 setView('SUCCESS');
             } else {
-                setStatus({ type: 'error', msg: data.error?.message || 'Verification failed.' });
+                const errorMsg = (typeof data.error === 'string' ? data.error : data.error?.message) || data.message || JSON.stringify(data.error) || 'Verification failed.';
+                setStatus({ type: 'error', msg: errorMsg });
             }
         } catch (error) {
             console.error(error);
@@ -280,13 +283,17 @@ const ContactForm = () => {
                         </div>
                         <div>
                             <label className="block text-gray-500 text-xs font-bold uppercase mb-2">Country</label>
-                            <input
-                                type="text"
+                            <select
                                 name="country_name"
                                 value={formData.country_name}
                                 onChange={handleChange}
-                                className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors"
-                            />
+                                className="w-full bg-[#091830] border border-gray-700 rounded px-4 py-3 text-white focus:outline-none focus:border-[var(--color-gold)] transition-colors appearance-none"
+                            >
+                                <option value="" disabled>Select Country</option>
+                                {COUNTRIES.map((country) => (
+                                    <option key={country} value={country}>{country}</option>
+                                ))}
+                            </select>
                         </div>
                     </div>
 
