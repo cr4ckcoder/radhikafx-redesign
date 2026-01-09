@@ -4,6 +4,7 @@ import {
     Scale, Building
 } from 'lucide-react';
 import RegulationsBg from '../assets/regulations.jpg';
+import LicensePDF from '../assets/RCML-GBL-License.pdf';
 
 const Regulations = () => {
     return (
@@ -65,10 +66,12 @@ const Regulations = () => {
                             </div>
 
                             <a
-                                href="#"
+                                href={LicensePDF}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--color-gold)] text-[var(--color-navy)] font-bold rounded hover:bg-white transition-colors shadow-lg shadow-yellow-900/10"
                             >
-                                Verify License on FSC Website <ExternalLink size={16} />
+                                View License <ExternalLink size={16} />
                             </a>
                         </div>
 

@@ -62,7 +62,7 @@ const Achievements = () => {
 
                                 <h3 className="text-2xl font-[var(--font-heading)] font-bold text-white text-center mb-2">Best Forex Trading Experience</h3>
                                 <div className="flex items-center justify-center gap-2 text-[var(--color-gold)] text-sm mb-6">
-                                    <MapPin size={14} /> Forex Expo, Dubai
+                                    <MapPin size={14} /> Forex Expo, Dubai, 2025
                                 </div>
 
                                 <p className="text-gray-400 text-center text-sm leading-relaxed border-t border-gray-800 pt-6">
