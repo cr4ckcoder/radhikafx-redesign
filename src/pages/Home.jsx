@@ -252,7 +252,7 @@ const Home = () => {
                                 <ul className="space-y-3 mb-8 text-sm text-gray-300 text-left pl-4">
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Minimum Deposit: $100</span></li>
                                     <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Spread: 3 pips</span></li>
-                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:300</span></li>
+                                    <li className="flex items-center gap-3"><BarChart2 size={16} className="text-[var(--color-gold)] flex-shrink-0" /> <span className="text-white">Leverage: Up to 1:500</span></li>
                                 </ul>
                                 <Link to="/open-live-account" className="block w-full py-3 btn-gold text-[#091830] font-bold text-center rounded-lg hover:shadow-[0_0_20px_rgba(96,189,71,0.4)] transition-all transform hover:-translate-y-1">Start Trading</Link>
                             </div>

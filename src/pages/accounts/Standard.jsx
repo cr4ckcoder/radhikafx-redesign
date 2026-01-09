@@ -48,7 +48,7 @@ const Standard = () => {
                         </div>
                         <div className="text-center">
                             <div className="text-gold-gradient text-xs font-bold uppercase tracking-widest mb-2">Leverage</div>
-                            <div className="text-3xl font-bold text-white">1:300</div>
+                            <div className="text-3xl font-bold text-white">1:500</div>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@ const Standard = () => {
                             </div>
                             <div className="p-6 border-b md:border-b-0 border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
                                 <span className="text-gray-500">Max Leverage</span>
-                                <span className="text-white font-bold font-mono">1:300</span>
+                                <span className="text-white font-bold font-mono">1:500</span>
                             </div>
                             <div className="p-6 border-b md:border-b-0 md:border-r border-gray-800 flex justify-between items-center group hover:bg-white/5 transition-colors">
                                 <span className="text-gray-500">Account Currency</span>
