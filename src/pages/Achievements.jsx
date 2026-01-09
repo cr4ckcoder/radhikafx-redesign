@@ -94,9 +94,9 @@ const Achievements = () => {
                     <p className="text-center text-gray-600 text-xs font-bold uppercase tracking-[0.3em] mb-8">Recognized By</p>
                     <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
                         {/* Placeholder Logos with Text for now */}
-                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]">Pro<span className="text-gold-gradient">FX</span> Expo</div>
+                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]">Pro<span className="text-gold-gradient">FX</span> Expo MENA, Dubai</div>
                         <div className="text-2xl font-bold text-white font-[var(--font-heading)]">FOREX <span className="text-gray-500">TRADERS</span> SUMMIT</div>
-                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]"><span className="text-gold-gradient">FOREX EXPO</span> Dubai</div>
+                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]"><span className="text-gold-gradient">FOREX EXPO</span> Dubai </div>
                     </div>
                 </div>
             </section>
