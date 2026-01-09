@@ -96,7 +96,7 @@ const Achievements = () => {
                         {/* Placeholder Logos with Text for now */}
                         <div className="text-2xl font-bold text-white font-[var(--font-heading)]">Prof<span className="text-gold-gradient">X</span> Expo</div>
                         <div className="text-2xl font-bold text-white font-[var(--font-heading)]">FOREX <span className="text-gray-500">TRADERS</span> SUMMIT</div>
-                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]"><span className="text-gold-gradient">MENA</span> FINANCIAL AWARDS</div>
+                        <div className="text-2xl font-bold text-white font-[var(--font-heading)]"><span className="text-gold-gradient">FOREX EXPO</span> Dubai</div>
                     </div>
                 </div>
             </section>
