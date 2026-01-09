@@ -43,47 +43,40 @@ const Achievements = () => {
             {/* Block 2: The Award Showcase (The "Golden Cards") */}
             <section className="py-24 bg-[#050505] relative">
                 <div className="container mx-auto px-6">
-                    <div className="flex flex-wrap justify-center gap-12 max-w-5xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
 
                         {[
                             {
                                 title: "BEST RETAIL FOREX BROKER OF THE YEAR 2025",
                                 subtitle: "AT PROFX EXPO MENA, DUBAI",
-                                icon: Trophy,
-                                description: "Recognized for outstanding retail services, transparency, and superior trading conditions for clients across the MENA region."
+                                icon: Trophy
                             },
                             {
                                 title: "BEST FOREX TRADING EXPERIENCE 2025",
                                 subtitle: "AWARDED AT FOREX TRADERS SUMMIT DUBAI",
-                                icon: Award,
-                                description: "Radhika Capital Markets was recognized for offering the best trading experience, combining ultra-low latency execution with an intuitive client portal."
+                                icon: Award
                             },
                             {
                                 title: "Active Participation in Forex Expo Dubai 2025",
                                 subtitle: "Awarded for Forex Expo Dubai 2025",
-                                icon: Users,
-                                description: "Acknowledged for significant contribution and active engagement in one of the world's largest financial B2B expos."
+                                icon: Users
                             }
                         ].map((award, index) => (
-                            <div key={index} className="w-full max-w-xl bg-[#0a1629]/50 backdrop-blur-sm border border-[rgba(96,189,71,0.1)] rounded-2xl p-8 hover:border-[var(--color-gold)] transition-all duration-500 hover:transform hover:-translate-y-2 group shadow-2xl relative overflow-hidden flex flex-col items-center">
+                            <div key={index} className="w-full bg-[#0a1629]/50 backdrop-blur-sm border border-[rgba(96,189,71,0.1)] rounded-2xl p-8 hover:border-[var(--color-gold)] transition-all duration-500 hover:transform hover:-translate-y-2 group shadow-2xl relative overflow-hidden flex flex-col items-center">
                                 {/* Sash */}
                                 <div className="absolute top-0 right-0 bg-[var(--color-gold)] text-black text-xs font-bold px-4 py-1 rounded-bl-lg z-20">
                                     2025 WINNER
                                 </div>
 
-                                <div className="relative z-10 w-full flex flex-col items-center">
-                                    <div className="w-24 h-24 bg-gradient-to-br from-[var(--color-gold)] to-[#4A8739] rounded-full flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(96,189,71,0.3)] group-hover:scale-110 transition-transform duration-500">
-                                        <award.icon size={48} className="text-[#0a1629]" />
+                                <div className="relative z-10 w-full flex flex-col items-center flex-grow">
+                                    <div className="w-20 h-20 bg-gradient-to-br from-[var(--color-gold)] to-[#4A8739] rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(96,189,71,0.3)] group-hover:scale-110 transition-transform duration-500">
+                                        <award.icon size={40} className="text-[#0a1629]" />
                                     </div>
 
-                                    <h3 className="text-xl md:text-2xl font-[var(--font-heading)] font-bold text-white text-center mb-2 uppercase leading-snug">{award.title}</h3>
-                                    <div className="flex items-center justify-center gap-2 text-[var(--color-gold)] text-sm mb-6 font-semibold tracking-wide text-center uppercase">
-                                        <MapPin size={14} /> {award.subtitle}
+                                    <h3 className="text-lg md:text-xl font-[var(--font-heading)] font-bold text-white text-center mb-3 uppercase leading-snug min-h-[3rem] flex items-center">{award.title}</h3>
+                                    <div className="flex items-center justify-center gap-2 text-[var(--color-gold)] text-xs mb-0 font-semibold tracking-wide text-center uppercase">
+                                        <MapPin size={12} /> {award.subtitle}
                                     </div>
-
-                                    <p className="text-gray-400 text-center text-sm leading-relaxed border-t border-gray-800 pt-6">
-                                        {award.description}
-                                    </p>
                                 </div>
 
                                 {/* Background Texture */}
