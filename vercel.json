@@ -1,5 +1,12 @@
 {
   "rewrites": [{ 
       "source": "/(.*)",
-      "destination": "/" }]
+      "destination": "/" }],
+  "redirects": [
+    { "source": "/commodities-trading/", "destination": "/products/commodities", "permanent": true },
+    { "source": "/shares-trading/", "destination": "/products/shares", "permanent": true },
+    { "source": "/forex-trading/", "destination": "/products/forex", "permanent": true },
+    { "source": "/why-radhikafx/", "destination": "/about/why-radhikafx", "permanent": true },
+    { "source": "/indices-trading/", "destination": "/products/indices", "permanent": true }
+  ]
 }
