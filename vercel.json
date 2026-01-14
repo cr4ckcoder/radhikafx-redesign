@@ -7,6 +7,13 @@
     { "source": "/shares-trading/", "destination": "/products/shares", "permanent": true },
     { "source": "/forex-trading/", "destination": "/products/forex", "permanent": true },
     { "source": "/why-radhikafx/", "destination": "/about/why-radhikafx", "permanent": true },
-    { "source": "/indices-trading/", "destination": "/products/indices", "permanent": true }
+    { "source": "/indices-trading/", "destination": "/products/indices", "permanent": true },
+    {"source":"/platform/","destination":"/platforms/mt5","permanent":true},
+    {"source":"radhika-faqs","destination":"/about/faqs","permanent":true},
+    {"source":"/cpa-affiliate/","destination":"/partnership/cpa-affiliate","permanent":true},
+    {"source":"/ib-programme/","destination":"/partnership/ib-programme","permanent":true},
+    {"source":"/radhika-blogs/","destination":"/tools/education","permanent":true},
+    {"source":"/radhika-about/","destination":"/about-us","permanent":true},
+    {"source":"/trading-conditions/","destination":"/tools/trading-conditions","permanent":true}
   ]
 }
