@@ -1,7 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Send, Mail, MapPin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.png';
 import { useRef } from 'react';
 
 const Footer = () => {
@@ -30,7 +29,7 @@ const Footer = () => {
                         {/* Column 1: Brand & Contact */}
                         <div>
                             <Link to="/" className="flex items-center gap-2 mb-6">
-                                <img src={Logo} alt="Radhika Capital Markets" className="h-32 w-auto object-contain" />
+                                <img src="/logo.svg" alt="Radhika Capital Markets" className="h-32 w-auto object-contain" />
                             </Link>
                             <p className="text-gray-400 mb-6 leading-relaxed">
                                 Trade with a regulated global broker. Experience institutional-grade execution, 0.0 spreads, and 24/7 support.

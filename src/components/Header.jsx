@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, ChevronUp, User, Globe, Activity, Briefcase, BarChart2, Star, Flame, TrendingUp, PieChart, Repeat, DollarSign, Zap, Monitor, Award, Diamond, Check, Wallet, ArrowUpRight, Scale, Trophy, HelpCircle, Users, Mail, Clock, Calendar, Calculator, BookOpen, Database } from 'lucide-react';
-import Logo from '../assets/logo.png';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -136,7 +135,7 @@ const Header = () => {
             <div className="container mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
-                    <img src={Logo} alt="Radhika Capital Markets" className="h-12 md:h-16 lg:h-20 w-auto object-contain" />
+                    <img src="/logo.svg" alt="Radhika Capital Markets" className="h-12 md:h-16 lg:h-20 w-auto object-contain" />
                 </Link>
 
                 {/* Desktop Navigation */}
