@@ -133,10 +133,10 @@ const BlogPost = () => {
             <div className="relative z-10 w-full mb-12">
                 <div className="absolute inset-0 h-[500px] overflow-hidden">
                     <img src={featuredImage} alt="" className="w-full h-full object-cover opacity-20 blur-sm" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#02050a]/80 via-[#02050a]/90 to-[#02050a]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#0a1629]/80 via-[#0a1629]/90 to-[#0a1629]"></div>
                 </div>
 
-                <div className="container mx-auto px-6 pt-12 relative">
+                <div className="container mx-auto px-6 pt-32 relative">
                     <Link to="/tools/education" className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-green-500/10 text-gray-300 hover:text-green-500 rounded-full transition-all mb-8 group border border-white/10 hover:border-green-500/50 backdrop-blur-sm font-medium">
                         <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" /> Back to Insights
                     </Link>
