@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -38,24 +38,12 @@ import OpenLiveAccount from './pages/OpenLiveAccount';
 import OpenDemoAccount from './pages/OpenDemoAccount';
 import LiquidityServices from './pages/partnerships/LiquidityServices';
 import GoldGradientDefs from './components/GoldGradientDefs';
-import { useEffect, useRef } from 'react';
-
-
-// Scroll to top on route change
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-};
+import PageMetadata from './components/PageMetadata';
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
+      <PageMetadata />
       <GoldGradientDefs />
       <div className="app-container min-h-screen flex flex-col">
         <Header />

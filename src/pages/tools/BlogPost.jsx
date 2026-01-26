@@ -63,6 +63,19 @@ const BlogPost = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [processedContent]);
 
+    // Update page title when post is loaded
+    useEffect(() => {
+        if (post && post.title && post.title.rendered) {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = post.title.rendered;
+            const decodedTitle = tempDiv.textContent || tempDiv.innerText || "";
+            document.title = `${decodedTitle} | RadhikaFX`;
+        }
+        
+        // Cleanup function to reset title is not strictly needed as PageMetadata handles route changes,
+        // but good practice might be to not do anything as unmounting means navigation.
+    }, [post]);
+
     const processContent = (htmlContent) => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(htmlContent, 'text/html');
