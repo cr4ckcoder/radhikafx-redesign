@@ -29,7 +29,7 @@ const OpenDemoAccount = () => {
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState({ type: '', msg: '' });
 
-    const API_URL = "https://cabinet.radhikafx.com/api/v1/accounts/register/demo";
+    const API_URL = "https://promotions.radhikafx.com/wp-json/radhika-proxy/v1/register-real";
 
     // Scroll to top on mount
     useEffect(() => {

@@ -28,7 +28,7 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState({ type: '', msg: '' });
 
-    const API_URL = "https://cabinet.radhikafx.com/api/v1/accounts/register/real";
+    const API_URL = "https://promotions.radhikafx.com/wp-json/radhika-proxy/v1/register-real";
 
     const handleChange = (e) => {
         const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
