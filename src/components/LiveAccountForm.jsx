@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
-    Shield, ChevronRight, CheckCircle, AlertCircle, Loader2
+    ChevronRight, CheckCircle, AlertCircle, Loader2
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { COUNTRIES } from '../data/countries';
 
 const LiveAccountForm = ({ isIB = false, className = '' }) => {
-    // Steps: 1 = Account Setup, 2 = Trading Prefs, 3 = Verification
+    // Steps: 1 = Account Setup, 2 = Location & Extras
     const [step, setStep] = useState(1);
-    const [view, setView] = useState('WIZARD'); // 'WIZARD', 'OTP', 'SUCCESS'
+    const [view, setView] = useState('WIZARD'); // 'WIZARD', 'SUCCESS'
 
     // Form State
     const [formData, setFormData] = useState({
@@ -25,22 +25,10 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
         is_ib_request: isIB || false
     });
 
-    // OTP State
-    const [otp, setOtp] = useState(['', '', '', '', '', '']);
-    const [otpTimer, setOtpTimer] = useState(0);
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState({ type: '', msg: '' });
 
-    const API_URL = "https://crm1.radhikafx.com/form_api.php";
-
-    // OTP Timer Effect
-    useEffect(() => {
-        let interval;
-        if (otpTimer > 0) {
-            interval = setInterval(() => setOtpTimer(t => t - 1), 1000);
-        }
-        return () => clearInterval(interval);
-    }, [otpTimer]);
+    const API_URL = "https://cabinet.radhikafx.com/api/v1/accounts/register/real";
 
     const handleChange = (e) => {
         const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
@@ -61,13 +49,12 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
                 setStatus({ type: 'error', msg: 'Please complete your location details.' });
                 return;
             }
-            // Trigger OTP Request after Step 2
-            requestOtp();
+            // Submit form after Step 2
+            submitForm();
             return;
         }
 
         setStep(step + 1);
-        // window.scrollTo(0, 0); // Removed scroll to top to avoid jumping when embedded
     };
 
     const handlePrevStep = () => {
@@ -75,100 +62,40 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
         setStatus({ type: '', msg: '' });
     };
 
-    const handleOtpChange = (element, index) => {
-        if (isNaN(element.value)) return;
-        const newOtp = [...otp];
-        newOtp[index] = element.value;
-        setOtp(newOtp);
-        if (element.nextSibling && element.value) {
-            element.nextSibling.focus();
-        }
-    };
-
-    const requestOtp = async () => {
+    const submitForm = async () => {
         setLoading(true);
         setStatus({ type: '', msg: '' });
 
-        const payload = new URLSearchParams();
-        payload.append('method', 'otp_send');
-        payload.append('email', formData.email);
-        payload.append('type', 'live');
-        payload.append('module_name', 'LiveAccount');
+        // Prepare payload in the required format
+        const payload = {
+            first_name: formData.firstname.trim(),
+            last_name: formData.lastname.trim(),
+            email: formData.email.trim(),
+            phone: formData.mobile.trim(),
+            lead_source: "Google_Ads_Feb"
+        };
 
         try {
             const response = await fetch(API_URL, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: payload.toString()
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
             });
+
             const data = await response.json();
 
-            if (data.success) {
-                setView('OTP');
-                setStatus({ type: 'success', msg: `OTP sent to ${formData.email}` });
-                setOtpTimer(15);
+            if (response.ok) {
+                setView('SUCCESS');
             } else {
-                const errorMsg = (typeof data.error === 'string' ? data.error : data.error?.message) || data.message || JSON.stringify(data.error) || 'Failed to send OTP.';
+                const errorMsg = data.message || data.error || 'Registration failed. Please try again.';
                 setStatus({ type: 'error', msg: errorMsg });
             }
         } catch (error) {
             console.error(error);
             setStatus({ type: 'error', msg: 'Network error. Please try again.' });
-        } finally {
-            setLoading(false);
-        }
-    };
-
-    const submitFinal = async () => {
-        const otpCode = otp.join('');
-        if (otpCode.length !== 6) {
-            setStatus({ type: 'error', msg: 'Invalid OTP code.' });
-            return;
-        }
-
-        setLoading(true);
-        setStatus({ type: '', msg: '' });
-
-        const payload = new URLSearchParams();
-        payload.append('web_operation', 'WebLiveaccount');
-        payload.append('module_name', 'LiveAccount');
-        payload.append('email', formData.email);
-        payload.append('otp', otpCode);
-        payload.append('otp_verify', 'true');
-        payload.append('type', 'live');
-
-        const formValues = {
-            ...formData,
-            firstname: formData.firstname.replace(/[^a-zA-Z\s]/g, ''),
-            lastname: formData.lastname.replace(/[^a-zA-Z\s]/g, ''),
-            city: formData.city.replace(/[^a-zA-Z\s]/g, ''),
-            mobile: formData.mobile.replace(/\D/g, ''),
-            leadstatus: 'New',
-            leadsource: 'Web Site',
-            // Custom fields matching assumed CRM schema
-            web_operation: 'WebLiveaccount',
-            module_name: 'LiveAccount',
-            method: 'WebLiveaccount'
-        };
-        payload.append('value', JSON.stringify(formValues));
-
-        try {
-            const response = await fetch(API_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: payload.toString()
-            });
-            const data = await response.json();
-
-            if (data.success) {
-                setView('SUCCESS');
-            } else {
-                const errorMsg = (typeof data.error === 'string' ? data.error : data.error?.message) || data.message || JSON.stringify(data.error) || 'Verification failed.';
-                setStatus({ type: 'error', msg: errorMsg });
-            }
-        } catch (error) {
-            console.error(error);
-            setStatus({ type: 'error', msg: 'Submission failed. Please try again.' });
         } finally {
             setLoading(false);
         }
@@ -300,60 +227,13 @@ const LiveAccountForm = ({ isIB = false, className = '' }) => {
                             >
                                 {loading ? <Loader2 className="animate-spin" /> : (
                                     <>
-                                        {step === 2 ? 'Submit & Verify' : 'Next Step'} <ChevronRight size={18} />
+                                        {step === 2 ? 'Submit Application' : 'Next Step'} <ChevronRight size={18} />
                                     </>
                                 )}
                             </button>
                         </div>
                     </form>
                 </>
-            )}
-
-            {view === 'OTP' && (
-                <div className="text-center animate-fade-in py-10">
-                    <div className="w-20 h-20 bg-[var(--color-gold)]/10 rounded-full flex items-center justify-center mx-auto mb-6 text-[var(--color-gold)]">
-                        <Shield size={40} />
-                    </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">Security Verification</h3>
-                    <p className="text-gray-400 mb-8">Enter the 6-digit code sent to <span className="text-white font-mono">{formData.email}</span></p>
-
-                    {status.msg && (
-                        <div className={`mb-6 p-4 rounded flex items-center gap-2 max-w-sm mx-auto ${status.type === 'error' ? 'bg-red-500/10 text-red-400 border border-red-500/20' : 'bg-green-500/10 text-green-400 border border-green-500/20'}`}>
-                            <AlertCircle size={18} /> {status.msg}
-                        </div>
-                    )}
-
-                    <div className="flex justify-center gap-3 mb-8">
-                        {otp.map((digit, index) => (
-                            <input
-                                key={index}
-                                type="text"
-                                maxLength="1"
-                                value={digit}
-                                onChange={(e) => handleOtpChange(e.target, index)}
-                                className="w-12 h-14 bg-[#091830] border border-gray-700 rounded text-center text-xl font-bold text-white focus:border-[var(--color-gold)] focus:outline-none"
-                            />
-                        ))}
-                    </div>
-
-                    <button
-                        onClick={submitFinal}
-                        disabled={loading}
-                        className="btn-gold w-full max-w-sm mx-auto px-8 py-3 rounded text-[#091830] font-bold mb-4 flex items-center justify-center gap-2"
-                    >
-                        {loading ? <Loader2 className="animate-spin" /> : 'Verify & Open Account'}
-                    </button>
-
-                    <div>
-                        {otpTimer > 0 ? (
-                            <p className="text-sm text-gray-500">Resend code in {otpTimer}s</p>
-                        ) : (
-                            <button onClick={requestOtp} className="text-sm text-gold-gradient hover:underline">Resend Verification Code</button>
-                        )}
-                    </div>
-
-                    <button onClick={() => setView('WIZARD')} className="block text-xs text-gray-500 mt-6 mx-auto hover:text-white">Go Back</button>
-                </div>
             )}
         </div>
     );
