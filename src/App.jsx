@@ -34,11 +34,18 @@ import RiskDisclaimer from './pages/RiskDisclaimer';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import RiskWarning from './pages/RiskWarning';
-import OpenLiveAccount from './pages/OpenLiveAccount';
-import OpenDemoAccount from './pages/OpenDemoAccount';
+// OpenLiveAccount and OpenDemoAccount now redirect to the cabinet portal
 import LiquidityServices from './pages/partnerships/LiquidityServices';
 import GoldGradientDefs from './components/GoldGradientDefs';
 import PageMetadata from './components/PageMetadata';
+
+// External redirect component – works for both direct visits and client-side navigation
+function ExternalRedirect({ to }) {
+  React.useEffect(() => {
+    window.location.replace(to);
+  }, [to]);
+  return null;
+}
 
 function App() {
   return (
@@ -82,8 +89,8 @@ function App() {
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/risk-warning" element={<RiskWarning />} />
-            <Route path="/open-live-account" element={<OpenLiveAccount />} />
-            <Route path="/open-demo-account" element={<OpenDemoAccount />} />
+            <Route path="/open-live-account" element={<ExternalRedirect to="https://cabinet.radhikafx.com/en/register/account-types" />} />
+            <Route path="/open-demo-account" element={<ExternalRedirect to="https://cabinet.radhikafx.com/en/register/demo/account" />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
