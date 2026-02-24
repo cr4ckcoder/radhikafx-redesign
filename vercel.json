@@ -24,7 +24,9 @@
     {"source":"/cryptocurrency-trading/","destination":"/products/crypto","permanent":true},
     {"source":"/career-radhika/","destination":"/about/careers","permanent":true},
     {"source":"/our-achievements/","destination":"/about/achievements","permanent":true},
-    {"source":"/regulation/","destination":"/about/regulation","permanent":true}
+    {"source":"/regulation/","destination":"/about/regulation","permanent":true},
+    {"source": " /open-live-account/", "destination": "https://cabinet.radhikafx.com/en/register/account-types", "permanent": true},
+    {"source": "/open-demo-account/", "destination": "https://cabinet.radhikafx.com/en/register/demo/account", "permanent": true}
     
   ]
 }

@@ -119,7 +119,7 @@ const Header = () => {
                         >
                             IB Registration
                         </Link>
-                        <a href="https://cabinet.radhikafx.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-white)] hover-text-gold-gradient font-medium transition-colors">
+                        <a href="https://cabinet.radhikafx.com/en/login" target="_blank" rel="noopener noreferrer" className="text-[var(--color-white)] hover-text-gold-gradient font-medium transition-colors">
                             Login
                         </a>
                         <Link
